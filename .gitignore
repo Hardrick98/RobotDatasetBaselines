@@ -1,0 +1,4 @@
+Detection2D/mmdetection/test_rick.sh
+Detection2D/mmdetection/train_rick.sh
+Detection2D/mmdetection/train_jack.sh
+exo_dataset/*
