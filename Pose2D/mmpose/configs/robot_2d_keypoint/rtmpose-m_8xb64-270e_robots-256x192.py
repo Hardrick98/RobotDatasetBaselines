@@ -98,7 +98,7 @@ model = dict(
 # base dataset settings
 dataset_type = 'RobotDataset'
 data_mode = 'topdown'
-data_root = 'data/coco/'
+data_root = '/work/ToyotaHPE/rcatalini/EventRobotPose/exo_dataset/'
 
 backend_args = dict(backend='local')
 # backend_args = dict(
@@ -208,11 +208,30 @@ custom_hooks = [
         priority=49)
 ]
 
-# evaluators
 val_evaluator = dict(
     type='CocoMetric',
-    ann_file='/work/ToyotaHPE/rcatalini/EventRobotPose/exo_dataset/val_coco_pose.json')
-test_evaluator = dict(
-    type='CocoMetric',
-    ann_file='/work/ToyotaHPE/rcatalini/EventRobotPose/exo_dataset/test_coco_pose.json')
+    ann_file=data_root + 'test_coco_pose.json')
+test_evaluator = val_evaluator
+
+#val_evaluator = [
+#    dict(
+#        type='PCKAccuracy',
+#        thr=0.5,
+#        norm_item='bbox'),
+#    dict(
+#        type='AUC',
+#        norm_factor=30,
+#        num_thrs=20)
+#]
+#
+#test_evaluator = [
+#    dict(
+#        type='PCKAccuracy',
+#        thr=0.5,
+#        norm_item='bbox'),
+#    dict(
+#        type='AUC',
+#        norm_factor=30,
+#        num_thrs=20)
+#]
 

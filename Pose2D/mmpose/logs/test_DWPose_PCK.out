@@ -1,0 +1,500 @@
+/homes/rcatalini/.conda/envs/mmpose/lib/python3.8/site-packages/mmengine/optim/optimizer/zero_optimizer.py:11: DeprecationWarning: `TorchScript` support for functional optimizers is deprecated and will be removed in a future PyTorch release. Consider using the `torch.compile` optimizer instead.
+  from torch.distributed.optim import \
+/homes/rcatalini/.conda/envs/mmpose/lib/python3.8/site-packages/albumentations/__init__.py:13: UserWarning: A new version of Albumentations is available: 2.0.8 (you have 1.4.18). Upgrade using: pip install -U albumentations. To disable automatic update checks, set the environment variable NO_ALBUMENTATIONS_UPDATE to 1.
+  check_for_updates()
+02/17 18:57:58 - mmengine - INFO - 
+------------------------------------------------------------
+System environment:
+    sys.platform: linux
+    Python: 3.8.20 (default, Oct  3 2024, 15:24:27) [GCC 11.2.0]
+    CUDA available: True
+    MUSA available: False
+    numpy_random_seed: 21
+    GPU 0: Quadro RTX 5000
+    CUDA_HOME: /homes/admin/spack/opt/spack/linux-ivybridge/cuda-12.6.3-cr3dswdcqnxbg772az4phx3g6qqmegwy
+    NVCC: Cuda compilation tools, release 12.6, V12.6.85
+    GCC: gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+    PyTorch: 2.4.1+cu121
+    PyTorch compiling details: PyTorch built with:
+  - GCC 9.3
+  - C++ Version: 201703
+  - Intel(R) oneAPI Math Kernel Library Version 2022.2-Product Build 20220804 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v3.4.2 (Git Hash 1137e04ec0b5251ca2b4400a4fd3c667ce843d67)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX512
+  - CUDA Runtime 12.1
+  - NVCC architecture flags: -gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86;-gencode;arch=compute_90,code=sm_90
+  - CuDNN 90.1  (built against CUDA 12.4)
+  - Magma 2.6.1
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, CUDA_VERSION=12.1, CUDNN_VERSION=9.1.0, CXX_COMPILER=/opt/rh/devtoolset-9/root/usr/bin/c++, CXX_FLAGS= -D_GLIBCXX_USE_CXX11_ABI=0 -fabi-version=11 -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOROCTRACER -DUSE_FBGEMM -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -O2 -fPIC -Wall -Wextra -Werror=return-type -Werror=non-virtual-dtor -Werror=bool-operation -Wnarrowing -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-unused-parameter -Wno-unused-function -Wno-unused-result -Wno-strict-overflow -Wno-strict-aliasing -Wno-stringop-overflow -Wsuggest-override -Wno-psabi -Wno-error=pedantic -Wno-error=old-style-cast -Wno-missing-braces -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, TORCH_VERSION=2.4.1, USE_CUDA=ON, USE_CUDNN=ON, USE_CUSPARSELT=1, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=1, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, 
+
+    TorchVision: 0.19.1+cu121
+    OpenCV: 4.13.0
+    MMEngine: 0.10.7
+
+Runtime environment:
+    cudnn_benchmark: False
+    mp_cfg: {'mp_start_method': 'fork', 'opencv_num_threads': 0}
+    dist_cfg: {'backend': 'nccl'}
+    seed: 21
+    Distributed launcher: none
+    Distributed training: False
+    GPU number: 1
+------------------------------------------------------------
+
+02/17 18:57:59 - mmengine - INFO - Config:
+auto_scale_lr = dict(base_batch_size=64)
+backend_args = dict(backend='local')
+base_lr = 0.004
+codec = dict(
+    input_size=(
+        192,
+        256,
+    ),
+    normalize=False,
+    sigma=(
+        4.9,
+        5.66,
+    ),
+    simcc_split_ratio=2.0,
+    type='SimCCLabel',
+    use_dark=False)
+custom_hooks = [
+    dict(
+        ema_type='ExpMomentumEMA',
+        momentum=0.0002,
+        priority=49,
+        type='EMAHook',
+        update_buffers=True),
+]
+data_mode = 'topdown'
+data_root = 'data/coco/'
+dataset_type = 'RobotDataset'
+default_hooks = dict(
+    badcase=dict(
+        badcase_thr=5,
+        enable=False,
+        metric_type='loss',
+        out_dir='badcase',
+        type='BadCaseAnalysisHook'),
+    checkpoint=dict(
+        interval=1,
+        max_keep_ckpts=10,
+        rule='greater',
+        save_best='PCK',
+        type='CheckpointHook'),
+    logger=dict(interval=50, type='LoggerHook'),
+    param_scheduler=dict(type='ParamSchedulerHook'),
+    sampler_seed=dict(type='DistSamplerSeedHook'),
+    timer=dict(type='IterTimerHook'),
+    visualization=dict(enable=False, type='PoseVisualizationHook'))
+default_scope = 'mmpose'
+env_cfg = dict(
+    cudnn_benchmark=False,
+    dist_cfg=dict(backend='nccl'),
+    mp_cfg=dict(mp_start_method='fork', opencv_num_threads=0))
+fea = True
+find_unused_parameters = False
+launcher = 'none'
+load_from = 'baselines/DWPose/epoch_10.pth'
+log_level = 'INFO'
+log_processor = dict(
+    by_epoch=True, num_digits=6, type='LogProcessor', window_size=50)
+logit = True
+max_epochs = 10
+model = dict(
+    data_preprocessor=dict(
+        bgr_to_rgb=True,
+        mean=[
+            123.675,
+            116.28,
+            103.53,
+        ],
+        std=[
+            58.395,
+            57.12,
+            57.375,
+        ],
+        type='PoseDataPreprocessor'),
+    distill_cfg=[
+        dict(methods=[
+            dict(
+                alpha_fea=7e-05,
+                name='loss_fea',
+                student_channels=768,
+                teacher_channels=1024,
+                type='FeaLoss',
+                use_this=True),
+        ]),
+        dict(methods=[
+            dict(name='loss_logit', type='KDLoss', use_this=True, weight=0.1),
+        ]),
+    ],
+    student_cfg=
+    'configs/wholebody_2d_keypoint/rtmpose/coco-wholebody/rtmpose-m_8xb64-270e_coco-wholebody-256x192.py',
+    teacher_cfg=
+    'configs/wholebody_2d_keypoint/rtmpose/coco-wholebody/rtmpose-l_8xb64-270e_coco-wholebody-256x192.py',
+    teacher_pretrained=
+    'https://download.openmmlab.com/mmpose/v1/projects/rtmpose/rtmpose-l_simcc-coco-wholebody_pt-aic-coco_270e-256x192-6f206314_20230124.pth',
+    type='DWPoseDistiller')
+optim_wrapper = dict(
+    clip_grad=dict(max_norm=1.0, norm_type=2),
+    optimizer=dict(lr=0.004, type='AdamW', weight_decay=0.05),
+    paramwise_cfg=dict(
+        bias_decay_mult=0, bypass_duplicate=True, norm_decay_mult=0),
+    type='OptimWrapper')
+param_scheduler = [
+    dict(
+        begin=0, by_epoch=False, end=1000, start_factor=1e-05,
+        type='LinearLR'),
+    dict(
+        T_max=5,
+        begin=5,
+        by_epoch=True,
+        convert_to_iter_based=True,
+        end=10,
+        eta_min=0.0002,
+        type='CosineAnnealingLR'),
+]
+randomness = dict(seed=21)
+resume = False
+test_cfg = dict()
+test_dataloader = dict(
+    batch_size=64,
+    dataset=dict(
+        ann_file='test_coco_pose.json',
+        data_root='/work/ToyotaHPE/rcatalini/EventRobotPose/exo_dataset/',
+        metainfo=dict(from_file='configs/_base_/datasets/robot_dataset.py'),
+        pipeline=[
+            dict(backend_args=dict(backend='local'), type='LoadImage'),
+            dict(type='GetBBoxCenterScale'),
+            dict(input_size=(
+                192,
+                256,
+            ), type='TopdownAffine'),
+            dict(type='PackPoseInputs'),
+        ],
+        test_mode=True,
+        type='RobotDataset'),
+    drop_last=False,
+    num_workers=8,
+    persistent_workers=True,
+    pin_memory=True,
+    sampler=dict(round_up=False, shuffle=False, type='DefaultSampler'))
+test_evaluator = [
+    dict(norm_item='bbox', thr=0.5, type='PCKAccuracy'),
+    dict(norm_factor=30, num_thrs=20, type='AUC'),
+]
+train_cfg = dict(by_epoch=True, max_epochs=10, val_interval=10)
+train_dataloader = dict(
+    batch_size=64,
+    dataset=dict(
+        ann_file='train_coco_pose.json',
+        data_root='/work/ToyotaHPE/rcatalini/EventRobotPose/exo_dataset/',
+        metainfo=dict(from_file='configs/_base_/datasets/robot_dataset.py'),
+        pipeline=[
+            dict(backend_args=dict(backend='local'), type='LoadImage'),
+            dict(type='GetBBoxCenterScale'),
+            dict(direction='horizontal', type='RandomFlip'),
+            dict(input_size=(
+                192,
+                256,
+            ), type='TopdownAffine'),
+            dict(
+                encoder=dict(
+                    input_size=(
+                        192,
+                        256,
+                    ),
+                    normalize=False,
+                    sigma=(
+                        4.9,
+                        5.66,
+                    ),
+                    simcc_split_ratio=2.0,
+                    type='SimCCLabel',
+                    use_dark=False),
+                type='GenerateTarget'),
+            dict(type='PackPoseInputs'),
+        ],
+        test_mode=False,
+        type='RobotDataset'),
+    num_workers=8,
+    persistent_workers=True,
+    pin_memory=True,
+    sampler=dict(shuffle=True, type='DefaultSampler'))
+train_pipeline = [
+    dict(backend_args=dict(backend='local'), type='LoadImage'),
+    dict(type='GetBBoxCenterScale'),
+    dict(direction='horizontal', type='RandomFlip'),
+    dict(input_size=(
+        192,
+        256,
+    ), type='TopdownAffine'),
+    dict(
+        encoder=dict(
+            input_size=(
+                192,
+                256,
+            ),
+            normalize=False,
+            sigma=(
+                4.9,
+                5.66,
+            ),
+            simcc_split_ratio=2.0,
+            type='SimCCLabel',
+            use_dark=False),
+        type='GenerateTarget'),
+    dict(type='PackPoseInputs'),
+]
+val_cfg = dict()
+val_dataloader = dict(
+    batch_size=64,
+    dataset=dict(
+        ann_file='val_coco_pose.json',
+        data_root='/work/ToyotaHPE/rcatalini/EventRobotPose/exo_dataset/',
+        metainfo=dict(from_file='configs/_base_/datasets/robot_dataset.py'),
+        pipeline=[
+            dict(backend_args=dict(backend='local'), type='LoadImage'),
+            dict(type='GetBBoxCenterScale'),
+            dict(input_size=(
+                192,
+                256,
+            ), type='TopdownAffine'),
+            dict(type='PackPoseInputs'),
+        ],
+        test_mode=True,
+        type='RobotDataset'),
+    drop_last=False,
+    num_workers=8,
+    persistent_workers=True,
+    pin_memory=True,
+    sampler=dict(round_up=False, shuffle=False, type='DefaultSampler'))
+val_evaluator = [
+    dict(norm_item='bbox', thr=0.5, type='PCKAccuracy'),
+    dict(norm_factor=30, num_thrs=20, type='AUC'),
+]
+val_pipeline = [
+    dict(backend_args=dict(backend='local'), type='LoadImage'),
+    dict(type='GetBBoxCenterScale'),
+    dict(input_size=(
+        192,
+        256,
+    ), type='TopdownAffine'),
+    dict(type='PackPoseInputs'),
+]
+vis_backends = [
+    dict(type='LocalVisBackend'),
+]
+visualizer = dict(
+    name='visualizer',
+    type='PoseLocalVisualizer',
+    vis_backends=[
+        dict(type='LocalVisBackend'),
+    ])
+work_dir = './baselines/DWPose/'
+
+02/17 18:58:29 - mmengine - INFO - Distributed training is not used, all SyncBatchNorm (SyncBN) layers in the model will be automatically reverted to BatchNormXd layers if they are used.
+02/17 18:58:30 - mmengine - INFO - Hooks will be executed in the following order:
+before_run:
+(VERY_HIGH   ) RuntimeInfoHook                    
+(49          ) EMAHook                            
+(BELOW_NORMAL) LoggerHook                         
+ -------------------- 
+after_load_checkpoint:
+(49          ) EMAHook                            
+ -------------------- 
+before_train:
+(VERY_HIGH   ) RuntimeInfoHook                    
+(49          ) EMAHook                            
+(NORMAL      ) IterTimerHook                      
+(VERY_LOW    ) CheckpointHook                     
+ -------------------- 
+before_train_epoch:
+(VERY_HIGH   ) RuntimeInfoHook                    
+(NORMAL      ) IterTimerHook                      
+(NORMAL      ) DistSamplerSeedHook                
+ -------------------- 
+before_train_iter:
+(VERY_HIGH   ) RuntimeInfoHook                    
+(NORMAL      ) IterTimerHook                      
+ -------------------- 
+after_train_iter:
+(VERY_HIGH   ) RuntimeInfoHook                    
+(49          ) EMAHook                            
+(NORMAL      ) IterTimerHook                      
+(BELOW_NORMAL) LoggerHook                         
+(LOW         ) ParamSchedulerHook                 
+(VERY_LOW    ) CheckpointHook                     
+ -------------------- 
+after_train_epoch:
+(NORMAL      ) IterTimerHook                      
+(LOW         ) ParamSchedulerHook                 
+(VERY_LOW    ) CheckpointHook                     
+ -------------------- 
+before_val:
+(VERY_HIGH   ) RuntimeInfoHook                    
+ -------------------- 
+before_val_epoch:
+(49          ) EMAHook                            
+(NORMAL      ) IterTimerHook                      
+ -------------------- 
+before_val_iter:
+(NORMAL      ) IterTimerHook                      
+ -------------------- 
+after_val_iter:
+(NORMAL      ) IterTimerHook                      
+(NORMAL      ) PoseVisualizationHook              
+(BELOW_NORMAL) LoggerHook                         
+ -------------------- 
+after_val_epoch:
+(VERY_HIGH   ) RuntimeInfoHook                    
+(49          ) EMAHook                            
+(NORMAL      ) IterTimerHook                      
+(BELOW_NORMAL) LoggerHook                         
+(LOW         ) ParamSchedulerHook                 
+(VERY_LOW    ) CheckpointHook                     
+ -------------------- 
+after_val:
+(VERY_HIGH   ) RuntimeInfoHook                    
+ -------------------- 
+before_save_checkpoint:
+(49          ) EMAHook                            
+ -------------------- 
+after_train:
+(VERY_HIGH   ) RuntimeInfoHook                    
+(VERY_LOW    ) CheckpointHook                     
+ -------------------- 
+before_test:
+(VERY_HIGH   ) RuntimeInfoHook                    
+ -------------------- 
+before_test_epoch:
+(49          ) EMAHook                            
+(NORMAL      ) IterTimerHook                      
+ -------------------- 
+before_test_iter:
+(NORMAL      ) IterTimerHook                      
+ -------------------- 
+after_test_iter:
+(NORMAL      ) IterTimerHook                      
+(NORMAL      ) PoseVisualizationHook              
+(NORMAL      ) BadCaseAnalysisHook                
+(BELOW_NORMAL) LoggerHook                         
+ -------------------- 
+after_test_epoch:
+(VERY_HIGH   ) RuntimeInfoHook                    
+(49          ) EMAHook                            
+(NORMAL      ) IterTimerHook                      
+(NORMAL      ) BadCaseAnalysisHook                
+(BELOW_NORMAL) LoggerHook                         
+ -------------------- 
+after_test:
+(VERY_HIGH   ) RuntimeInfoHook                    
+ -------------------- 
+after_run:
+(BELOW_NORMAL) LoggerHook                         
+ -------------------- 
+loading annotations into memory...
+Done (t=15.47s)
+creating index...
+index created!
+02/17 18:59:29 - mmengine - WARNING - The prefix is not set in metric class PCKAccuracy.
+02/17 18:59:29 - mmengine - WARNING - The prefix is not set in metric class AUC.
+Loads checkpoint by local backend from path: baselines/DWPose/epoch_10.pth
+/homes/rcatalini/.conda/envs/mmpose/lib/python3.8/site-packages/mmengine/runner/checkpoint.py:347: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(filename, map_location=map_location)
+02/17 19:00:09 - mmengine - INFO - Load checkpoint from baselines/DWPose/epoch_10.pth
+/work/ToyotaHPE/rcatalini/EventRobotPose/mmdetection/mmdet/models/layers/se_layer.py:158: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=False):
+/work/ToyotaHPE/rcatalini/EventRobotPose/mmdetection/mmdet/models/backbones/csp_darknet.py:118: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=False):
+02/17 19:01:04 - mmengine - INFO - Epoch(test) [  50/4221]    eta: 1:16:19  time: 1.098009  data_time: 0.870074  memory: 2178  
+02/17 19:02:05 - mmengine - INFO - Epoch(test) [ 100/4221]    eta: 1:19:46  time: 1.225207  data_time: 1.018217  memory: 2178  
+02/17 19:02:54 - mmengine - INFO - Epoch(test) [ 150/4221]    eta: 1:14:43  time: 0.980953  data_time: 0.780893  memory: 2178  
+02/17 19:04:00 - mmengine - INFO - Epoch(test) [ 200/4221]    eta: 1:17:16  time: 1.307797  data_time: 1.107490  memory: 2178  
+02/17 19:04:55 - mmengine - INFO - Epoch(test) [ 250/4221]    eta: 1:15:44  time: 1.109988  data_time: 0.912192  memory: 2178  
+02/17 19:05:49 - mmengine - INFO - Epoch(test) [ 300/4221]    eta: 1:13:58  time: 1.069801  data_time: 0.870158  memory: 2178  
+02/17 19:06:43 - mmengine - INFO - Epoch(test) [ 350/4221]    eta: 1:12:38  time: 1.089031  data_time: 0.886406  memory: 2178  
+02/17 19:07:28 - mmengine - INFO - Epoch(test) [ 400/4221]    eta: 1:09:57  time: 0.907065  data_time: 0.706774  memory: 2178  
+02/17 19:08:19 - mmengine - INFO - Epoch(test) [ 450/4221]    eta: 1:08:21  time: 1.001969  data_time: 0.800423  memory: 2178  
+02/17 19:09:10 - mmengine - INFO - Epoch(test) [ 500/4221]    eta: 1:07:06  time: 1.029854  data_time: 0.827811  memory: 2178  
+02/17 19:10:01 - mmengine - INFO - Epoch(test) [ 550/4221]    eta: 1:05:47  time: 1.009148  data_time: 0.808502  memory: 2178  
+02/17 19:10:48 - mmengine - INFO - Epoch(test) [ 600/4221]    eta: 1:04:17  time: 0.955502  data_time: 0.755852  memory: 2178  
+02/17 19:11:36 - mmengine - INFO - Epoch(test) [ 650/4221]    eta: 1:02:51  time: 0.946063  data_time: 0.739582  memory: 2178  
+02/17 19:12:17 - mmengine - INFO - Epoch(test) [ 700/4221]    eta: 1:01:02  time: 0.830758  data_time: 0.628710  memory: 2178  
+02/17 19:13:13 - mmengine - INFO - Epoch(test) [ 750/4221]    eta: 1:00:28  time: 1.119135  data_time: 0.911335  memory: 2178  
+02/17 19:13:51 - mmengine - INFO - Epoch(test) [ 800/4221]    eta: 0:58:35  time: 0.763613  data_time: 0.559307  memory: 2178  
+02/17 19:14:39 - mmengine - INFO - Epoch(test) [ 850/4221]    eta: 0:57:28  time: 0.947773  data_time: 0.745365  memory: 2178  
+02/17 19:15:19 - mmengine - INFO - Epoch(test) [ 900/4221]    eta: 0:55:57  time: 0.808367  data_time: 0.605542  memory: 2178  
+02/17 19:16:01 - mmengine - INFO - Epoch(test) [ 950/4221]    eta: 0:54:35  time: 0.828311  data_time: 0.625247  memory: 2178  
+02/17 19:16:50 - mmengine - INFO - Epoch(test) [1000/4221]    eta: 0:53:44  time: 0.994287  data_time: 0.788607  memory: 2178  
+02/17 19:17:36 - mmengine - INFO - Epoch(test) [1050/4221]    eta: 0:52:41  time: 0.914237  data_time: 0.710360  memory: 2178  
+02/17 19:18:19 - mmengine - INFO - Epoch(test) [1100/4221]    eta: 0:51:31  time: 0.855666  data_time: 0.654626  memory: 2178  
+02/17 19:18:54 - mmengine - INFO - Epoch(test) [1150/4221]    eta: 0:50:04  time: 0.708853  data_time: 0.512658  memory: 2178  
+02/17 19:19:42 - mmengine - INFO - Epoch(test) [1200/4221]    eta: 0:49:12  time: 0.951805  data_time: 0.745340  memory: 2178  
+02/17 19:20:29 - mmengine - INFO - Epoch(test) [1250/4221]    eta: 0:48:18  time: 0.939639  data_time: 0.738066  memory: 2178  
+02/17 19:21:09 - mmengine - INFO - Epoch(test) [1300/4221]    eta: 0:47:11  time: 0.808211  data_time: 0.605134  memory: 2178  
+02/17 19:21:54 - mmengine - INFO - Epoch(test) [1350/4221]    eta: 0:46:15  time: 0.901909  data_time: 0.702212  memory: 2178  
+02/17 19:22:49 - mmengine - INFO - Epoch(test) [1400/4221]    eta: 0:45:39  time: 1.091125  data_time: 0.891413  memory: 2178  
+02/17 19:24:01 - mmengine - INFO - Epoch(test) [1450/4221]    eta: 0:45:35  time: 1.437761  data_time: 1.233562  memory: 2178  
+02/17 19:24:32 - mmengine - INFO - Epoch(test) [1500/4221]    eta: 0:44:13  time: 0.628387  data_time: 0.430862  memory: 2178  
+02/17 19:25:11 - mmengine - INFO - Epoch(test) [1550/4221]    eta: 0:43:07  time: 0.773909  data_time: 0.567786  memory: 2178  
+02/17 19:26:02 - mmengine - INFO - Epoch(test) [1600/4221]    eta: 0:42:23  time: 1.023337  data_time: 0.824113  memory: 2178  
+02/17 19:26:44 - mmengine - INFO - Epoch(test) [1650/4221]    eta: 0:41:25  time: 0.842277  data_time: 0.642395  memory: 2178  
+02/17 19:27:36 - mmengine - INFO - Epoch(test) [1700/4221]    eta: 0:40:41  time: 1.030386  data_time: 0.829495  memory: 2178  
+02/17 19:28:14 - mmengine - INFO - Epoch(test) [1750/4221]    eta: 0:39:39  time: 0.773928  data_time: 0.572754  memory: 2178  
+02/17 19:29:05 - mmengine - INFO - Epoch(test) [1800/4221]    eta: 0:38:54  time: 1.002332  data_time: 0.797620  memory: 2178  
+02/17 19:29:49 - mmengine - INFO - Epoch(test) [1850/4221]    eta: 0:38:00  time: 0.885559  data_time: 0.684526  memory: 2178  
+02/17 19:30:31 - mmengine - INFO - Epoch(test) [1900/4221]    eta: 0:37:05  time: 0.836362  data_time: 0.634205  memory: 2178  
+02/17 19:31:15 - mmengine - INFO - Epoch(test) [1950/4221]    eta: 0:36:13  time: 0.889138  data_time: 0.688554  memory: 2178  
+02/17 19:31:57 - mmengine - INFO - Epoch(test) [2000/4221]    eta: 0:35:18  time: 0.834685  data_time: 0.640440  memory: 2178  
+02/17 19:32:40 - mmengine - INFO - Epoch(test) [2050/4221]    eta: 0:34:25  time: 0.861158  data_time: 0.660188  memory: 2178  
+02/17 19:33:31 - mmengine - INFO - Epoch(test) [2100/4221]    eta: 0:33:41  time: 1.013388  data_time: 0.811584  memory: 2178  
+02/17 19:34:42 - mmengine - INFO - Epoch(test) [2150/4221]    eta: 0:33:16  time: 1.426892  data_time: 1.226748  memory: 2178  
+02/17 19:36:02 - mmengine - INFO - Epoch(test) [2200/4221]    eta: 0:32:57  time: 1.604557  data_time: 1.404306  memory: 2178  
+02/17 19:37:21 - mmengine - INFO - Epoch(test) [2250/4221]    eta: 0:32:35  time: 1.581790  data_time: 1.384179  memory: 2178  
+02/17 19:38:51 - mmengine - INFO - Epoch(test) [2300/4221]    eta: 0:32:18  time: 1.790002  data_time: 1.591572  memory: 2178  
+02/17 19:39:50 - mmengine - INFO - Epoch(test) [2350/4221]    eta: 0:31:35  time: 1.182169  data_time: 0.979479  memory: 2178  
+02/17 19:40:49 - mmengine - INFO - Epoch(test) [2400/4221]    eta: 0:30:51  time: 1.181548  data_time: 0.980491  memory: 2178  
+02/17 19:41:38 - mmengine - INFO - Epoch(test) [2450/4221]    eta: 0:29:58  time: 0.971706  data_time: 0.767107  memory: 2178  
+02/17 19:42:20 - mmengine - INFO - Epoch(test) [2500/4221]    eta: 0:29:02  time: 0.852501  data_time: 0.652873  memory: 2178  
+02/17 19:43:13 - mmengine - INFO - Epoch(test) [2550/4221]    eta: 0:28:13  time: 1.054339  data_time: 0.853768  memory: 2178  
+02/17 19:43:45 - mmengine - INFO - Epoch(test) [2600/4221]    eta: 0:27:10  time: 0.648167  data_time: 0.440225  memory: 2178  
+02/17 19:44:16 - mmengine - INFO - Epoch(test) [2650/4221]    eta: 0:26:09  time: 0.623711  data_time: 0.418908  memory: 2178  
+02/17 19:44:46 - mmengine - INFO - Epoch(test) [2700/4221]    eta: 0:25:08  time: 0.597532  data_time: 0.394736  memory: 2178  
+02/17 19:45:17 - mmengine - INFO - Epoch(test) [2750/4221]    eta: 0:24:08  time: 0.620164  data_time: 0.414357  memory: 2178  
+02/17 19:45:43 - mmengine - INFO - Epoch(test) [2800/4221]    eta: 0:23:07  time: 0.520163  data_time: 0.314347  memory: 2178  
+02/17 19:46:15 - mmengine - INFO - Epoch(test) [2850/4221]    eta: 0:22:10  time: 0.637319  data_time: 0.438903  memory: 2178  
+02/17 19:46:47 - mmengine - INFO - Epoch(test) [2900/4221]    eta: 0:21:14  time: 0.626897  data_time: 0.421859  memory: 2178  
+02/17 19:47:11 - mmengine - INFO - Epoch(test) [2950/4221]    eta: 0:20:15  time: 0.481134  data_time: 0.278989  memory: 2178  
+02/17 19:47:44 - mmengine - INFO - Epoch(test) [3000/4221]    eta: 0:19:22  time: 0.675811  data_time: 0.474277  memory: 2178  
+02/17 19:48:15 - mmengine - INFO - Epoch(test) [3050/4221]    eta: 0:18:27  time: 0.612954  data_time: 0.407612  memory: 2178  
+02/17 19:48:43 - mmengine - INFO - Epoch(test) [3100/4221]    eta: 0:17:33  time: 0.565521  data_time: 0.363912  memory: 2178  
+02/17 19:49:10 - mmengine - INFO - Epoch(test) [3150/4221]    eta: 0:16:39  time: 0.529091  data_time: 0.324238  memory: 2178  
+02/17 19:49:39 - mmengine - INFO - Epoch(test) [3200/4221]    eta: 0:15:47  time: 0.591970  data_time: 0.386340  memory: 2178  
+02/17 19:50:05 - mmengine - INFO - Epoch(test) [3250/4221]    eta: 0:14:55  time: 0.513632  data_time: 0.312504  memory: 2178  
+02/17 19:50:36 - mmengine - INFO - Epoch(test) [3300/4221]    eta: 0:14:04  time: 0.624569  data_time: 0.417647  memory: 2178  
+02/17 19:51:04 - mmengine - INFO - Epoch(test) [3350/4221]    eta: 0:13:14  time: 0.558909  data_time: 0.357394  memory: 2178  
+02/17 19:51:32 - mmengine - INFO - Epoch(test) [3400/4221]    eta: 0:12:24  time: 0.545260  data_time: 0.341787  memory: 2178  
+02/17 19:51:56 - mmengine - INFO - Epoch(test) [3450/4221]    eta: 0:11:34  time: 0.487886  data_time: 0.285680  memory: 2178  
+02/17 19:52:28 - mmengine - INFO - Epoch(test) [3500/4221]    eta: 0:10:46  time: 0.641310  data_time: 0.435469  memory: 2178  
+02/17 19:52:53 - mmengine - INFO - Epoch(test) [3550/4221]    eta: 0:09:57  time: 0.497224  data_time: 0.294058  memory: 2178  
+02/17 19:53:34 - mmengine - INFO - Epoch(test) [3600/4221]    eta: 0:09:12  time: 0.824875  data_time: 0.622666  memory: 2178  
+02/17 19:54:01 - mmengine - INFO - Epoch(test) [3650/4221]    eta: 0:08:25  time: 0.527851  data_time: 0.319739  memory: 2178  
+02/17 19:54:32 - mmengine - INFO - Epoch(test) [3700/4221]    eta: 0:07:39  time: 0.621029  data_time: 0.413924  memory: 2178  
+02/17 19:55:13 - mmengine - INFO - Epoch(test) [3750/4221]    eta: 0:06:54  time: 0.836405  data_time: 0.632472  memory: 2178  
+02/17 19:55:45 - mmengine - INFO - Epoch(test) [3800/4221]    eta: 0:06:09  time: 0.624416  data_time: 0.421913  memory: 2178  
+02/17 19:56:21 - mmengine - INFO - Epoch(test) [3850/4221]    eta: 0:05:24  time: 0.725334  data_time: 0.524371  memory: 2178  
+02/17 19:56:52 - mmengine - INFO - Epoch(test) [3900/4221]    eta: 0:04:40  time: 0.625620  data_time: 0.420822  memory: 2178  
+02/17 19:57:21 - mmengine - INFO - Epoch(test) [3950/4221]    eta: 0:03:55  time: 0.581061  data_time: 0.377283  memory: 2178  
+02/17 19:57:54 - mmengine - INFO - Epoch(test) [4000/4221]    eta: 0:03:11  time: 0.662091  data_time: 0.450156  memory: 2178  
+02/17 19:58:59 - mmengine - INFO - Epoch(test) [4050/4221]    eta: 0:02:29  time: 1.282492  data_time: 1.080276  memory: 2178  
+02/17 19:59:24 - mmengine - INFO - Epoch(test) [4100/4221]    eta: 0:01:44  time: 0.503231  data_time: 0.299901  memory: 2178  
+02/17 19:59:54 - mmengine - INFO - Epoch(test) [4150/4221]    eta: 0:01:01  time: 0.603359  data_time: 0.401293  memory: 2178  
+02/17 20:00:25 - mmengine - INFO - Epoch(test) [4200/4221]    eta: 0:00:18  time: 0.629672  data_time: 0.427686  memory: 2178  
+02/17 20:00:42 - mmengine - INFO - Evaluating PCKAccuracy (normalized by ``"bbox_size"``)...
+02/17 20:00:44 - mmengine - INFO - Evaluating AUC...
+02/17 20:00:51 - mmengine - INFO - Epoch(test) [4221/4221]    PCK: 0.999167  AUC: 0.852233  data_time: 0.657271  time: 0.860116

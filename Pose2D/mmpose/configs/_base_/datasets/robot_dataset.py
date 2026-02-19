@@ -43,5 +43,5 @@ dataset_info = dict(
     },
 
     joint_weights=[1.] * 14,
-    sigmas=[],
+    sigmas = [0.05] * 14,
 )

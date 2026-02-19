@@ -154,6 +154,9 @@ def oks_nms(kpts_db: List[dict],
         i = order[0]
         keep.append(i)
 
+        if len(order) == 1:
+            break 
+
         oks_ovr = oks_iou(kpts[i], kpts[order[1:]], areas[i], areas[order[1:]],
                           sigmas, vis_thr)
 
