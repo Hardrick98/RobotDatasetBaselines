@@ -37,15 +37,9 @@ class RobotDataset3D(BaseMocapDataset):
             self.ann_data = COCO(local_path)
 
     def get_sequence_indices(self) -> List[List[int]]:
-        img_ids = self.ann_data.getImgIds()
-        sequence_indices = []
+        ann_ids = self.ann_data.getAnnIds()
+        sequence_indices = [[ann_id] for ann_id in ann_ids]
 
-        for img_id in img_ids:
-            ann_ids = self.ann_data.getAnnIds(imgIds=[img_id])
-            if len(ann_ids) > 0:
-                sequence_indices.append(ann_ids)
-
-        # Applica subset_frac se necessario
         subset_size = int(len(sequence_indices) * self.subset_frac)
         start = np.random.randint(0, len(sequence_indices) - subset_size + 1)
         end = start + subset_size
@@ -101,7 +95,7 @@ class RobotDataset3D(BaseMocapDataset):
 
             for j, ann in enumerate(anns):
                 img_ids.append(ann['image_id'])
-                kpts[j] = np.array(ann['keypoints'], dtype=np.float32).reshape(14, 2)
+                kpts[j] = np.array(ann['keypoints'], dtype=np.float32).reshape(14, 3)[:,:2]
                 kpts_3d[j] = np.array(ann['keypoints_3d'], dtype=np.float32).reshape(14, 3)
                 keypoints_visible[j] = np.array(
                     ann['keypoints_valid'], dtype=np.float32).reshape(14)

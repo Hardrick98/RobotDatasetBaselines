@@ -1,0 +1,526 @@
+/homes/rcatalini/.conda/envs/mmpose/lib/python3.8/site-packages/mmengine/optim/optimizer/zero_optimizer.py:11: DeprecationWarning: `TorchScript` support for functional optimizers is deprecated and will be removed in a future PyTorch release. Consider using the `torch.compile` optimizer instead.
+  from torch.distributed.optim import \
+/homes/rcatalini/.conda/envs/mmpose/lib/python3.8/site-packages/albumentations/__init__.py:13: UserWarning: A new version of Albumentations is available: 2.0.8 (you have 1.4.18). Upgrade using: pip install -U albumentations. To disable automatic update checks, set the environment variable NO_ALBUMENTATIONS_UPDATE to 1.
+  check_for_updates()
+02/23 23:36:33 - mmengine - INFO - 
+------------------------------------------------------------
+System environment:
+    sys.platform: linux
+    Python: 3.8.20 (default, Oct  3 2024, 15:24:27) [GCC 11.2.0]
+    CUDA available: True
+    MUSA available: False
+    numpy_random_seed: 1683549133
+    GPU 0: Quadro RTX 5000
+    CUDA_HOME: /homes/admin/spack/opt/spack/linux-ivybridge/cuda-12.6.3-cr3dswdcqnxbg772az4phx3g6qqmegwy
+    NVCC: Cuda compilation tools, release 12.6, V12.6.85
+    GCC: gcc (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0
+    PyTorch: 2.4.1+cu121
+    PyTorch compiling details: PyTorch built with:
+  - GCC 9.3
+  - C++ Version: 201703
+  - Intel(R) oneAPI Math Kernel Library Version 2022.2-Product Build 20220804 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v3.4.2 (Git Hash 1137e04ec0b5251ca2b4400a4fd3c667ce843d67)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX512
+  - CUDA Runtime 12.1
+  - NVCC architecture flags: -gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86;-gencode;arch=compute_90,code=sm_90
+  - CuDNN 90.1  (built against CUDA 12.4)
+  - Magma 2.6.1
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, CUDA_VERSION=12.1, CUDNN_VERSION=9.1.0, CXX_COMPILER=/opt/rh/devtoolset-9/root/usr/bin/c++, CXX_FLAGS= -D_GLIBCXX_USE_CXX11_ABI=0 -fabi-version=11 -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOROCTRACER -DUSE_FBGEMM -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -O2 -fPIC -Wall -Wextra -Werror=return-type -Werror=non-virtual-dtor -Werror=bool-operation -Wnarrowing -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-unused-parameter -Wno-unused-function -Wno-unused-result -Wno-strict-overflow -Wno-strict-aliasing -Wno-stringop-overflow -Wsuggest-override -Wno-psabi -Wno-error=pedantic -Wno-error=old-style-cast -Wno-missing-braces -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, TORCH_VERSION=2.4.1, USE_CUDA=ON, USE_CUDNN=ON, USE_CUSPARSELT=1, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=1, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, 
+
+    TorchVision: 0.19.1+cu121
+    OpenCV: 4.13.0
+    MMEngine: 0.10.7
+
+Runtime environment:
+    cudnn_benchmark: False
+    mp_cfg: {'mp_start_method': 'fork', 'opencv_num_threads': 0}
+    dist_cfg: {'backend': 'nccl'}
+    seed: 1683549133
+    Distributed launcher: none
+    Distributed training: False
+    GPU number: 1
+------------------------------------------------------------
+
+02/23 23:36:34 - mmengine - INFO - Config:
+auto_scale_lr = dict(base_batch_size=64)
+backend_args = dict(backend='local')
+codec = dict(
+    heatmap_size=(
+        48,
+        64,
+    ),
+    input_size=(
+        192,
+        256,
+    ),
+    sigma=2,
+    type='MSRAHeatmap')
+custom_hooks = [
+    dict(type='SyncBuffersHook'),
+]
+data_mode = 'topdown'
+data_root = '../exo_dataset/'
+dataset_type = 'RobotDataset'
+default_hooks = dict(
+    badcase=dict(
+        badcase_thr=5,
+        enable=False,
+        metric_type='loss',
+        out_dir='badcase',
+        type='BadCaseAnalysisHook'),
+    checkpoint=dict(
+        interval=1, rule='greater', save_best='coco/AP',
+        type='CheckpointHook'),
+    logger=dict(interval=50, type='LoggerHook'),
+    param_scheduler=dict(type='ParamSchedulerHook'),
+    sampler_seed=dict(type='DistSamplerSeedHook'),
+    timer=dict(type='IterTimerHook'),
+    visualization=dict(enable=False, type='PoseVisualizationHook'))
+default_scope = 'mmpose'
+env_cfg = dict(
+    cudnn_benchmark=False,
+    dist_cfg=dict(backend='nccl'),
+    mp_cfg=dict(mp_start_method='fork', opencv_num_threads=0))
+launcher = 'none'
+load_from = 'baselines/HRNet/epoch_8.pth'
+log_level = 'INFO'
+log_processor = dict(
+    by_epoch=True, num_digits=6, type='LogProcessor', window_size=50)
+model = dict(
+    backbone=dict(
+        extra=dict(
+            stage1=dict(
+                block='BOTTLENECK',
+                num_blocks=(4, ),
+                num_branches=1,
+                num_channels=(64, ),
+                num_modules=1),
+            stage2=dict(
+                block='BASIC',
+                num_blocks=(
+                    4,
+                    4,
+                ),
+                num_branches=2,
+                num_channels=(
+                    32,
+                    64,
+                ),
+                num_modules=1),
+            stage3=dict(
+                block='BASIC',
+                num_blocks=(
+                    4,
+                    4,
+                    4,
+                ),
+                num_branches=3,
+                num_channels=(
+                    32,
+                    64,
+                    128,
+                ),
+                num_modules=4),
+            stage4=dict(
+                block='BASIC',
+                num_blocks=(
+                    4,
+                    4,
+                    4,
+                    4,
+                ),
+                num_branches=4,
+                num_channels=(
+                    32,
+                    64,
+                    128,
+                    256,
+                ),
+                num_modules=3)),
+        in_channels=3,
+        init_cfg=dict(
+            checkpoint=
+            'https://download.openmmlab.com/mmpose/pretrain_models/hrnet_w32-36af842e.pth',
+            type='Pretrained'),
+        type='HRNet'),
+    data_preprocessor=dict(
+        bgr_to_rgb=True,
+        mean=[
+            123.675,
+            116.28,
+            103.53,
+        ],
+        std=[
+            58.395,
+            57.12,
+            57.375,
+        ],
+        type='PoseDataPreprocessor'),
+    head=dict(
+        decoder=dict(
+            heatmap_size=(
+                48,
+                64,
+            ),
+            input_size=(
+                192,
+                256,
+            ),
+            sigma=2,
+            type='MSRAHeatmap'),
+        deconv_out_channels=None,
+        in_channels=32,
+        loss=dict(type='KeypointMSELoss', use_target_weight=True),
+        out_channels=14,
+        type='HeatmapHead'),
+    test_cfg=dict(flip_mode='heatmap', flip_test=True, shift_heatmap=True),
+    type='TopdownPoseEstimator')
+optim_wrapper = dict(optimizer=dict(lr=0.0005, type='Adam'))
+param_scheduler = [
+    dict(begin=0, by_epoch=True, end=10, start_factor=0.001, type='LinearLR'),
+    dict(
+        begin=0,
+        by_epoch=True,
+        end=10,
+        gamma=0.1,
+        milestones=[
+            170,
+            200,
+        ],
+        type='MultiStepLR'),
+]
+resume = False
+test_cfg = dict()
+test_dataloader = dict(
+    batch_size=64,
+    dataset=dict(
+        ann_file='test_coco_pose.json',
+        data_mode='topdown',
+        data_root='../exo_dataset/',
+        pipeline=[
+            dict(type='LoadImage'),
+            dict(type='GetBBoxCenterScale'),
+            dict(input_size=(
+                192,
+                256,
+            ), type='TopdownAffine'),
+            dict(type='PackPoseInputs'),
+        ],
+        test_mode=True,
+        type='RobotDataset'),
+    drop_last=False,
+    num_workers=8,
+    persistent_workers=True,
+    sampler=dict(round_up=False, shuffle=False, type='DefaultSampler'))
+test_evaluator = dict(
+    ann_file='../exo_dataset/test_coco_pose.json', type='CocoMetric')
+train_cfg = dict(by_epoch=True, max_epochs=10, val_interval=1)
+train_dataloader = dict(
+    batch_size=64,
+    dataset=dict(
+        ann_file='train_coco_pose.json',
+        data_mode='topdown',
+        data_root='../exo_dataset/',
+        pipeline=[
+            dict(type='LoadImage'),
+            dict(type='GetBBoxCenterScale'),
+            dict(direction='horizontal', type='RandomFlip'),
+            dict(input_size=(
+                192,
+                256,
+            ), type='TopdownAffine'),
+            dict(
+                encoder=dict(
+                    heatmap_size=(
+                        48,
+                        64,
+                    ),
+                    input_size=(
+                        192,
+                        256,
+                    ),
+                    sigma=2,
+                    type='MSRAHeatmap'),
+                type='GenerateTarget'),
+            dict(type='PackPoseInputs'),
+        ],
+        type='RobotDataset'),
+    num_workers=8,
+    persistent_workers=True,
+    sampler=dict(shuffle=True, type='DefaultSampler'))
+train_pipeline = [
+    dict(type='LoadImage'),
+    dict(type='GetBBoxCenterScale'),
+    dict(direction='horizontal', type='RandomFlip'),
+    dict(input_size=(
+        192,
+        256,
+    ), type='TopdownAffine'),
+    dict(
+        encoder=dict(
+            heatmap_size=(
+                48,
+                64,
+            ),
+            input_size=(
+                192,
+                256,
+            ),
+            sigma=2,
+            type='MSRAHeatmap'),
+        type='GenerateTarget'),
+    dict(type='PackPoseInputs'),
+]
+val_cfg = dict()
+val_dataloader = dict(
+    batch_size=64,
+    dataset=dict(
+        ann_file='val_coco_pose.json',
+        data_mode='topdown',
+        data_root='../exo_dataset/',
+        pipeline=[
+            dict(type='LoadImage'),
+            dict(type='GetBBoxCenterScale'),
+            dict(input_size=(
+                192,
+                256,
+            ), type='TopdownAffine'),
+            dict(type='PackPoseInputs'),
+        ],
+        test_mode=True,
+        type='RobotDataset'),
+    drop_last=False,
+    num_workers=8,
+    persistent_workers=True,
+    sampler=dict(round_up=False, shuffle=False, type='DefaultSampler'))
+val_evaluator = dict(
+    ann_file='../exo_dataset/test_coco_pose.json', type='CocoMetric')
+val_pipeline = [
+    dict(type='LoadImage'),
+    dict(type='GetBBoxCenterScale'),
+    dict(input_size=(
+        192,
+        256,
+    ), type='TopdownAffine'),
+    dict(type='PackPoseInputs'),
+]
+vis_backends = [
+    dict(type='LocalVisBackend'),
+]
+visualizer = dict(
+    name='visualizer',
+    type='PoseLocalVisualizer',
+    vis_backends=[
+        dict(type='LocalVisBackend'),
+    ])
+work_dir = './baselines/HRNet/'
+
+02/23 23:36:35 - mmengine - INFO - Distributed training is not used, all SyncBatchNorm (SyncBN) layers in the model will be automatically reverted to BatchNormXd layers if they are used.
+02/23 23:36:35 - mmengine - INFO - Hooks will be executed in the following order:
+before_run:
+(VERY_HIGH   ) RuntimeInfoHook                    
+(BELOW_NORMAL) LoggerHook                         
+ -------------------- 
+before_train:
+(VERY_HIGH   ) RuntimeInfoHook                    
+(NORMAL      ) IterTimerHook                      
+(VERY_LOW    ) CheckpointHook                     
+ -------------------- 
+before_train_epoch:
+(VERY_HIGH   ) RuntimeInfoHook                    
+(NORMAL      ) IterTimerHook                      
+(NORMAL      ) DistSamplerSeedHook                
+ -------------------- 
+before_train_iter:
+(VERY_HIGH   ) RuntimeInfoHook                    
+(NORMAL      ) IterTimerHook                      
+ -------------------- 
+after_train_iter:
+(VERY_HIGH   ) RuntimeInfoHook                    
+(NORMAL      ) IterTimerHook                      
+(BELOW_NORMAL) LoggerHook                         
+(LOW         ) ParamSchedulerHook                 
+(VERY_LOW    ) CheckpointHook                     
+ -------------------- 
+after_train_epoch:
+(NORMAL      ) IterTimerHook                      
+(NORMAL      ) SyncBuffersHook                    
+(LOW         ) ParamSchedulerHook                 
+(VERY_LOW    ) CheckpointHook                     
+ -------------------- 
+before_val:
+(VERY_HIGH   ) RuntimeInfoHook                    
+ -------------------- 
+before_val_epoch:
+(NORMAL      ) IterTimerHook                      
+(NORMAL      ) SyncBuffersHook                    
+ -------------------- 
+before_val_iter:
+(NORMAL      ) IterTimerHook                      
+ -------------------- 
+after_val_iter:
+(NORMAL      ) IterTimerHook                      
+(NORMAL      ) PoseVisualizationHook              
+(BELOW_NORMAL) LoggerHook                         
+ -------------------- 
+after_val_epoch:
+(VERY_HIGH   ) RuntimeInfoHook                    
+(NORMAL      ) IterTimerHook                      
+(BELOW_NORMAL) LoggerHook                         
+(LOW         ) ParamSchedulerHook                 
+(VERY_LOW    ) CheckpointHook                     
+ -------------------- 
+after_val:
+(VERY_HIGH   ) RuntimeInfoHook                    
+ -------------------- 
+after_train:
+(VERY_HIGH   ) RuntimeInfoHook                    
+(VERY_LOW    ) CheckpointHook                     
+ -------------------- 
+before_test:
+(VERY_HIGH   ) RuntimeInfoHook                    
+ -------------------- 
+before_test_epoch:
+(NORMAL      ) IterTimerHook                      
+ -------------------- 
+before_test_iter:
+(NORMAL      ) IterTimerHook                      
+ -------------------- 
+after_test_iter:
+(NORMAL      ) IterTimerHook                      
+(NORMAL      ) PoseVisualizationHook              
+(NORMAL      ) BadCaseAnalysisHook                
+(BELOW_NORMAL) LoggerHook                         
+ -------------------- 
+after_test_epoch:
+(VERY_HIGH   ) RuntimeInfoHook                    
+(NORMAL      ) IterTimerHook                      
+(NORMAL      ) BadCaseAnalysisHook                
+(BELOW_NORMAL) LoggerHook                         
+ -------------------- 
+after_test:
+(VERY_HIGH   ) RuntimeInfoHook                    
+ -------------------- 
+after_run:
+(BELOW_NORMAL) LoggerHook                         
+ -------------------- 
+loading annotations into memory...
+Done (t=38.99s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=37.87s)
+creating index...
+index created!
+Loads checkpoint by local backend from path: baselines/HRNet/epoch_8.pth
+/homes/rcatalini/.conda/envs/mmpose/lib/python3.8/site-packages/mmengine/runner/checkpoint.py:347: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(filename, map_location=map_location)
+02/23 23:47:50 - mmengine - INFO - Load checkpoint from baselines/HRNet/epoch_8.pth
+02/23 23:52:42 - mmengine - INFO - Epoch(test) [  50/4221]    eta: 6:45:16  time: 5.829857  data_time: 5.417693  memory: 912  
+02/23 23:55:36 - mmengine - INFO - Epoch(test) [ 100/4221]    eta: 5:20:05  time: 3.491029  data_time: 3.080464  memory: 912  
+02/23 23:58:04 - mmengine - INFO - Epoch(test) [ 150/4221]    eta: 4:37:34  time: 2.952509  data_time: 2.542810  memory: 912  
+02/24 00:01:05 - mmengine - INFO - Epoch(test) [ 200/4221]    eta: 4:26:26  time: 3.629328  data_time: 3.220074  memory: 912  
+02/24 00:04:31 - mmengine - INFO - Epoch(test) [ 250/4221]    eta: 4:24:51  time: 4.106849  data_time: 3.690467  memory: 912  
+02/24 00:07:41 - mmengine - INFO - Epoch(test) [ 300/4221]    eta: 4:19:22  time: 3.804983  data_time: 3.391680  memory: 912  
+02/24 00:10:41 - mmengine - INFO - Epoch(test) [ 350/4221]    eta: 4:12:41  time: 3.601989  data_time: 3.188171  memory: 912  
+02/24 00:13:22 - mmengine - INFO - Epoch(test) [ 400/4221]    eta: 4:03:55  time: 3.225891  data_time: 2.815038  memory: 912  
+02/24 00:16:20 - mmengine - INFO - Epoch(test) [ 450/4221]    eta: 3:58:47  time: 3.552391  data_time: 3.138622  memory: 912  
+02/24 00:18:11 - mmengine - INFO - Epoch(test) [ 500/4221]    eta: 3:45:47  time: 2.212713  data_time: 1.805557  memory: 912  
+02/24 00:20:36 - mmengine - INFO - Epoch(test) [ 550/4221]    eta: 3:38:42  time: 2.912213  data_time: 2.506203  memory: 912  
+02/24 00:24:27 - mmengine - INFO - Epoch(test) [ 600/4221]    eta: 3:40:55  time: 4.609078  data_time: 4.200093  memory: 912  
+02/24 00:27:57 - mmengine - INFO - Epoch(test) [ 650/4221]    eta: 3:40:20  time: 4.199231  data_time: 3.790032  memory: 912  
+02/24 00:29:45 - mmengine - INFO - Epoch(test) [ 700/4221]    eta: 3:30:51  time: 2.174497  data_time: 1.765199  memory: 912  
+02/24 00:32:16 - mmengine - INFO - Epoch(test) [ 750/4221]    eta: 3:25:37  time: 3.015685  data_time: 2.602216  memory: 912  
+02/24 00:35:41 - mmengine - INFO - Epoch(test) [ 800/4221]    eta: 3:24:34  time: 4.091790  data_time: 3.680991  memory: 912  
+02/24 00:40:25 - mmengine - INFO - Epoch(test) [ 850/4221]    eta: 3:28:31  time: 5.686194  data_time: 5.274740  memory: 912  
+02/24 00:43:02 - mmengine - INFO - Epoch(test) [ 900/4221]    eta: 3:23:41  time: 3.146595  data_time: 2.735265  memory: 912  
+02/24 00:45:12 - mmengine - INFO - Epoch(test) [ 950/4221]    eta: 3:17:31  time: 2.599119  data_time: 2.191780  memory: 912  
+02/24 00:49:37 - mmengine - INFO - Epoch(test) [1000/4221]    eta: 3:19:00  time: 5.298769  data_time: 4.886295  memory: 912  
+02/24 00:52:24 - mmengine - INFO - Epoch(test) [1050/4221]    eta: 3:14:58  time: 3.329981  data_time: 2.919909  memory: 912  
+02/24 00:54:37 - mmengine - INFO - Epoch(test) [1100/4221]    eta: 3:09:27  time: 2.655910  data_time: 2.247653  memory: 912  
+02/24 00:56:37 - mmengine - INFO - Epoch(test) [1150/4221]    eta: 3:03:39  time: 2.403711  data_time: 1.997669  memory: 912  
+02/24 00:59:21 - mmengine - INFO - Epoch(test) [1200/4221]    eta: 3:00:02  time: 3.285103  data_time: 2.861966  memory: 912  
+02/24 01:03:29 - mmengine - INFO - Epoch(test) [1250/4221]    eta: 2:59:46  time: 4.950989  data_time: 4.543666  memory: 912  
+02/24 01:06:36 - mmengine - INFO - Epoch(test) [1300/4221]    eta: 2:56:58  time: 3.746178  data_time: 3.334221  memory: 912  
+02/24 01:09:59 - mmengine - INFO - Epoch(test) [1350/4221]    eta: 2:54:40  time: 4.054795  data_time: 3.643036  memory: 912  
+02/24 01:14:37 - mmengine - INFO - Epoch(test) [1400/4221]    eta: 2:54:51  time: 5.562559  data_time: 5.150012  memory: 912  
+02/24 01:17:53 - mmengine - INFO - Epoch(test) [1450/4221]    eta: 2:52:05  time: 3.932308  data_time: 3.523890  memory: 912  
+02/24 01:18:57 - mmengine - INFO - Epoch(test) [1500/4221]    eta: 2:45:16  time: 1.270006  data_time: 0.862789  memory: 912  
+02/24 01:20:14 - mmengine - INFO - Epoch(test) [1550/4221]    eta: 2:39:13  time: 1.551183  data_time: 1.140679  memory: 912  
+02/24 01:22:30 - mmengine - INFO - Epoch(test) [1600/4221]    eta: 2:35:03  time: 2.703192  data_time: 2.292353  memory: 912  
+02/24 01:24:23 - mmengine - INFO - Epoch(test) [1650/4221]    eta: 2:30:26  time: 2.270945  data_time: 1.858240  memory: 912  
+02/24 01:26:15 - mmengine - INFO - Epoch(test) [1700/4221]    eta: 2:25:56  time: 2.244924  data_time: 1.832542  memory: 912  
+02/24 01:27:32 - mmengine - INFO - Epoch(test) [1750/4221]    eta: 2:20:46  time: 1.530217  data_time: 1.121801  memory: 912  
+02/24 01:29:18 - mmengine - INFO - Epoch(test) [1800/4221]    eta: 2:16:28  time: 2.125887  data_time: 1.717122  memory: 912  
+02/24 01:30:41 - mmengine - INFO - Epoch(test) [1850/4221]    eta: 2:11:48  time: 1.661365  data_time: 1.248002  memory: 912  
+02/24 01:32:36 - mmengine - INFO - Epoch(test) [1900/4221]    eta: 2:07:57  time: 2.285298  data_time: 1.870528  memory: 912  
+02/24 01:34:09 - mmengine - INFO - Epoch(test) [1950/4221]    eta: 2:03:48  time: 1.861810  data_time: 1.447984  memory: 912  
+02/24 01:35:53 - mmengine - INFO - Epoch(test) [2000/4221]    eta: 1:59:59  time: 2.089411  data_time: 1.679750  memory: 912  
+02/24 01:37:45 - mmengine - INFO - Epoch(test) [2050/4221]    eta: 1:56:23  time: 2.236149  data_time: 1.814172  memory: 912  
+02/24 01:38:57 - mmengine - INFO - Epoch(test) [2100/4221]    eta: 1:52:13  time: 1.450448  data_time: 1.041191  memory: 912  
+02/24 01:40:32 - mmengine - INFO - Epoch(test) [2150/4221]    eta: 1:48:33  time: 1.887283  data_time: 1.476611  memory: 912  
+02/24 01:42:53 - mmengine - INFO - Epoch(test) [2200/4221]    eta: 1:45:41  time: 2.828782  data_time: 2.415504  memory: 912  
+02/24 01:44:58 - mmengine - INFO - Epoch(test) [2250/4221]    eta: 1:42:36  time: 2.498389  data_time: 2.083797  memory: 912  
+02/24 01:48:09 - mmengine - INFO - Epoch(test) [2300/4221]    eta: 1:40:28  time: 3.808852  data_time: 3.382554  memory: 912  
+02/24 01:50:04 - mmengine - INFO - Epoch(test) [2350/4221]    eta: 1:37:18  time: 2.305347  data_time: 1.890480  memory: 912  
+02/24 01:52:08 - mmengine - INFO - Epoch(test) [2400/4221]    eta: 1:34:18  time: 2.483133  data_time: 2.070823  memory: 912  
+02/24 01:53:58 - mmengine - INFO - Epoch(test) [2450/4221]    eta: 1:31:10  time: 2.191686  data_time: 1.778304  memory: 912  
+02/24 01:55:18 - mmengine - INFO - Epoch(test) [2500/4221]    eta: 1:27:44  time: 1.603365  data_time: 1.190598  memory: 912  
+02/24 01:56:57 - mmengine - INFO - Epoch(test) [2550/4221]    eta: 1:24:36  time: 1.990450  data_time: 1.578347  memory: 912  
+02/24 01:58:46 - mmengine - INFO - Epoch(test) [2600/4221]    eta: 1:21:37  time: 2.180769  data_time: 1.768694  memory: 912  
+02/24 02:00:20 - mmengine - INFO - Epoch(test) [2650/4221]    eta: 1:18:32  time: 1.877608  data_time: 1.462494  memory: 912  
+02/24 02:03:01 - mmengine - INFO - Epoch(test) [2700/4221]    eta: 1:16:08  time: 3.213788  data_time: 2.804344  memory: 912  
+02/24 02:04:57 - mmengine - INFO - Epoch(test) [2750/4221]    eta: 1:13:20  time: 2.324253  data_time: 1.911299  memory: 912  
+02/24 02:06:35 - mmengine - INFO - Epoch(test) [2800/4221]    eta: 1:10:24  time: 1.964358  data_time: 1.553786  memory: 912  
+02/24 02:08:04 - mmengine - INFO - Epoch(test) [2850/4221]    eta: 1:07:27  time: 1.775517  data_time: 1.365862  memory: 912  
+02/24 02:10:07 - mmengine - INFO - Epoch(test) [2900/4221]    eta: 1:04:48  time: 2.452774  data_time: 2.041370  memory: 912  
+02/24 02:11:28 - mmengine - INFO - Epoch(test) [2950/4221]    eta: 1:01:53  time: 1.632013  data_time: 1.220413  memory: 912  
+02/24 02:13:37 - mmengine - INFO - Epoch(test) [3000/4221]    eta: 0:59:20  time: 2.577567  data_time: 2.163231  memory: 912  
+02/24 02:15:11 - mmengine - INFO - Epoch(test) [3050/4221]    eta: 0:56:34  time: 1.875793  data_time: 1.467607  memory: 912  
+02/24 02:17:07 - mmengine - INFO - Epoch(test) [3100/4221]    eta: 0:53:58  time: 2.309462  data_time: 1.898380  memory: 912  
+02/24 02:18:51 - mmengine - INFO - Epoch(test) [3150/4221]    eta: 0:51:20  time: 2.086256  data_time: 1.672080  memory: 912  
+02/24 02:22:21 - mmengine - INFO - Epoch(test) [3200/4221]    eta: 0:49:18  time: 4.208895  data_time: 3.801893  memory: 912  
+02/24 02:24:01 - mmengine - INFO - Epoch(test) [3250/4221]    eta: 0:46:39  time: 1.984841  data_time: 1.572064  memory: 912  
+02/24 02:25:41 - mmengine - INFO - Epoch(test) [3300/4221]    eta: 0:44:03  time: 2.013290  data_time: 1.604277  memory: 912  
+02/24 02:27:20 - mmengine - INFO - Epoch(test) [3350/4221]    eta: 0:41:28  time: 1.982383  data_time: 1.573399  memory: 912  
+02/24 02:29:25 - mmengine - INFO - Epoch(test) [3400/4221]    eta: 0:39:00  time: 2.482984  data_time: 2.074221  memory: 912  
+02/24 02:30:47 - mmengine - INFO - Epoch(test) [3450/4221]    eta: 0:36:24  time: 1.657434  data_time: 1.245390  memory: 912  
+02/24 02:32:26 - mmengine - INFO - Epoch(test) [3500/4221]    eta: 0:33:54  time: 1.971383  data_time: 1.557939  memory: 912  
+02/24 02:33:45 - mmengine - INFO - Epoch(test) [3550/4221]    eta: 0:31:21  time: 1.582381  data_time: 1.160143  memory: 912  
+02/24 02:36:21 - mmengine - INFO - Epoch(test) [3600/4221]    eta: 0:29:04  time: 3.128102  data_time: 2.716596  memory: 912  
+02/24 02:37:46 - mmengine - INFO - Epoch(test) [3650/4221]    eta: 0:26:34  time: 1.687480  data_time: 1.272028  memory: 912  
+02/24 02:39:39 - mmengine - INFO - Epoch(test) [3700/4221]    eta: 0:24:11  time: 2.262671  data_time: 1.847496  memory: 912  
+02/24 02:41:33 - mmengine - INFO - Epoch(test) [3750/4221]    eta: 0:21:49  time: 2.276715  data_time: 1.864171  memory: 912  
+02/24 02:43:21 - mmengine - INFO - Epoch(test) [3800/4221]    eta: 0:19:26  time: 2.158750  data_time: 1.744582  memory: 912  
+02/24 02:44:38 - mmengine - INFO - Epoch(test) [3850/4221]    eta: 0:17:02  time: 1.543332  data_time: 1.118636  memory: 912  
+02/24 02:46:13 - mmengine - INFO - Epoch(test) [3900/4221]    eta: 0:14:40  time: 1.909158  data_time: 1.498417  memory: 912  
+02/24 02:47:59 - mmengine - INFO - Epoch(test) [3950/4221]    eta: 0:12:21  time: 2.117054  data_time: 1.704504  memory: 912  
+02/24 02:49:36 - mmengine - INFO - Epoch(test) [4000/4221]    eta: 0:10:02  time: 1.940719  data_time: 1.527057  memory: 912  
+02/24 02:51:57 - mmengine - INFO - Epoch(test) [4050/4221]    eta: 0:07:46  time: 2.804680  data_time: 2.395021  memory: 912  
+02/24 02:53:10 - mmengine - INFO - Epoch(test) [4100/4221]    eta: 0:05:28  time: 1.467125  data_time: 1.059231  memory: 912  
+02/24 02:55:20 - mmengine - INFO - Epoch(test) [4150/4221]    eta: 0:03:12  time: 2.599712  data_time: 2.187993  memory: 912  
+02/24 02:57:34 - mmengine - INFO - Epoch(test) [4200/4221]    eta: 0:00:56  time: 2.684396  data_time: 2.257647  memory: 912  
+02/24 02:59:02 - mmengine - INFO - Evaluating CocoMetric...
+Loading and preparing results...
+DONE (t=5.74s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *keypoints*
+DONE (t=50.31s).
+Accumulating evaluation results...
+DONE (t=3.13s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] =  0.925
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets= 20 ] =  0.970
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets= 20 ] =  0.950
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets= 20 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] =  0.925
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] =  0.934
+ Average Recall     (AR) @[ IoU=0.50      | area=   all | maxDets= 20 ] =  0.980
+ Average Recall     (AR) @[ IoU=0.75      | area=   all | maxDets= 20 ] =  0.958
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets= 20 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] =  0.934
+02/24 03:00:04 - mmengine - INFO - Epoch(test) [4221/4221]    coco/AP: 0.925062  coco/AP .5: 0.970243  coco/AP .75: 0.950209  coco/AP (M): -1.000000  coco/AP (L): 0.925062  coco/AR: 0.933916  coco/AR .5: 0.979613  coco/AR .75: 0.957638  coco/AR (M): -1.000000  coco/AR (L): 0.933916  data_time: 2.297468  time: 2.709595

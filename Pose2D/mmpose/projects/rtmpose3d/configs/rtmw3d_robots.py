@@ -15,7 +15,7 @@ base_lr = 5e-4
 num_keypoints = 14
 randomness = dict(seed=2024)
 
-train_cfg = dict(max_epochs=max_epochs, val_interval=5)
+train_cfg = dict(max_epochs=max_epochs, val_interval=1)
 
 # Optimizer
 optim_wrapper = dict(
@@ -38,20 +38,21 @@ param_scheduler = [
     ),
 ]
 
-auto_scale_lr = dict(base_batch_size=4096)
+auto_scale_lr = dict(base_batch_size=64)
 
 # Codec settings
 codec = dict(
     type='SimCC3DLabel',
     input_size=(288, 384, 288),
     sigma=(6., 6.93, 6.),
-    simcc_split_ratio=1.0,
-    normalize=False,   
+    simcc_split_ratio=2.0,
+    normalize=True,   
     root_index=0,   
     use_dark=False,
 )
 
-backbone_path = 'https://download.openmmlab.com/mmpose/v1/projects/rtmposev1/rtmpose-l_simcc-ucoco_dw-ucoco_270e-256x192-4d6dfc62_20230728.pth'
+#backbone_path = 'https://download.openmmlab.com/mmpose/v1/projects/rtmposev1/rtmpose-l_simcc-ucoco_dw-ucoco_270e-256x192-4d6dfc62_20230728.pth'
+backbone_path = "/work/ToyotaHPE/rcatalini/EventRobotPose/mmpose/baselines/RTMPose/epoch_9.pth"
 
 # model settings
 model = dict(
@@ -128,7 +129,7 @@ train_pipeline = [
     dict(type='RandomHalfBody'),
     dict(type='RandomBBoxTransform', scale_factor=[0.6, 1.4], rotate_factor=80),
     dict(type='TopdownAffine', input_size=(288, 384)),
-    dict(type='YOLOXHSVRandomAug'),
+    #dict(type='YOLOXHSVRandomAug'),
     #dict(type='Albumentation', transforms=[
     #    dict(type='Blur', p=0.1),
     #    dict(type='MedianBlur', p=0.1),
@@ -153,9 +154,9 @@ train_dataloader = dict(
     persistent_workers=True,
     sampler=dict(type='DefaultSampler', shuffle=True),
     dataset=dict(
-        type='RobotDataset',
-        ann_file='train_coco_rtmpose3d.json',
-        data_root='/work/ToyotaHPE/rcatalini/EventRobotPose/ego_dataset/',
+        type='RobotDataset3D',
+        ann_file='train_coco_pose3d_sampled.json',
+        data_root='/work/ToyotaHPE/rcatalini/EventRobotPose/exo_dataset/',
         seq_len=1,
         pipeline=train_pipeline,
         test_mode=False
@@ -169,12 +170,12 @@ val_dataloader = dict(
     drop_last=False,
     sampler=dict(type='DefaultSampler', shuffle=False, round_up=False),
     dataset=dict(
-        type='RobotDataset',
-        ann_file='val_coco_rtmpose3d.json',
-        data_root='/work/ToyotaHPE/rcatalini/EventRobotPose/ego_dataset/',
+        type='RobotDataset3D',
+        ann_file='val_coco_pose3d_sampled.json',
+        data_root='/work/ToyotaHPE/rcatalini/EventRobotPose/exo_dataset/',
         seq_len=1,
         test_mode=True,
-        pipeline=train_pipeline
+        pipeline=val_pipeline
     )
 )
 
@@ -185,9 +186,9 @@ test_dataloader = dict(
     drop_last=False,
     sampler=dict(type='DefaultSampler', shuffle=False, round_up=False),
     dataset=dict(
-        type='RobotDataset',
-        ann_file='test_coco_rtmpose3d.json',
-        data_root='/work/ToyotaHPE/rcatalini/EventRobotPose/ego_dataset/',
+        type='RobotDataset3D',
+        ann_file='test_coco_pose3d.json',
+        data_root='/work/ToyotaHPE/rcatalini/EventRobotPose/exo_dataset/',
         seq_len=1,
         test_mode=True,
         pipeline=val_pipeline
@@ -200,7 +201,7 @@ test_dataloader = dict(
 #]
 
 default_hooks = dict(
-    checkpoint=dict(type='CheckpointHook', save_best='MPJPE', rule='less', max_keep_ckpts=2)
+    checkpoint=dict(type='CheckpointHook', save_best='MPJPE', rule='less', max_keep_ckpts=10)
 )
 
 #val_evaluator = [dict(type='SimpleMPJPE', mode='mpjpe'), dict(type='SimpleMPJPE', mode='p-mpjpe')]

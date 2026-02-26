@@ -735,3 +735,961 @@ DONE (t=2.38s).
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] =  0.006
 02/19 09:12:12 - mmengine - INFO - Epoch(val) [2][1463/1463]    coco/AP: 0.000415  coco/AP .5: 0.001397  coco/AP .75: 0.000160  coco/AP (M): -1.000000  coco/AP (L): 0.000415  coco/AR: 0.005613  coco/AR .5: 0.016592  coco/AR .75: 0.003365  coco/AR (M): -1.000000  coco/AR (L): 0.005613  data_time: 0.546494  time: 0.697357
 02/19 09:12:13 - mmengine - INFO - The best checkpoint with 0.0004 coco/AP at 2 epoch is saved to best_coco_AP_epoch_2.pth.
+02/19 09:13:43 - mmengine - INFO - Epoch(train)  [3][   50/11654]  lr: 1.115000e-04  eta: 1 day, 16:09:59  time: 1.708405  data_time: 1.437309  memory: 9726  loss: 0.000235  loss_kpt: 0.000235  acc_pose: 0.997750
+02/19 09:14:49 - mmengine - INFO - Epoch(train)  [3][  100/11654]  lr: 1.115000e-04  eta: 1 day, 16:07:14  time: 1.329695  data_time: 1.058064  memory: 9726  loss: 0.000255  loss_kpt: 0.000255  acc_pose: 0.990929
+02/19 09:15:53 - mmengine - INFO - Epoch(train)  [3][  150/11654]  lr: 1.115000e-04  eta: 1 day, 16:04:12  time: 1.285340  data_time: 1.014709  memory: 9726  loss: 0.000252  loss_kpt: 0.000252  acc_pose: 0.979697
+02/19 09:16:58 - mmengine - INFO - Epoch(train)  [3][  200/11654]  lr: 1.115000e-04  eta: 1 day, 16:01:12  time: 1.290623  data_time: 1.017780  memory: 9726  loss: 0.000263  loss_kpt: 0.000263  acc_pose: 0.985168
+02/19 09:18:17 - mmengine - INFO - Epoch(train)  [3][  250/11654]  lr: 1.115000e-04  eta: 1 day, 16:00:07  time: 1.579571  data_time: 1.306590  memory: 9726  loss: 0.000268  loss_kpt: 0.000268  acc_pose: 0.978529
+02/19 09:19:21 - mmengine - INFO - Epoch(train)  [3][  300/11654]  lr: 1.115000e-04  eta: 1 day, 15:57:08  time: 1.286988  data_time: 0.997394  memory: 9726  loss: 0.000262  loss_kpt: 0.000262  acc_pose: 0.988607
+02/19 09:20:25 - mmengine - INFO - Epoch(train)  [3][  350/11654]  lr: 1.115000e-04  eta: 1 day, 15:54:07  time: 1.280744  data_time: 1.008309  memory: 9726  loss: 0.000271  loss_kpt: 0.000271  acc_pose: 0.972329
+02/19 09:21:28 - mmengine - INFO - Epoch(train)  [3][  400/11654]  lr: 1.115000e-04  eta: 1 day, 15:50:57  time: 1.253498  data_time: 0.967966  memory: 9726  loss: 0.000282  loss_kpt: 0.000282  acc_pose: 0.980866
+02/19 09:22:37 - mmengine - INFO - Epoch(train)  [3][  450/11654]  lr: 1.115000e-04  eta: 1 day, 15:48:36  time: 1.378157  data_time: 1.107341  memory: 9726  loss: 0.000289  loss_kpt: 0.000289  acc_pose: 0.989955
+02/19 09:23:51 - mmengine - INFO - Epoch(train)  [3][  500/11654]  lr: 1.115000e-04  eta: 1 day, 15:46:53  time: 1.478016  data_time: 1.206110  memory: 9726  loss: 0.000312  loss_kpt: 0.000312  acc_pose: 0.988786
+02/19 09:24:53 - mmengine - INFO - Epoch(train)  [3][  550/11654]  lr: 1.115000e-04  eta: 1 day, 15:43:46  time: 1.254136  data_time: 0.965309  memory: 9726  loss: 0.000341  loss_kpt: 0.000341  acc_pose: 0.983259
+02/19 09:26:01 - mmengine - INFO - Epoch(train)  [3][  600/11654]  lr: 1.115000e-04  eta: 1 day, 15:41:15  time: 1.348055  data_time: 1.076674  memory: 9726  loss: 0.000301  loss_kpt: 0.000301  acc_pose: 0.979608
+02/19 09:27:15 - mmengine - INFO - Epoch(train)  [3][  650/11654]  lr: 1.115000e-04  eta: 1 day, 15:39:36  time: 1.485120  data_time: 1.214621  memory: 9726  loss: 0.000287  loss_kpt: 0.000287  acc_pose: 0.991054
+02/19 09:28:08 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 09:28:19 - mmengine - INFO - Epoch(train)  [3][  700/11654]  lr: 1.115000e-04  eta: 1 day, 15:36:39  time: 1.276372  data_time: 1.006364  memory: 9726  loss: 0.000281  loss_kpt: 0.000281  acc_pose: 0.986572
+02/19 09:29:51 - mmengine - INFO - Epoch(train)  [3][  750/11654]  lr: 1.115000e-04  eta: 1 day, 15:37:13  time: 1.836784  data_time: 1.567315  memory: 9726  loss: 0.000288  loss_kpt: 0.000288  acc_pose: 0.997768
+02/19 09:30:52 - mmengine - INFO - Epoch(train)  [3][  800/11654]  lr: 1.115000e-04  eta: 1 day, 15:34:00  time: 1.231142  data_time: 0.961091  memory: 9726  loss: 0.000286  loss_kpt: 0.000286  acc_pose: 0.989955
+02/19 09:32:05 - mmengine - INFO - Epoch(train)  [3][  850/11654]  lr: 1.115000e-04  eta: 1 day, 15:32:08  time: 1.445265  data_time: 1.174714  memory: 9726  loss: 0.000272  loss_kpt: 0.000272  acc_pose: 0.991071
+02/19 09:33:13 - mmengine - INFO - Epoch(train)  [3][  900/11654]  lr: 1.115000e-04  eta: 1 day, 15:29:49  time: 1.372341  data_time: 1.103050  memory: 9726  loss: 0.000277  loss_kpt: 0.000277  acc_pose: 0.985367
+02/19 09:34:13 - mmengine - INFO - Epoch(train)  [3][  950/11654]  lr: 1.115000e-04  eta: 1 day, 15:26:26  time: 1.196252  data_time: 0.923160  memory: 9726  loss: 0.000281  loss_kpt: 0.000281  acc_pose: 0.984145
+02/19 09:35:15 - mmengine - INFO - Epoch(train)  [3][ 1000/11654]  lr: 1.115000e-04  eta: 1 day, 15:23:22  time: 1.245290  data_time: 0.971452  memory: 9726  loss: 0.000273  loss_kpt: 0.000273  acc_pose: 0.995536
+02/19 09:36:24 - mmengine - INFO - Epoch(train)  [3][ 1050/11654]  lr: 1.115000e-04  eta: 1 day, 15:21:05  time: 1.372032  data_time: 1.099928  memory: 9726  loss: 0.000260  loss_kpt: 0.000260  acc_pose: 0.987670
+02/19 09:37:31 - mmengine - INFO - Epoch(train)  [3][ 1100/11654]  lr: 1.115000e-04  eta: 1 day, 15:18:40  time: 1.346982  data_time: 1.074998  memory: 9726  loss: 0.000251  loss_kpt: 0.000251  acc_pose: 0.985151
+02/19 09:38:46 - mmengine - INFO - Epoch(train)  [3][ 1150/11654]  lr: 1.115000e-04  eta: 1 day, 15:17:07  time: 1.490688  data_time: 1.218726  memory: 9726  loss: 0.000271  loss_kpt: 0.000271  acc_pose: 0.984251
+02/19 09:39:54 - mmengine - INFO - Epoch(train)  [3][ 1200/11654]  lr: 1.115000e-04  eta: 1 day, 15:14:46  time: 1.357871  data_time: 1.087559  memory: 9726  loss: 0.000258  loss_kpt: 0.000258  acc_pose: 0.988768
+02/19 09:41:04 - mmengine - INFO - Epoch(train)  [3][ 1250/11654]  lr: 1.115000e-04  eta: 1 day, 15:12:42  time: 1.401834  data_time: 1.132938  memory: 9726  loss: 0.000309  loss_kpt: 0.000309  acc_pose: 0.976952
+02/19 09:42:18 - mmengine - INFO - Epoch(train)  [3][ 1300/11654]  lr: 1.115000e-04  eta: 1 day, 15:11:10  time: 1.492500  data_time: 1.220646  memory: 9726  loss: 0.000288  loss_kpt: 0.000288  acc_pose: 0.990964
+02/19 09:43:37 - mmengine - INFO - Epoch(train)  [3][ 1350/11654]  lr: 1.115000e-04  eta: 1 day, 15:10:06  time: 1.569383  data_time: 1.298751  memory: 9726  loss: 0.000268  loss_kpt: 0.000268  acc_pose: 0.981911
+02/19 09:44:49 - mmengine - INFO - Epoch(train)  [3][ 1400/11654]  lr: 1.115000e-04  eta: 1 day, 15:08:14  time: 1.434007  data_time: 1.162458  memory: 9726  loss: 0.000275  loss_kpt: 0.000275  acc_pose: 0.983976
+02/19 09:46:02 - mmengine - INFO - Epoch(train)  [3][ 1450/11654]  lr: 1.115000e-04  eta: 1 day, 15:06:34  time: 1.469601  data_time: 1.197562  memory: 9726  loss: 0.000263  loss_kpt: 0.000263  acc_pose: 0.987723
+02/19 09:47:21 - mmengine - INFO - Epoch(train)  [3][ 1500/11654]  lr: 1.115000e-04  eta: 1 day, 15:05:34  time: 1.582169  data_time: 1.309707  memory: 9726  loss: 0.000264  loss_kpt: 0.000264  acc_pose: 0.975226
+02/19 09:48:35 - mmengine - INFO - Epoch(train)  [3][ 1550/11654]  lr: 1.115000e-04  eta: 1 day, 15:03:57  time: 1.473819  data_time: 1.207542  memory: 9726  loss: 0.000265  loss_kpt: 0.000265  acc_pose: 0.991036
+02/19 09:49:39 - mmengine - INFO - Epoch(train)  [3][ 1600/11654]  lr: 1.115000e-04  eta: 1 day, 15:01:11  time: 1.276340  data_time: 1.007378  memory: 9726  loss: 0.000249  loss_kpt: 0.000249  acc_pose: 0.987562
+02/19 09:50:43 - mmengine - INFO - Epoch(train)  [3][ 1650/11654]  lr: 1.115000e-04  eta: 1 day, 14:58:31  time: 1.291989  data_time: 1.022391  memory: 9726  loss: 0.000270  loss_kpt: 0.000270  acc_pose: 0.993211
+02/19 09:51:43 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 09:51:53 - mmengine - INFO - Epoch(train)  [3][ 1700/11654]  lr: 1.115000e-04  eta: 1 day, 14:56:30  time: 1.401351  data_time: 1.131703  memory: 9726  loss: 0.000258  loss_kpt: 0.000258  acc_pose: 0.994420
+02/19 09:52:56 - mmengine - INFO - Epoch(train)  [3][ 1750/11654]  lr: 1.115000e-04  eta: 1 day, 14:53:40  time: 1.257813  data_time: 0.988465  memory: 9726  loss: 0.000257  loss_kpt: 0.000257  acc_pose: 0.950285
+02/19 09:54:08 - mmengine - INFO - Epoch(train)  [3][ 1800/11654]  lr: 1.115000e-04  eta: 1 day, 14:51:51  time: 1.436008  data_time: 1.176069  memory: 9726  loss: 0.000243  loss_kpt: 0.000243  acc_pose: 0.970770
+02/19 09:55:11 - mmengine - INFO - Epoch(train)  [3][ 1850/11654]  lr: 1.115000e-04  eta: 1 day, 14:49:04  time: 1.261601  data_time: 0.992483  memory: 9726  loss: 0.000260  loss_kpt: 0.000260  acc_pose: 0.986429
+02/19 09:56:19 - mmengine - INFO - Epoch(train)  [3][ 1900/11654]  lr: 1.115000e-04  eta: 1 day, 14:46:52  time: 1.366039  data_time: 1.095482  memory: 9726  loss: 0.000250  loss_kpt: 0.000250  acc_pose: 0.973603
+02/19 09:57:22 - mmengine - INFO - Epoch(train)  [3][ 1950/11654]  lr: 1.115000e-04  eta: 1 day, 14:44:02  time: 1.248767  data_time: 0.976224  memory: 9726  loss: 0.000240  loss_kpt: 0.000240  acc_pose: 0.991018
+02/19 09:58:36 - mmengine - INFO - Epoch(train)  [3][ 2000/11654]  lr: 1.115000e-04  eta: 1 day, 14:42:33  time: 1.489097  data_time: 1.220965  memory: 9726  loss: 0.000235  loss_kpt: 0.000235  acc_pose: 0.989955
+02/19 10:00:20 - mmengine - INFO - Epoch(train)  [3][ 2050/11654]  lr: 1.115000e-04  eta: 1 day, 14:44:16  time: 2.068573  data_time: 1.786516  memory: 9726  loss: 0.000227  loss_kpt: 0.000227  acc_pose: 0.968343
+02/19 10:01:40 - mmengine - INFO - Epoch(train)  [3][ 2100/11654]  lr: 1.115000e-04  eta: 1 day, 14:43:26  time: 1.609273  data_time: 1.338064  memory: 9726  loss: 0.000225  loss_kpt: 0.000225  acc_pose: 0.993286
+02/19 10:02:50 - mmengine - INFO - Epoch(train)  [3][ 2150/11654]  lr: 1.115000e-04  eta: 1 day, 14:41:27  time: 1.398281  data_time: 1.108018  memory: 9726  loss: 0.000244  loss_kpt: 0.000244  acc_pose: 0.973737
+02/19 10:04:23 - mmengine - INFO - Epoch(train)  [3][ 2200/11654]  lr: 1.115000e-04  eta: 1 day, 14:42:01  time: 1.865847  data_time: 1.594625  memory: 9726  loss: 0.000230  loss_kpt: 0.000230  acc_pose: 0.979548
+02/19 10:05:33 - mmengine - INFO - Epoch(train)  [3][ 2250/11654]  lr: 1.115000e-04  eta: 1 day, 14:39:58  time: 1.389415  data_time: 1.119526  memory: 9726  loss: 0.000225  loss_kpt: 0.000225  acc_pose: 0.991054
+02/19 10:06:46 - mmengine - INFO - Epoch(train)  [3][ 2300/11654]  lr: 1.115000e-04  eta: 1 day, 14:38:22  time: 1.471474  data_time: 1.183423  memory: 9726  loss: 0.000243  loss_kpt: 0.000243  acc_pose: 0.975429
+02/19 10:07:58 - mmengine - INFO - Epoch(train)  [3][ 2350/11654]  lr: 1.115000e-04  eta: 1 day, 14:36:31  time: 1.421707  data_time: 1.152141  memory: 9726  loss: 0.000223  loss_kpt: 0.000223  acc_pose: 0.993268
+02/19 10:09:13 - mmengine - INFO - Epoch(train)  [3][ 2400/11654]  lr: 1.115000e-04  eta: 1 day, 14:35:08  time: 1.508261  data_time: 1.238223  memory: 9726  loss: 0.000234  loss_kpt: 0.000234  acc_pose: 0.993178
+02/19 10:10:19 - mmengine - INFO - Epoch(train)  [3][ 2450/11654]  lr: 1.115000e-04  eta: 1 day, 14:32:47  time: 1.329244  data_time: 1.042692  memory: 9726  loss: 0.000241  loss_kpt: 0.000241  acc_pose: 0.975232
+02/19 10:11:32 - mmengine - INFO - Epoch(train)  [3][ 2500/11654]  lr: 1.115000e-04  eta: 1 day, 14:31:03  time: 1.444198  data_time: 1.176786  memory: 9726  loss: 0.000235  loss_kpt: 0.000235  acc_pose: 0.977679
+02/19 10:12:38 - mmengine - INFO - Epoch(train)  [3][ 2550/11654]  lr: 1.115000e-04  eta: 1 day, 14:28:40  time: 1.319723  data_time: 1.050219  memory: 9726  loss: 0.000224  loss_kpt: 0.000224  acc_pose: 0.993103
+02/19 10:13:49 - mmengine - INFO - Epoch(train)  [3][ 2600/11654]  lr: 1.115000e-04  eta: 1 day, 14:26:53  time: 1.429977  data_time: 1.158646  memory: 9726  loss: 0.000215  loss_kpt: 0.000215  acc_pose: 0.996652
+02/19 10:14:54 - mmengine - INFO - Epoch(train)  [3][ 2650/11654]  lr: 1.115000e-04  eta: 1 day, 14:24:26  time: 1.303531  data_time: 1.034059  memory: 9726  loss: 0.000239  loss_kpt: 0.000239  acc_pose: 0.980794
+02/19 10:16:00 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 10:16:10 - mmengine - INFO - Epoch(train)  [3][ 2700/11654]  lr: 1.115000e-04  eta: 1 day, 14:23:07  time: 1.518222  data_time: 1.247800  memory: 9726  loss: 0.000238  loss_kpt: 0.000238  acc_pose: 0.990982
+02/19 10:17:11 - mmengine - INFO - Epoch(train)  [3][ 2750/11654]  lr: 1.115000e-04  eta: 1 day, 14:20:14  time: 1.220738  data_time: 0.957285  memory: 9726  loss: 0.000232  loss_kpt: 0.000232  acc_pose: 0.979751
+02/19 10:18:21 - mmengine - INFO - Epoch(train)  [3][ 2800/11654]  lr: 1.115000e-04  eta: 1 day, 14:18:18  time: 1.395671  data_time: 1.125480  memory: 9726  loss: 0.000218  loss_kpt: 0.000218  acc_pose: 0.994329
+02/19 10:19:20 - mmengine - INFO - Epoch(train)  [3][ 2850/11654]  lr: 1.115000e-04  eta: 1 day, 14:15:13  time: 1.175921  data_time: 0.919244  memory: 9726  loss: 0.000222  loss_kpt: 0.000222  acc_pose: 0.993304
+02/19 10:20:23 - mmengine - INFO - Epoch(train)  [3][ 2900/11654]  lr: 1.115000e-04  eta: 1 day, 14:12:36  time: 1.265067  data_time: 1.006465  memory: 9726  loss: 0.000222  loss_kpt: 0.000222  acc_pose: 0.995536
+02/19 10:21:26 - mmengine - INFO - Epoch(train)  [3][ 2950/11654]  lr: 1.115000e-04  eta: 1 day, 14:09:56  time: 1.250733  data_time: 0.980369  memory: 9726  loss: 0.000220  loss_kpt: 0.000220  acc_pose: 0.988643
+02/19 10:22:35 - mmengine - INFO - Epoch(train)  [3][ 3000/11654]  lr: 1.115000e-04  eta: 1 day, 14:08:00  time: 1.393043  data_time: 1.139001  memory: 9726  loss: 0.000222  loss_kpt: 0.000222  acc_pose: 0.985132
+02/19 10:23:51 - mmengine - INFO - Epoch(train)  [3][ 3050/11654]  lr: 1.115000e-04  eta: 1 day, 14:06:43  time: 1.517731  data_time: 1.260356  memory: 9726  loss: 0.000230  loss_kpt: 0.000230  acc_pose: 0.986482
+02/19 10:25:11 - mmengine - INFO - Epoch(train)  [3][ 3100/11654]  lr: 1.115000e-04  eta: 1 day, 14:05:47  time: 1.587371  data_time: 1.328269  memory: 9726  loss: 0.000232  loss_kpt: 0.000232  acc_pose: 0.988822
+02/19 10:26:21 - mmengine - INFO - Epoch(train)  [3][ 3150/11654]  lr: 1.115000e-04  eta: 1 day, 14:03:59  time: 1.414778  data_time: 1.159694  memory: 9726  loss: 0.000231  loss_kpt: 0.000231  acc_pose: 0.992080
+02/19 10:27:34 - mmengine - INFO - Epoch(train)  [3][ 3200/11654]  lr: 1.115000e-04  eta: 1 day, 14:02:23  time: 1.457891  data_time: 1.200432  memory: 9726  loss: 0.000220  loss_kpt: 0.000220  acc_pose: 0.993250
+02/19 10:28:54 - mmengine - INFO - Epoch(train)  [3][ 3250/11654]  lr: 1.115000e-04  eta: 1 day, 14:01:32  time: 1.604128  data_time: 1.346354  memory: 9726  loss: 0.000220  loss_kpt: 0.000220  acc_pose: 0.989884
+02/19 10:30:11 - mmengine - INFO - Epoch(train)  [3][ 3300/11654]  lr: 1.115000e-04  eta: 1 day, 14:00:22  time: 1.540947  data_time: 1.283109  memory: 9726  loss: 0.000210  loss_kpt: 0.000210  acc_pose: 0.995518
+02/19 10:31:19 - mmengine - INFO - Epoch(train)  [3][ 3350/11654]  lr: 1.115000e-04  eta: 1 day, 13:58:15  time: 1.351436  data_time: 1.089505  memory: 9726  loss: 0.000217  loss_kpt: 0.000217  acc_pose: 0.985313
+02/19 10:32:28 - mmengine - INFO - Epoch(train)  [3][ 3400/11654]  lr: 1.115000e-04  eta: 1 day, 13:56:16  time: 1.376351  data_time: 1.116003  memory: 9726  loss: 0.000211  loss_kpt: 0.000211  acc_pose: 0.985312
+02/19 10:33:43 - mmengine - INFO - Epoch(train)  [3][ 3450/11654]  lr: 1.115000e-04  eta: 1 day, 13:54:56  time: 1.505929  data_time: 1.243223  memory: 9726  loss: 0.000215  loss_kpt: 0.000215  acc_pose: 0.995465
+02/19 10:34:56 - mmengine - INFO - Epoch(train)  [3][ 3500/11654]  lr: 1.115000e-04  eta: 1 day, 13:53:21  time: 1.456023  data_time: 1.168675  memory: 9726  loss: 0.000219  loss_kpt: 0.000219  acc_pose: 0.989938
+02/19 10:36:06 - mmengine - INFO - Epoch(train)  [3][ 3550/11654]  lr: 1.115000e-04  eta: 1 day, 13:51:29  time: 1.400204  data_time: 1.127602  memory: 9726  loss: 0.000212  loss_kpt: 0.000212  acc_pose: 0.991001
+02/19 10:37:22 - mmengine - INFO - Epoch(train)  [3][ 3600/11654]  lr: 1.115000e-04  eta: 1 day, 13:50:13  time: 1.519474  data_time: 1.232929  memory: 9726  loss: 0.000211  loss_kpt: 0.000211  acc_pose: 0.994349
+02/19 10:39:33 - mmengine - INFO - Epoch(train)  [3][ 3650/11654]  lr: 1.115000e-04  eta: 1 day, 13:54:16  time: 2.610327  data_time: 2.338863  memory: 9726  loss: 0.000219  loss_kpt: 0.000219  acc_pose: 0.978706
+02/19 10:40:58 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 10:41:11 - mmengine - INFO - Epoch(train)  [3][ 3700/11654]  lr: 1.115000e-04  eta: 1 day, 13:55:12  time: 1.976361  data_time: 1.704697  memory: 9726  loss: 0.000216  loss_kpt: 0.000216  acc_pose: 0.986607
+02/19 10:42:28 - mmengine - INFO - Epoch(train)  [3][ 3750/11654]  lr: 1.115000e-04  eta: 1 day, 13:54:00  time: 1.536703  data_time: 1.264233  memory: 9726  loss: 0.000209  loss_kpt: 0.000209  acc_pose: 0.986080
+02/19 10:43:49 - mmengine - INFO - Epoch(train)  [3][ 3800/11654]  lr: 1.115000e-04  eta: 1 day, 13:53:10  time: 1.617612  data_time: 1.347991  memory: 9726  loss: 0.000228  loss_kpt: 0.000228  acc_pose: 0.988751
+02/19 10:44:57 - mmengine - INFO - Epoch(train)  [3][ 3850/11654]  lr: 1.115000e-04  eta: 1 day, 13:51:03  time: 1.349859  data_time: 1.075196  memory: 9726  loss: 0.000214  loss_kpt: 0.000214  acc_pose: 0.988822
+02/19 10:46:06 - mmengine - INFO - Epoch(train)  [3][ 3900/11654]  lr: 1.115000e-04  eta: 1 day, 13:49:10  time: 1.394937  data_time: 1.121030  memory: 9726  loss: 0.000244  loss_kpt: 0.000244  acc_pose: 0.989796
+02/19 10:47:11 - mmengine - INFO - Epoch(train)  [3][ 3950/11654]  lr: 1.115000e-04  eta: 1 day, 13:46:49  time: 1.296193  data_time: 1.022380  memory: 9726  loss: 0.000230  loss_kpt: 0.000230  acc_pose: 0.996652
+02/19 10:48:23 - mmengine - INFO - Epoch(train)  [3][ 4000/11654]  lr: 1.115000e-04  eta: 1 day, 13:45:09  time: 1.441347  data_time: 1.168939  memory: 9726  loss: 0.000235  loss_kpt: 0.000235  acc_pose: 0.959325
+02/19 10:49:24 - mmengine - INFO - Epoch(train)  [3][ 4050/11654]  lr: 1.115000e-04  eta: 1 day, 13:42:25  time: 1.212837  data_time: 0.939470  memory: 9726  loss: 0.000234  loss_kpt: 0.000234  acc_pose: 0.995536
+02/19 10:50:30 - mmengine - INFO - Epoch(train)  [3][ 4100/11654]  lr: 1.115000e-04  eta: 1 day, 13:40:11  time: 1.317254  data_time: 1.044937  memory: 9726  loss: 0.000229  loss_kpt: 0.000229  acc_pose: 0.995427
+02/19 10:51:31 - mmengine - INFO - Epoch(train)  [3][ 4150/11654]  lr: 1.115000e-04  eta: 1 day, 13:37:30  time: 1.222218  data_time: 0.949589  memory: 9726  loss: 0.000227  loss_kpt: 0.000227  acc_pose: 0.989758
+02/19 10:52:36 - mmengine - INFO - Epoch(train)  [3][ 4200/11654]  lr: 1.115000e-04  eta: 1 day, 13:35:12  time: 1.299615  data_time: 1.028710  memory: 9726  loss: 0.000233  loss_kpt: 0.000233  acc_pose: 0.987723
+02/19 10:53:49 - mmengine - INFO - Epoch(train)  [3][ 4250/11654]  lr: 1.115000e-04  eta: 1 day, 13:33:40  time: 1.462075  data_time: 1.189425  memory: 9726  loss: 0.000224  loss_kpt: 0.000224  acc_pose: 0.996599
+02/19 10:55:02 - mmengine - INFO - Epoch(train)  [3][ 4300/11654]  lr: 1.115000e-04  eta: 1 day, 13:32:09  time: 1.465733  data_time: 1.193982  memory: 9726  loss: 0.000217  loss_kpt: 0.000217  acc_pose: 0.985365
+02/19 10:56:12 - mmengine - INFO - Epoch(train)  [3][ 4350/11654]  lr: 1.115000e-04  eta: 1 day, 13:30:18  time: 1.393603  data_time: 1.121180  memory: 9726  loss: 0.000208  loss_kpt: 0.000208  acc_pose: 0.986395
+02/19 10:57:15 - mmengine - INFO - Epoch(train)  [3][ 4400/11654]  lr: 1.115000e-04  eta: 1 day, 13:27:54  time: 1.270959  data_time: 0.997840  memory: 9726  loss: 0.000218  loss_kpt: 0.000218  acc_pose: 0.990910
+02/19 10:58:24 - mmengine - INFO - Epoch(train)  [3][ 4450/11654]  lr: 1.115000e-04  eta: 1 day, 13:25:55  time: 1.363817  data_time: 1.088234  memory: 9726  loss: 0.000208  loss_kpt: 0.000208  acc_pose: 0.979840
+02/19 10:59:31 - mmengine - INFO - Epoch(train)  [3][ 4500/11654]  lr: 1.115000e-04  eta: 1 day, 13:23:55  time: 1.355492  data_time: 1.080873  memory: 9726  loss: 0.000218  loss_kpt: 0.000218  acc_pose: 0.993250
+02/19 11:00:42 - mmengine - INFO - Epoch(train)  [3][ 4550/11654]  lr: 1.115000e-04  eta: 1 day, 13:22:09  time: 1.407841  data_time: 1.134518  memory: 9726  loss: 0.000209  loss_kpt: 0.000209  acc_pose: 0.992099
+02/19 11:01:48 - mmengine - INFO - Epoch(train)  [3][ 4600/11654]  lr: 1.115000e-04  eta: 1 day, 13:19:58  time: 1.316875  data_time: 1.044462  memory: 9726  loss: 0.000219  loss_kpt: 0.000219  acc_pose: 0.979750
+02/19 11:02:56 - mmengine - INFO - Epoch(train)  [3][ 4650/11654]  lr: 1.115000e-04  eta: 1 day, 13:18:03  time: 1.370410  data_time: 1.100398  memory: 9726  loss: 0.000217  loss_kpt: 0.000217  acc_pose: 0.988839
+02/19 11:04:10 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 11:04:21 - mmengine - INFO - Epoch(train)  [3][ 4700/11654]  lr: 1.115000e-04  eta: 1 day, 13:17:38  time: 1.703621  data_time: 1.430821  memory: 9726  loss: 0.000223  loss_kpt: 0.000223  acc_pose: 0.984232
+02/19 11:05:30 - mmengine - INFO - Epoch(train)  [3][ 4750/11654]  lr: 1.115000e-04  eta: 1 day, 13:15:45  time: 1.377941  data_time: 1.105006  memory: 9726  loss: 0.000220  loss_kpt: 0.000220  acc_pose: 0.996634
+02/19 11:06:31 - mmengine - INFO - Epoch(train)  [3][ 4800/11654]  lr: 1.115000e-04  eta: 1 day, 13:13:07  time: 1.212380  data_time: 0.926766  memory: 9726  loss: 0.000214  loss_kpt: 0.000214  acc_pose: 0.993304
+02/19 11:07:35 - mmengine - INFO - Epoch(train)  [3][ 4850/11654]  lr: 1.115000e-04  eta: 1 day, 13:10:47  time: 1.274177  data_time: 1.000699  memory: 9726  loss: 0.000225  loss_kpt: 0.000225  acc_pose: 0.985402
+02/19 11:08:44 - mmengine - INFO - Epoch(train)  [3][ 4900/11654]  lr: 1.115000e-04  eta: 1 day, 13:08:59  time: 1.392070  data_time: 1.120269  memory: 9726  loss: 0.000205  loss_kpt: 0.000205  acc_pose: 0.993304
+02/19 11:09:45 - mmengine - INFO - Epoch(train)  [3][ 4950/11654]  lr: 1.115000e-04  eta: 1 day, 13:06:26  time: 1.223184  data_time: 0.951645  memory: 9726  loss: 0.000220  loss_kpt: 0.000220  acc_pose: 0.968483
+02/19 11:10:44 - mmengine - INFO - Epoch(train)  [3][ 5000/11654]  lr: 1.115000e-04  eta: 1 day, 13:03:40  time: 1.174620  data_time: 0.905534  memory: 9726  loss: 0.000225  loss_kpt: 0.000225  acc_pose: 0.975013
+02/19 11:11:43 - mmengine - INFO - Epoch(train)  [3][ 5050/11654]  lr: 1.115000e-04  eta: 1 day, 13:00:58  time: 1.182552  data_time: 0.892994  memory: 9726  loss: 0.000223  loss_kpt: 0.000223  acc_pose: 0.980614
+02/19 11:12:53 - mmengine - INFO - Epoch(train)  [3][ 5100/11654]  lr: 1.115000e-04  eta: 1 day, 12:59:14  time: 1.402985  data_time: 1.131243  memory: 9726  loss: 0.000217  loss_kpt: 0.000217  acc_pose: 0.992188
+02/19 11:14:31 - mmengine - INFO - Epoch(train)  [3][ 5150/11654]  lr: 1.115000e-04  eta: 1 day, 12:59:56  time: 1.961605  data_time: 1.689618  memory: 9726  loss: 0.000218  loss_kpt: 0.000218  acc_pose: 1.000000
+02/19 11:15:39 - mmengine - INFO - Epoch(train)  [3][ 5200/11654]  lr: 1.115000e-04  eta: 1 day, 12:58:01  time: 1.358610  data_time: 1.088131  memory: 9726  loss: 0.000215  loss_kpt: 0.000215  acc_pose: 0.997750
+02/19 11:16:55 - mmengine - INFO - Epoch(train)  [3][ 5250/11654]  lr: 1.115000e-04  eta: 1 day, 12:56:43  time: 1.503920  data_time: 1.232178  memory: 9726  loss: 0.000210  loss_kpt: 0.000210  acc_pose: 0.994345
+02/19 11:18:16 - mmengine - INFO - Epoch(train)  [3][ 5300/11654]  lr: 1.115000e-04  eta: 1 day, 12:55:55  time: 1.619874  data_time: 1.335100  memory: 9726  loss: 0.000212  loss_kpt: 0.000212  acc_pose: 0.993214
+02/19 11:19:32 - mmengine - INFO - Epoch(train)  [3][ 5350/11654]  lr: 1.115000e-04  eta: 1 day, 12:54:43  time: 1.523186  data_time: 1.253785  memory: 9726  loss: 0.000226  loss_kpt: 0.000226  acc_pose: 0.994384
+02/19 11:21:06 - mmengine - INFO - Epoch(train)  [3][ 5400/11654]  lr: 1.115000e-04  eta: 1 day, 12:55:01  time: 1.875933  data_time: 1.604137  memory: 9726  loss: 0.000227  loss_kpt: 0.000227  acc_pose: 0.982107
+02/19 11:23:19 - mmengine - INFO - Epoch(train)  [3][ 5450/11654]  lr: 1.115000e-04  eta: 1 day, 12:58:44  time: 2.676232  data_time: 2.404721  memory: 9726  loss: 0.000221  loss_kpt: 0.000221  acc_pose: 0.971433
+02/19 11:25:34 - mmengine - INFO - Epoch(train)  [3][ 5500/11654]  lr: 1.115000e-04  eta: 1 day, 13:02:30  time: 2.698577  data_time: 2.434925  memory: 9726  loss: 0.000217  loss_kpt: 0.000217  acc_pose: 0.978564
+02/19 11:26:59 - mmengine - INFO - Epoch(train)  [3][ 5550/11654]  lr: 1.115000e-04  eta: 1 day, 13:01:57  time: 1.686407  data_time: 1.417187  memory: 9726  loss: 0.000207  loss_kpt: 0.000207  acc_pose: 0.997768
+02/19 11:28:30 - mmengine - INFO - Epoch(train)  [3][ 5600/11654]  lr: 1.115000e-04  eta: 1 day, 13:02:01  time: 1.836438  data_time: 1.567541  memory: 9726  loss: 0.000212  loss_kpt: 0.000212  acc_pose: 0.976206
+02/19 11:29:53 - mmengine - INFO - Epoch(train)  [3][ 5650/11654]  lr: 1.115000e-04  eta: 1 day, 13:01:19  time: 1.655474  data_time: 1.384078  memory: 9726  loss: 0.000201  loss_kpt: 0.000201  acc_pose: 0.998884
+02/19 11:31:00 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 11:31:15 - mmengine - INFO - Epoch(train)  [3][ 5700/11654]  lr: 1.115000e-04  eta: 1 day, 13:00:31  time: 1.633030  data_time: 1.347909  memory: 9726  loss: 0.000219  loss_kpt: 0.000219  acc_pose: 0.998866
+02/19 11:32:54 - mmengine - INFO - Epoch(train)  [3][ 5750/11654]  lr: 1.115000e-04  eta: 1 day, 13:01:12  time: 1.991166  data_time: 1.722695  memory: 9726  loss: 0.000210  loss_kpt: 0.000210  acc_pose: 0.982973
+02/19 11:34:23 - mmengine - INFO - Epoch(train)  [3][ 5800/11654]  lr: 1.115000e-04  eta: 1 day, 13:01:00  time: 1.777520  data_time: 1.508640  memory: 9726  loss: 0.000199  loss_kpt: 0.000199  acc_pose: 0.993250
+02/19 11:35:45 - mmengine - INFO - Epoch(train)  [3][ 5850/11654]  lr: 1.115000e-04  eta: 1 day, 13:00:10  time: 1.630910  data_time: 1.359856  memory: 9726  loss: 0.000197  loss_kpt: 0.000197  acc_pose: 0.990965
+02/19 11:37:13 - mmengine - INFO - Epoch(train)  [3][ 5900/11654]  lr: 1.115000e-04  eta: 1 day, 12:59:53  time: 1.762582  data_time: 1.492945  memory: 9726  loss: 0.000197  loss_kpt: 0.000197  acc_pose: 0.972289
+02/19 11:38:53 - mmengine - INFO - Epoch(train)  [3][ 5950/11654]  lr: 1.115000e-04  eta: 1 day, 13:00:35  time: 2.001896  data_time: 1.734745  memory: 9726  loss: 0.000183  loss_kpt: 0.000183  acc_pose: 0.993268
+02/19 11:40:19 - mmengine - INFO - Epoch(train)  [3][ 6000/11654]  lr: 1.115000e-04  eta: 1 day, 13:00:04  time: 1.707463  data_time: 1.436809  memory: 9726  loss: 0.000202  loss_kpt: 0.000202  acc_pose: 0.988839
+02/19 11:41:51 - mmengine - INFO - Epoch(train)  [3][ 6050/11654]  lr: 1.115000e-04  eta: 1 day, 13:00:07  time: 1.851722  data_time: 1.584031  memory: 9726  loss: 0.000188  loss_kpt: 0.000188  acc_pose: 0.993215
+02/19 11:43:23 - mmengine - INFO - Epoch(train)  [3][ 6100/11654]  lr: 1.115000e-04  eta: 1 day, 13:00:09  time: 1.847502  data_time: 1.565326  memory: 9726  loss: 0.000197  loss_kpt: 0.000197  acc_pose: 0.996616
+02/19 11:45:02 - mmengine - INFO - Epoch(train)  [3][ 6150/11654]  lr: 1.115000e-04  eta: 1 day, 13:00:43  time: 1.977806  data_time: 1.709329  memory: 9726  loss: 0.000199  loss_kpt: 0.000199  acc_pose: 0.997750
+02/19 11:46:35 - mmengine - INFO - Epoch(train)  [3][ 6200/11654]  lr: 1.115000e-04  eta: 1 day, 13:00:44  time: 1.850218  data_time: 1.583641  memory: 9726  loss: 0.000195  loss_kpt: 0.000195  acc_pose: 0.997750
+02/19 11:48:06 - mmengine - INFO - Epoch(train)  [3][ 6250/11654]  lr: 1.115000e-04  eta: 1 day, 13:00:39  time: 1.823576  data_time: 1.556811  memory: 9726  loss: 0.000193  loss_kpt: 0.000193  acc_pose: 0.986483
+02/19 11:49:47 - mmengine - INFO - Epoch(train)  [3][ 6300/11654]  lr: 1.115000e-04  eta: 1 day, 13:01:18  time: 2.009429  data_time: 1.740722  memory: 9726  loss: 0.000198  loss_kpt: 0.000198  acc_pose: 0.994420
+02/19 11:51:26 - mmengine - INFO - Epoch(train)  [3][ 6350/11654]  lr: 1.115000e-04  eta: 1 day, 13:01:49  time: 1.980762  data_time: 1.710481  memory: 9726  loss: 0.000198  loss_kpt: 0.000198  acc_pose: 0.984340
+02/19 11:52:59 - mmengine - INFO - Epoch(train)  [3][ 6400/11654]  lr: 1.115000e-04  eta: 1 day, 13:01:52  time: 1.867743  data_time: 1.598850  memory: 9726  loss: 0.000187  loss_kpt: 0.000187  acc_pose: 0.976492
+02/19 11:54:38 - mmengine - INFO - Epoch(train)  [3][ 6450/11654]  lr: 1.115000e-04  eta: 1 day, 13:02:20  time: 1.971757  data_time: 1.701073  memory: 9726  loss: 0.000194  loss_kpt: 0.000194  acc_pose: 0.994330
+02/19 11:56:09 - mmengine - INFO - Epoch(train)  [3][ 6500/11654]  lr: 1.115000e-04  eta: 1 day, 13:02:12  time: 1.825326  data_time: 1.555629  memory: 9726  loss: 0.000199  loss_kpt: 0.000199  acc_pose: 0.990983
+02/19 11:58:11 - mmengine - INFO - Epoch(train)  [3][ 6550/11654]  lr: 1.115000e-04  eta: 1 day, 13:04:33  time: 2.451396  data_time: 2.184389  memory: 9726  loss: 0.000190  loss_kpt: 0.000190  acc_pose: 0.998884
+02/19 11:59:42 - mmengine - INFO - Epoch(train)  [3][ 6600/11654]  lr: 1.115000e-04  eta: 1 day, 13:04:23  time: 1.821000  data_time: 1.550613  memory: 9726  loss: 0.000199  loss_kpt: 0.000199  acc_pose: 0.993268
+02/19 12:01:22 - mmengine - INFO - Epoch(train)  [3][ 6650/11654]  lr: 1.115000e-04  eta: 1 day, 13:04:52  time: 1.989040  data_time: 1.723498  memory: 9726  loss: 0.000202  loss_kpt: 0.000202  acc_pose: 0.989955
+02/19 12:02:40 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 12:02:55 - mmengine - INFO - Epoch(train)  [3][ 6700/11654]  lr: 1.115000e-04  eta: 1 day, 13:04:50  time: 1.859512  data_time: 1.591817  memory: 9726  loss: 0.000204  loss_kpt: 0.000204  acc_pose: 0.988679
+02/19 12:04:38 - mmengine - INFO - Epoch(train)  [3][ 6750/11654]  lr: 1.115000e-04  eta: 1 day, 13:05:35  time: 2.063824  data_time: 1.793926  memory: 9726  loss: 0.000205  loss_kpt: 0.000205  acc_pose: 0.987432
+02/19 12:06:02 - mmengine - INFO - Epoch(train)  [3][ 6800/11654]  lr: 1.115000e-04  eta: 1 day, 13:04:47  time: 1.669689  data_time: 1.383334  memory: 9726  loss: 0.000196  loss_kpt: 0.000196  acc_pose: 0.979696
+02/19 12:07:29 - mmengine - INFO - Epoch(train)  [3][ 6850/11654]  lr: 1.115000e-04  eta: 1 day, 13:04:17  time: 1.746871  data_time: 1.477987  memory: 9726  loss: 0.000199  loss_kpt: 0.000199  acc_pose: 0.997750
+02/19 12:09:05 - mmengine - INFO - Epoch(train)  [3][ 6900/11654]  lr: 1.115000e-04  eta: 1 day, 13:04:29  time: 1.926332  data_time: 1.641270  memory: 9726  loss: 0.000194  loss_kpt: 0.000194  acc_pose: 0.998884
+02/19 12:10:39 - mmengine - INFO - Epoch(train)  [3][ 6950/11654]  lr: 1.115000e-04  eta: 1 day, 13:04:28  time: 1.873734  data_time: 1.604056  memory: 9726  loss: 0.000197  loss_kpt: 0.000197  acc_pose: 0.994420
+02/19 12:12:00 - mmengine - INFO - Epoch(train)  [3][ 7000/11654]  lr: 1.115000e-04  eta: 1 day, 13:03:25  time: 1.613030  data_time: 1.343887  memory: 9726  loss: 0.000186  loss_kpt: 0.000186  acc_pose: 1.000000
+02/19 12:13:30 - mmengine - INFO - Epoch(train)  [3][ 7050/11654]  lr: 1.115000e-04  eta: 1 day, 13:03:07  time: 1.801465  data_time: 1.533124  memory: 9726  loss: 0.000194  loss_kpt: 0.000194  acc_pose: 0.990965
+02/19 12:14:55 - mmengine - INFO - Epoch(train)  [3][ 7100/11654]  lr: 1.115000e-04  eta: 1 day, 13:02:28  time: 1.714950  data_time: 1.446652  memory: 9726  loss: 0.000183  loss_kpt: 0.000183  acc_pose: 0.998884
+02/19 12:16:26 - mmengine - INFO - Epoch(train)  [3][ 7150/11654]  lr: 1.115000e-04  eta: 1 day, 13:02:09  time: 1.804699  data_time: 1.536297  memory: 9726  loss: 0.000189  loss_kpt: 0.000189  acc_pose: 0.997732
+02/19 12:17:47 - mmengine - INFO - Epoch(train)  [3][ 7200/11654]  lr: 1.115000e-04  eta: 1 day, 13:01:08  time: 1.619377  data_time: 1.333388  memory: 9726  loss: 0.000184  loss_kpt: 0.000184  acc_pose: 1.000000
+02/19 12:19:17 - mmengine - INFO - Epoch(train)  [3][ 7250/11654]  lr: 1.115000e-04  eta: 1 day, 13:00:47  time: 1.798751  data_time: 1.530729  memory: 9726  loss: 0.000186  loss_kpt: 0.000186  acc_pose: 0.995500
+02/19 12:20:36 - mmengine - INFO - Epoch(train)  [3][ 7300/11654]  lr: 1.115000e-04  eta: 1 day, 12:59:38  time: 1.586237  data_time: 1.302762  memory: 9726  loss: 0.000180  loss_kpt: 0.000180  acc_pose: 1.000000
+02/19 12:22:09 - mmengine - INFO - Epoch(train)  [3][ 7350/11654]  lr: 1.115000e-04  eta: 1 day, 12:59:33  time: 1.870891  data_time: 1.600187  memory: 9726  loss: 0.000198  loss_kpt: 0.000198  acc_pose: 0.987723
+02/19 12:24:00 - mmengine - INFO - Epoch(train)  [3][ 7400/11654]  lr: 1.115000e-04  eta: 1 day, 13:00:43  time: 2.207158  data_time: 1.936778  memory: 9726  loss: 0.000190  loss_kpt: 0.000190  acc_pose: 0.995500
+02/19 12:25:12 - mmengine - INFO - Epoch(train)  [3][ 7450/11654]  lr: 1.115000e-04  eta: 1 day, 12:59:03  time: 1.452546  data_time: 1.165796  memory: 9726  loss: 0.000201  loss_kpt: 0.000201  acc_pose: 0.981027
+02/19 12:26:31 - mmengine - INFO - Epoch(train)  [3][ 7500/11654]  lr: 1.115000e-04  eta: 1 day, 12:57:48  time: 1.563215  data_time: 1.290714  memory: 9726  loss: 0.000203  loss_kpt: 0.000203  acc_pose: 0.985491
+02/19 12:28:00 - mmengine - INFO - Epoch(train)  [3][ 7550/11654]  lr: 1.115000e-04  eta: 1 day, 12:57:25  time: 1.795688  data_time: 1.525330  memory: 9726  loss: 0.000190  loss_kpt: 0.000190  acc_pose: 0.994384
+02/19 12:29:33 - mmengine - INFO - Epoch(train)  [3][ 7600/11654]  lr: 1.115000e-04  eta: 1 day, 12:57:12  time: 1.844088  data_time: 1.575225  memory: 9726  loss: 0.000213  loss_kpt: 0.000213  acc_pose: 0.965541
+02/19 12:30:58 - mmengine - INFO - Epoch(train)  [3][ 7650/11654]  lr: 1.115000e-04  eta: 1 day, 12:56:29  time: 1.710122  data_time: 1.439047  memory: 9726  loss: 0.000204  loss_kpt: 0.000204  acc_pose: 0.986607
+02/19 12:32:11 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 12:32:24 - mmengine - INFO - Epoch(train)  [3][ 7700/11654]  lr: 1.115000e-04  eta: 1 day, 12:55:49  time: 1.724840  data_time: 1.453184  memory: 9726  loss: 0.000204  loss_kpt: 0.000204  acc_pose: 0.982107
+02/19 12:34:09 - mmengine - INFO - Epoch(train)  [3][ 7750/11654]  lr: 1.115000e-04  eta: 1 day, 12:56:30  time: 2.094074  data_time: 1.822244  memory: 9726  loss: 0.000195  loss_kpt: 0.000195  acc_pose: 0.997714
+02/19 12:35:38 - mmengine - INFO - Epoch(train)  [3][ 7800/11654]  lr: 1.115000e-04  eta: 1 day, 12:56:00  time: 1.773762  data_time: 1.503636  memory: 9726  loss: 0.000183  loss_kpt: 0.000183  acc_pose: 0.985093
+02/19 12:36:59 - mmengine - INFO - Epoch(train)  [3][ 7850/11654]  lr: 1.115000e-04  eta: 1 day, 12:54:57  time: 1.621910  data_time: 1.353477  memory: 9726  loss: 0.000189  loss_kpt: 0.000189  acc_pose: 0.988768
+02/19 12:38:23 - mmengine - INFO - Epoch(train)  [3][ 7900/11654]  lr: 1.115000e-04  eta: 1 day, 12:54:05  time: 1.675402  data_time: 1.406779  memory: 9726  loss: 0.000195  loss_kpt: 0.000195  acc_pose: 0.994402
+02/19 12:39:46 - mmengine - INFO - Epoch(train)  [3][ 7950/11654]  lr: 1.115000e-04  eta: 1 day, 12:53:10  time: 1.662172  data_time: 1.390780  memory: 9726  loss: 0.000184  loss_kpt: 0.000184  acc_pose: 0.978581
+02/19 12:41:03 - mmengine - INFO - Epoch(train)  [3][ 8000/11654]  lr: 1.115000e-04  eta: 1 day, 12:51:51  time: 1.551047  data_time: 1.279485  memory: 9726  loss: 0.000190  loss_kpt: 0.000190  acc_pose: 0.988839
+02/19 12:42:15 - mmengine - INFO - Epoch(train)  [3][ 8050/11654]  lr: 1.115000e-04  eta: 1 day, 12:50:04  time: 1.423628  data_time: 1.153609  memory: 9726  loss: 0.000183  loss_kpt: 0.000183  acc_pose: 0.998848
+02/19 12:43:41 - mmengine - INFO - Epoch(train)  [3][ 8100/11654]  lr: 1.115000e-04  eta: 1 day, 12:49:25  time: 1.736609  data_time: 1.466427  memory: 9726  loss: 0.000184  loss_kpt: 0.000184  acc_pose: 0.994348
+02/19 12:45:05 - mmengine - INFO - Epoch(train)  [3][ 8150/11654]  lr: 1.115000e-04  eta: 1 day, 12:48:34  time: 1.681350  data_time: 1.413942  memory: 9726  loss: 0.000193  loss_kpt: 0.000193  acc_pose: 0.994330
+02/19 12:46:13 - mmengine - INFO - Epoch(train)  [3][ 8200/11654]  lr: 1.115000e-04  eta: 1 day, 12:46:34  time: 1.361285  data_time: 1.091872  memory: 9726  loss: 0.000179  loss_kpt: 0.000179  acc_pose: 0.996616
+02/19 12:47:24 - mmengine - INFO - Epoch(train)  [3][ 8250/11654]  lr: 1.115000e-04  eta: 1 day, 12:44:46  time: 1.417678  data_time: 1.147926  memory: 9726  loss: 0.000181  loss_kpt: 0.000181  acc_pose: 0.996634
+02/19 12:48:50 - mmengine - INFO - Epoch(train)  [3][ 8300/11654]  lr: 1.115000e-04  eta: 1 day, 12:44:00  time: 1.704126  data_time: 1.432264  memory: 9726  loss: 0.000188  loss_kpt: 0.000188  acc_pose: 0.954241
+02/19 12:50:17 - mmengine - INFO - Epoch(train)  [3][ 8350/11654]  lr: 1.115000e-04  eta: 1 day, 12:43:24  time: 1.755860  data_time: 1.468693  memory: 9726  loss: 0.000177  loss_kpt: 0.000177  acc_pose: 0.996634
+02/19 12:51:39 - mmengine - INFO - Epoch(train)  [3][ 8400/11654]  lr: 1.115000e-04  eta: 1 day, 12:42:24  time: 1.641840  data_time: 1.368988  memory: 9726  loss: 0.000174  loss_kpt: 0.000174  acc_pose: 1.000000
+02/19 12:53:13 - mmengine - INFO - Epoch(train)  [3][ 8450/11654]  lr: 1.115000e-04  eta: 1 day, 12:42:14  time: 1.876129  data_time: 1.604117  memory: 9726  loss: 0.000173  loss_kpt: 0.000173  acc_pose: 0.997768
+02/19 12:54:28 - mmengine - INFO - Epoch(train)  [3][ 8500/11654]  lr: 1.115000e-04  eta: 1 day, 12:40:42  time: 1.495110  data_time: 1.234711  memory: 9726  loss: 0.000179  loss_kpt: 0.000179  acc_pose: 0.992188
+02/19 12:55:58 - mmengine - INFO - Epoch(train)  [3][ 8550/11654]  lr: 1.115000e-04  eta: 1 day, 12:40:14  time: 1.794183  data_time: 1.538696  memory: 9726  loss: 0.000179  loss_kpt: 0.000179  acc_pose: 0.998866
+02/19 12:57:14 - mmengine - INFO - Epoch(train)  [3][ 8600/11654]  lr: 1.115000e-04  eta: 1 day, 12:38:50  time: 1.530360  data_time: 1.269633  memory: 9726  loss: 0.000178  loss_kpt: 0.000178  acc_pose: 0.993196
+02/19 12:58:31 - mmengine - INFO - Epoch(train)  [3][ 8650/11654]  lr: 1.115000e-04  eta: 1 day, 12:37:27  time: 1.536466  data_time: 1.273108  memory: 9726  loss: 0.000174  loss_kpt: 0.000174  acc_pose: 0.998866
+02/19 13:00:07 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 13:00:19 - mmengine - INFO - Epoch(train)  [3][ 8700/11654]  lr: 1.115000e-04  eta: 1 day, 12:38:14  time: 2.160919  data_time: 1.881502  memory: 9726  loss: 0.000177  loss_kpt: 0.000177  acc_pose: 0.988661
+02/19 13:01:36 - mmengine - INFO - Epoch(train)  [3][ 8750/11654]  lr: 1.115000e-04  eta: 1 day, 12:36:52  time: 1.539484  data_time: 1.280617  memory: 9726  loss: 0.000195  loss_kpt: 0.000195  acc_pose: 1.000000
+02/19 13:02:48 - mmengine - INFO - Epoch(train)  [3][ 8800/11654]  lr: 1.115000e-04  eta: 1 day, 12:35:10  time: 1.445926  data_time: 1.185940  memory: 9726  loss: 0.000189  loss_kpt: 0.000189  acc_pose: 0.995536
+02/19 13:04:11 - mmengine - INFO - Epoch(train)  [3][ 8850/11654]  lr: 1.115000e-04  eta: 1 day, 12:34:12  time: 1.653009  data_time: 1.395647  memory: 9726  loss: 0.000184  loss_kpt: 0.000184  acc_pose: 0.994420
+02/19 13:05:28 - mmengine - INFO - Epoch(train)  [3][ 8900/11654]  lr: 1.115000e-04  eta: 1 day, 12:32:50  time: 1.542128  data_time: 1.281631  memory: 9726  loss: 0.000182  loss_kpt: 0.000182  acc_pose: 0.996599
+02/19 13:07:02 - mmengine - INFO - Epoch(train)  [3][ 8950/11654]  lr: 1.115000e-04  eta: 1 day, 12:32:38  time: 1.885674  data_time: 1.627507  memory: 9726  loss: 0.000171  loss_kpt: 0.000171  acc_pose: 0.989866
+02/19 13:08:29 - mmengine - INFO - Epoch(train)  [3][ 9000/11654]  lr: 1.115000e-04  eta: 1 day, 12:31:54  time: 1.727002  data_time: 1.451989  memory: 9726  loss: 0.000180  loss_kpt: 0.000180  acc_pose: 0.994276
+02/19 13:09:46 - mmengine - INFO - Epoch(train)  [3][ 9050/11654]  lr: 1.115000e-04  eta: 1 day, 12:30:31  time: 1.538424  data_time: 1.279756  memory: 9726  loss: 0.000178  loss_kpt: 0.000178  acc_pose: 0.994420
+02/19 13:11:02 - mmengine - INFO - Epoch(train)  [3][ 9100/11654]  lr: 1.115000e-04  eta: 1 day, 12:29:06  time: 1.523047  data_time: 1.246335  memory: 9726  loss: 0.000179  loss_kpt: 0.000179  acc_pose: 0.991933
+02/19 13:12:28 - mmengine - INFO - Epoch(train)  [3][ 9150/11654]  lr: 1.115000e-04  eta: 1 day, 12:28:19  time: 1.715272  data_time: 1.450300  memory: 9726  loss: 0.000193  loss_kpt: 0.000193  acc_pose: 0.989884
+02/19 13:13:59 - mmengine - INFO - Epoch(train)  [3][ 9200/11654]  lr: 1.115000e-04  eta: 1 day, 12:27:54  time: 1.824085  data_time: 1.566206  memory: 9726  loss: 0.000188  loss_kpt: 0.000188  acc_pose: 0.996599
+02/19 13:15:15 - mmengine - INFO - Epoch(train)  [3][ 9250/11654]  lr: 1.115000e-04  eta: 1 day, 12:26:27  time: 1.522556  data_time: 1.261946  memory: 9726  loss: 0.000180  loss_kpt: 0.000180  acc_pose: 0.997768
+02/19 13:16:37 - mmengine - INFO - Epoch(train)  [3][ 9300/11654]  lr: 1.115000e-04  eta: 1 day, 12:25:27  time: 1.649093  data_time: 1.387021  memory: 9726  loss: 0.000181  loss_kpt: 0.000181  acc_pose: 0.993215
+02/19 13:18:20 - mmengine - INFO - Epoch(train)  [3][ 9350/11654]  lr: 1.115000e-04  eta: 1 day, 12:25:45  time: 2.044848  data_time: 1.781108  memory: 9726  loss: 0.000181  loss_kpt: 0.000181  acc_pose: 0.990983
+02/19 13:19:40 - mmengine - INFO - Epoch(train)  [3][ 9400/11654]  lr: 1.115000e-04  eta: 1 day, 12:24:36  time: 1.610207  data_time: 1.330023  memory: 9726  loss: 0.000176  loss_kpt: 0.000176  acc_pose: 0.990855
+02/19 13:21:02 - mmengine - INFO - Epoch(train)  [3][ 9450/11654]  lr: 1.115000e-04  eta: 1 day, 12:23:34  time: 1.641865  data_time: 1.375633  memory: 9726  loss: 0.000202  loss_kpt: 0.000202  acc_pose: 0.979786
+02/19 13:22:24 - mmengine - INFO - Epoch(train)  [3][ 9500/11654]  lr: 1.115000e-04  eta: 1 day, 12:22:30  time: 1.638987  data_time: 1.363613  memory: 9726  loss: 0.000190  loss_kpt: 0.000190  acc_pose: 0.997768
+02/19 13:23:58 - mmengine - INFO - Epoch(train)  [3][ 9550/11654]  lr: 1.115000e-04  eta: 1 day, 12:22:14  time: 1.880024  data_time: 1.610931  memory: 9726  loss: 0.000174  loss_kpt: 0.000174  acc_pose: 0.997768
+02/19 13:25:13 - mmengine - INFO - Epoch(train)  [3][ 9600/11654]  lr: 1.115000e-04  eta: 1 day, 12:20:44  time: 1.502409  data_time: 1.239237  memory: 9726  loss: 0.000184  loss_kpt: 0.000184  acc_pose: 0.997768
+02/19 13:26:38 - mmengine - INFO - Epoch(train)  [3][ 9650/11654]  lr: 1.115000e-04  eta: 1 day, 12:19:52  time: 1.699578  data_time: 1.433713  memory: 9726  loss: 0.000175  loss_kpt: 0.000175  acc_pose: 0.995536
+02/19 13:27:40 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 13:27:52 - mmengine - INFO - Epoch(train)  [3][ 9700/11654]  lr: 1.115000e-04  eta: 1 day, 12:18:15  time: 1.469700  data_time: 1.205885  memory: 9726  loss: 0.000179  loss_kpt: 0.000179  acc_pose: 0.991952
+02/19 13:29:21 - mmengine - INFO - Epoch(train)  [3][ 9750/11654]  lr: 1.115000e-04  eta: 1 day, 12:17:40  time: 1.785631  data_time: 1.520257  memory: 9726  loss: 0.000172  loss_kpt: 0.000172  acc_pose: 0.998884
+02/19 13:30:34 - mmengine - INFO - Epoch(train)  [3][ 9800/11654]  lr: 1.115000e-04  eta: 1 day, 12:15:59  time: 1.446453  data_time: 1.182030  memory: 9726  loss: 0.000183  loss_kpt: 0.000183  acc_pose: 0.994276
+02/19 13:32:04 - mmengine - INFO - Epoch(train)  [3][ 9850/11654]  lr: 1.115000e-04  eta: 1 day, 12:15:27  time: 1.801728  data_time: 1.542530  memory: 9726  loss: 0.000182  loss_kpt: 0.000182  acc_pose: 0.993196
+02/19 13:33:31 - mmengine - INFO - Epoch(train)  [3][ 9900/11654]  lr: 1.115000e-04  eta: 1 day, 12:14:44  time: 1.748129  data_time: 1.485086  memory: 9726  loss: 0.000173  loss_kpt: 0.000173  acc_pose: 0.991071
+02/19 13:35:15 - mmengine - INFO - Epoch(train)  [3][ 9950/11654]  lr: 1.115000e-04  eta: 1 day, 12:15:05  time: 2.082805  data_time: 1.823219  memory: 9726  loss: 0.000178  loss_kpt: 0.000178  acc_pose: 0.988714
+02/19 13:36:29 - mmengine - INFO - Epoch(train)  [3][10000/11654]  lr: 1.115000e-04  eta: 1 day, 12:13:28  time: 1.470260  data_time: 1.211109  memory: 9726  loss: 0.000187  loss_kpt: 0.000187  acc_pose: 0.993232
+02/19 13:37:58 - mmengine - INFO - Epoch(train)  [3][10050/11654]  lr: 1.115000e-04  eta: 1 day, 12:12:52  time: 1.787345  data_time: 1.523611  memory: 9726  loss: 0.000177  loss_kpt: 0.000177  acc_pose: 0.995483
+02/19 13:39:20 - mmengine - INFO - Epoch(train)  [3][10100/11654]  lr: 1.115000e-04  eta: 1 day, 12:11:48  time: 1.643143  data_time: 1.376985  memory: 9726  loss: 0.000184  loss_kpt: 0.000184  acc_pose: 0.994349
+02/19 13:40:41 - mmengine - INFO - Epoch(train)  [3][10150/11654]  lr: 1.115000e-04  eta: 1 day, 12:10:41  time: 1.625135  data_time: 1.355290  memory: 9726  loss: 0.000176  loss_kpt: 0.000176  acc_pose: 0.997732
+02/19 13:41:58 - mmengine - INFO - Epoch(train)  [3][10200/11654]  lr: 1.115000e-04  eta: 1 day, 12:09:16  time: 1.533524  data_time: 1.265602  memory: 9726  loss: 0.000177  loss_kpt: 0.000177  acc_pose: 0.985366
+02/19 13:43:40 - mmengine - INFO - Epoch(train)  [3][10250/11654]  lr: 1.115000e-04  eta: 1 day, 12:09:28  time: 2.044448  data_time: 1.780622  memory: 9726  loss: 0.000170  loss_kpt: 0.000170  acc_pose: 0.998884
+02/19 13:44:57 - mmengine - INFO - Epoch(train)  [3][10300/11654]  lr: 1.115000e-04  eta: 1 day, 12:08:04  time: 1.541082  data_time: 1.277477  memory: 9726  loss: 0.000174  loss_kpt: 0.000174  acc_pose: 0.982773
+02/19 13:46:16 - mmengine - INFO - Epoch(train)  [3][10350/11654]  lr: 1.115000e-04  eta: 1 day, 12:06:47  time: 1.573343  data_time: 1.311368  memory: 9726  loss: 0.000163  loss_kpt: 0.000163  acc_pose: 0.996634
+02/19 13:47:34 - mmengine - INFO - Epoch(train)  [3][10400/11654]  lr: 1.115000e-04  eta: 1 day, 12:05:27  time: 1.562058  data_time: 1.300831  memory: 9726  loss: 0.000167  loss_kpt: 0.000167  acc_pose: 0.995483
+02/19 13:49:12 - mmengine - INFO - Epoch(train)  [3][10450/11654]  lr: 1.115000e-04  eta: 1 day, 12:05:22  time: 1.959657  data_time: 1.695006  memory: 9726  loss: 0.000172  loss_kpt: 0.000172  acc_pose: 0.997750
+02/19 13:50:28 - mmengine - INFO - Epoch(train)  [3][10500/11654]  lr: 1.115000e-04  eta: 1 day, 12:03:55  time: 1.523881  data_time: 1.257028  memory: 9726  loss: 0.000174  loss_kpt: 0.000174  acc_pose: 0.997732
+02/19 13:51:53 - mmengine - INFO - Epoch(train)  [3][10550/11654]  lr: 1.115000e-04  eta: 1 day, 12:02:58  time: 1.684894  data_time: 1.424289  memory: 9726  loss: 0.000180  loss_kpt: 0.000180  acc_pose: 0.981749
+02/19 13:53:33 - mmengine - INFO - Epoch(train)  [3][10600/11654]  lr: 1.115000e-04  eta: 1 day, 12:03:00  time: 2.002399  data_time: 1.738488  memory: 9726  loss: 0.000186  loss_kpt: 0.000186  acc_pose: 1.000000
+02/19 13:55:00 - mmengine - INFO - Epoch(train)  [3][10650/11654]  lr: 1.115000e-04  eta: 1 day, 12:02:12  time: 1.735508  data_time: 1.474508  memory: 9726  loss: 0.000178  loss_kpt: 0.000178  acc_pose: 0.994366
+02/19 13:56:02 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 13:56:14 - mmengine - INFO - Epoch(train)  [3][10700/11654]  lr: 1.115000e-04  eta: 1 day, 12:00:38  time: 1.487015  data_time: 1.224895  memory: 9726  loss: 0.000170  loss_kpt: 0.000170  acc_pose: 0.984357
+02/19 13:57:30 - mmengine - INFO - Epoch(train)  [3][10750/11654]  lr: 1.115000e-04  eta: 1 day, 11:59:12  time: 1.529840  data_time: 1.265880  memory: 9726  loss: 0.000163  loss_kpt: 0.000163  acc_pose: 1.000000
+02/19 13:58:55 - mmengine - INFO - Epoch(train)  [3][10800/11654]  lr: 1.115000e-04  eta: 1 day, 11:58:16  time: 1.696592  data_time: 1.431474  memory: 9726  loss: 0.000170  loss_kpt: 0.000170  acc_pose: 0.987616
+02/19 14:00:21 - mmengine - INFO - Epoch(train)  [3][10850/11654]  lr: 1.115000e-04  eta: 1 day, 11:57:23  time: 1.709389  data_time: 1.447640  memory: 9726  loss: 0.000166  loss_kpt: 0.000166  acc_pose: 0.989938
+02/19 14:01:39 - mmengine - INFO - Epoch(train)  [3][10900/11654]  lr: 1.115000e-04  eta: 1 day, 11:56:03  time: 1.566264  data_time: 1.304466  memory: 9726  loss: 0.000161  loss_kpt: 0.000161  acc_pose: 0.981855
+02/19 14:02:54 - mmengine - INFO - Epoch(train)  [3][10950/11654]  lr: 1.115000e-04  eta: 1 day, 11:54:31  time: 1.492791  data_time: 1.226486  memory: 9726  loss: 0.000165  loss_kpt: 0.000165  acc_pose: 0.982072
+02/19 14:04:19 - mmengine - INFO - Epoch(train)  [3][11000/11654]  lr: 1.115000e-04  eta: 1 day, 11:53:37  time: 1.710604  data_time: 1.431566  memory: 9726  loss: 0.000179  loss_kpt: 0.000179  acc_pose: 0.994349
+02/19 14:06:14 - mmengine - INFO - Epoch(train)  [3][11050/11654]  lr: 1.115000e-04  eta: 1 day, 11:54:30  time: 2.297310  data_time: 2.039907  memory: 9726  loss: 0.000172  loss_kpt: 0.000172  acc_pose: 0.997750
+02/19 14:07:58 - mmengine - INFO - Epoch(train)  [3][11100/11654]  lr: 1.115000e-04  eta: 1 day, 11:54:42  time: 2.072707  data_time: 1.812116  memory: 9726  loss: 0.000172  loss_kpt: 0.000172  acc_pose: 0.993250
+02/19 14:09:43 - mmengine - INFO - Epoch(train)  [3][11150/11654]  lr: 1.115000e-04  eta: 1 day, 11:54:58  time: 2.101720  data_time: 1.837941  memory: 9726  loss: 0.000164  loss_kpt: 0.000164  acc_pose: 0.995481
+02/19 14:10:59 - mmengine - INFO - Epoch(train)  [3][11200/11654]  lr: 1.115000e-04  eta: 1 day, 11:53:29  time: 1.518387  data_time: 1.255632  memory: 9726  loss: 0.000172  loss_kpt: 0.000172  acc_pose: 0.998884
+02/19 14:12:20 - mmengine - INFO - Epoch(train)  [3][11250/11654]  lr: 1.115000e-04  eta: 1 day, 11:52:20  time: 1.628837  data_time: 1.359910  memory: 9726  loss: 0.000168  loss_kpt: 0.000168  acc_pose: 0.994329
+02/19 14:13:46 - mmengine - INFO - Epoch(train)  [3][11300/11654]  lr: 1.115000e-04  eta: 1 day, 11:51:27  time: 1.721676  data_time: 1.460983  memory: 9726  loss: 0.000171  loss_kpt: 0.000171  acc_pose: 0.996652
+02/19 14:15:07 - mmengine - INFO - Epoch(train)  [3][11350/11654]  lr: 1.115000e-04  eta: 1 day, 11:50:14  time: 1.604930  data_time: 1.339518  memory: 9726  loss: 0.000157  loss_kpt: 0.000157  acc_pose: 0.995536
+02/19 14:16:19 - mmengine - INFO - Epoch(train)  [3][11400/11654]  lr: 1.115000e-04  eta: 1 day, 11:48:33  time: 1.450577  data_time: 1.172476  memory: 9726  loss: 0.000164  loss_kpt: 0.000164  acc_pose: 0.995536
+02/19 14:17:44 - mmengine - INFO - Epoch(train)  [3][11450/11654]  lr: 1.115000e-04  eta: 1 day, 11:47:37  time: 1.707193  data_time: 1.442273  memory: 9726  loss: 0.000168  loss_kpt: 0.000168  acc_pose: 0.983096
+02/19 14:19:06 - mmengine - INFO - Epoch(train)  [3][11500/11654]  lr: 1.115000e-04  eta: 1 day, 11:46:28  time: 1.626904  data_time: 1.362749  memory: 9726  loss: 0.000167  loss_kpt: 0.000167  acc_pose: 0.982677
+02/19 14:20:21 - mmengine - INFO - Epoch(train)  [3][11550/11654]  lr: 1.115000e-04  eta: 1 day, 11:44:57  time: 1.509128  data_time: 1.247971  memory: 9726  loss: 0.000170  loss_kpt: 0.000170  acc_pose: 0.986447
+02/19 14:21:35 - mmengine - INFO - Epoch(train)  [3][11600/11654]  lr: 1.115000e-04  eta: 1 day, 11:43:21  time: 1.474709  data_time: 1.209177  memory: 9726  loss: 0.000178  loss_kpt: 0.000178  acc_pose: 0.991953
+02/19 14:23:12 - mmengine - INFO - Epoch(train)  [3][11650/11654]  lr: 1.115000e-04  eta: 1 day, 11:43:05  time: 1.937497  data_time: 1.669690  memory: 9726  loss: 0.000159  loss_kpt: 0.000159  acc_pose: 0.998884
+02/19 14:23:13 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 14:23:13 - mmengine - INFO - Saving checkpoint at 3 epochs
+02/19 14:24:08 - mmengine - INFO - Epoch(val)  [3][  50/1463]    eta: 0:24:38  time: 1.046402  data_time: 0.904200  memory: 9726  
+02/19 14:24:52 - mmengine - INFO - Epoch(val)  [3][ 100/1463]    eta: 0:21:55  time: 0.883740  data_time: 0.742488  memory: 1165  
+02/19 14:25:36 - mmengine - INFO - Epoch(val)  [3][ 150/1463]    eta: 0:20:27  time: 0.875250  data_time: 0.720853  memory: 1165  
+02/19 14:26:22 - mmengine - INFO - Epoch(val)  [3][ 200/1463]    eta: 0:19:34  time: 0.912984  data_time: 0.770064  memory: 1165  
+02/19 14:27:13 - mmengine - INFO - Epoch(val)  [3][ 250/1463]    eta: 0:19:12  time: 1.032387  data_time: 0.889180  memory: 1165  
+02/19 14:28:02 - mmengine - INFO - Epoch(val)  [3][ 300/1463]    eta: 0:18:29  time: 0.971116  data_time: 0.828836  memory: 1165  
+02/19 14:29:02 - mmengine - INFO - Epoch(val)  [3][ 350/1463]    eta: 0:18:22  time: 1.210122  data_time: 1.070014  memory: 1165  
+02/19 14:29:57 - mmengine - INFO - Epoch(val)  [3][ 400/1463]    eta: 0:17:45  time: 1.083565  data_time: 0.943031  memory: 1165  
+02/19 14:30:48 - mmengine - INFO - Epoch(val)  [3][ 450/1463]    eta: 0:16:57  time: 1.028772  data_time: 0.888672  memory: 1165  
+02/19 14:31:36 - mmengine - INFO - Epoch(val)  [3][ 500/1463]    eta: 0:16:03  time: 0.957908  data_time: 0.814166  memory: 1165  
+02/19 14:32:34 - mmengine - INFO - Epoch(val)  [3][ 550/1463]    eta: 0:15:26  time: 1.161550  data_time: 1.020811  memory: 1165  
+02/19 14:33:29 - mmengine - INFO - Epoch(val)  [3][ 600/1463]    eta: 0:14:41  time: 1.096434  data_time: 0.953036  memory: 1165  
+02/19 14:34:13 - mmengine - INFO - Epoch(val)  [3][ 650/1463]    eta: 0:13:41  time: 0.872740  data_time: 0.733048  memory: 1165  
+02/19 14:34:58 - mmengine - INFO - Epoch(val)  [3][ 700/1463]    eta: 0:12:45  time: 0.918193  data_time: 0.774123  memory: 1165  
+02/19 14:35:36 - mmengine - INFO - Epoch(val)  [3][ 750/1463]    eta: 0:11:43  time: 0.759306  data_time: 0.603725  memory: 1165  
+02/19 14:36:29 - mmengine - INFO - Epoch(val)  [3][ 800/1463]    eta: 0:10:57  time: 1.049428  data_time: 0.904093  memory: 1165  
+02/19 14:37:27 - mmengine - INFO - Epoch(val)  [3][ 850/1463]    eta: 0:10:13  time: 1.161445  data_time: 1.013014  memory: 1165  
+02/19 14:38:27 - mmengine - INFO - Epoch(val)  [3][ 900/1463]    eta: 0:09:30  time: 1.209626  data_time: 1.061410  memory: 1165  
+02/19 14:39:20 - mmengine - INFO - Epoch(val)  [3][ 950/1463]    eta: 0:08:40  time: 1.051502  data_time: 0.908849  memory: 1165  
+02/19 14:40:10 - mmengine - INFO - Epoch(val)  [3][1000/1463]    eta: 0:07:49  time: 0.998680  data_time: 0.856170  memory: 1165  
+02/19 14:41:23 - mmengine - INFO - Epoch(val)  [3][1050/1463]    eta: 0:07:07  time: 1.454544  data_time: 1.308270  memory: 1165  
+02/19 14:42:12 - mmengine - INFO - Epoch(val)  [3][1100/1463]    eta: 0:06:15  time: 0.992217  data_time: 0.849240  memory: 1165  
+02/19 14:43:25 - mmengine - INFO - Epoch(val)  [3][1150/1463]    eta: 0:05:29  time: 1.461914  data_time: 1.323200  memory: 1165  
+02/19 14:44:48 - mmengine - INFO - Epoch(val)  [3][1200/1463]    eta: 0:04:43  time: 1.653195  data_time: 1.509036  memory: 1165  
+02/19 14:45:43 - mmengine - INFO - Epoch(val)  [3][1250/1463]    eta: 0:03:49  time: 1.106225  data_time: 0.963478  memory: 1165  
+02/19 14:46:33 - mmengine - INFO - Epoch(val)  [3][1300/1463]    eta: 0:02:55  time: 0.988501  data_time: 0.845936  memory: 1165  
+02/19 14:47:22 - mmengine - INFO - Epoch(val)  [3][1350/1463]    eta: 0:02:01  time: 0.991412  data_time: 0.834985  memory: 1165  
+02/19 14:48:14 - mmengine - INFO - Epoch(val)  [3][1400/1463]    eta: 0:01:07  time: 1.042141  data_time: 0.896515  memory: 1165  
+02/19 14:49:10 - mmengine - INFO - Epoch(val)  [3][1450/1463]    eta: 0:00:13  time: 1.111899  data_time: 0.964778  memory: 1165  
+02/19 14:49:30 - mmengine - INFO - Evaluating CocoMetric...
+Loading and preparing results...
+DONE (t=1.41s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *keypoints*
+DONE (t=16.46s).
+Accumulating evaluation results...
+DONE (t=2.28s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] =  0.001
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets= 20 ] =  0.003
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets= 20 ] =  0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets= 20 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] =  0.001
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] =  0.005
+ Average Recall     (AR) @[ IoU=0.50      | area=   all | maxDets= 20 ] =  0.016
+ Average Recall     (AR) @[ IoU=0.75      | area=   all | maxDets= 20 ] =  0.003
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets= 20 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] =  0.005
+02/19 14:49:51 - mmengine - INFO - Epoch(val) [3][1463/1463]    coco/AP: 0.000793  coco/AP .5: 0.003113  coco/AP .75: 0.000116  coco/AP (M): -1.000000  coco/AP (L): 0.000793  coco/AR: 0.005483  coco/AR .5: 0.016448  coco/AR .75: 0.003298  coco/AR (M): -1.000000  coco/AR (L): 0.005483  data_time: 0.924650  time: 1.069016
+02/19 14:49:51 - mmengine - INFO - The previous best checkpoint /work/ToyotaHPE/rcatalini/EventRobotPose/mmpose/baselines/HRNet/best_coco_AP_epoch_2.pth is removed
+02/19 14:49:52 - mmengine - INFO - The best checkpoint with 0.0008 coco/AP at 3 epoch is saved to best_coco_AP_epoch_3.pth.
+02/19 14:51:06 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 14:51:36 - mmengine - INFO - Epoch(train)  [4][   50/11654]  lr: 1.670000e-04  eta: 1 day, 11:42:41  time: 2.032444  data_time: 1.777712  memory: 9726  loss: 0.000173  loss_kpt: 0.000173  acc_pose: 0.991001
+02/19 14:53:00 - mmengine - INFO - Epoch(train)  [4][  100/11654]  lr: 1.670000e-04  eta: 1 day, 11:41:38  time: 1.664744  data_time: 1.409419  memory: 9726  loss: 0.000175  loss_kpt: 0.000175  acc_pose: 0.997732
+02/19 14:54:30 - mmengine - INFO - Epoch(train)  [4][  150/11654]  lr: 1.670000e-04  eta: 1 day, 11:40:59  time: 1.806511  data_time: 1.550127  memory: 9726  loss: 0.000173  loss_kpt: 0.000173  acc_pose: 0.990893
+02/19 14:56:00 - mmengine - INFO - Epoch(train)  [4][  200/11654]  lr: 1.670000e-04  eta: 1 day, 11:40:20  time: 1.805763  data_time: 1.544225  memory: 9726  loss: 0.000184  loss_kpt: 0.000184  acc_pose: 0.990946
+02/19 14:57:51 - mmengine - INFO - Epoch(train)  [4][  250/11654]  lr: 1.670000e-04  eta: 1 day, 11:40:50  time: 2.211614  data_time: 1.940974  memory: 9726  loss: 0.000214  loss_kpt: 0.000214  acc_pose: 0.972497
+02/19 14:59:53 - mmengine - INFO - Epoch(train)  [4][  300/11654]  lr: 1.670000e-04  eta: 1 day, 11:41:58  time: 2.433467  data_time: 2.148455  memory: 9726  loss: 0.000205  loss_kpt: 0.000205  acc_pose: 0.994384
+02/19 15:01:58 - mmengine - INFO - Epoch(train)  [4][  350/11654]  lr: 1.670000e-04  eta: 1 day, 11:43:19  time: 2.514804  data_time: 2.247231  memory: 9726  loss: 0.000202  loss_kpt: 0.000202  acc_pose: 0.995483
+02/19 15:04:12 - mmengine - INFO - Epoch(train)  [4][  400/11654]  lr: 1.670000e-04  eta: 1 day, 11:45:08  time: 2.683039  data_time: 2.401065  memory: 9726  loss: 0.000196  loss_kpt: 0.000196  acc_pose: 0.989704
+02/19 15:06:08 - mmengine - INFO - Epoch(train)  [4][  450/11654]  lr: 1.670000e-04  eta: 1 day, 11:45:51  time: 2.301917  data_time: 2.029519  memory: 9726  loss: 0.000196  loss_kpt: 0.000196  acc_pose: 0.992098
+02/19 15:08:19 - mmengine - INFO - Epoch(train)  [4][  500/11654]  lr: 1.670000e-04  eta: 1 day, 11:47:29  time: 2.625240  data_time: 2.360571  memory: 9726  loss: 0.000203  loss_kpt: 0.000203  acc_pose: 0.998884
+02/19 15:10:23 - mmengine - INFO - Epoch(train)  [4][  550/11654]  lr: 1.670000e-04  eta: 1 day, 11:48:42  time: 2.489002  data_time: 2.206499  memory: 9726  loss: 0.000193  loss_kpt: 0.000193  acc_pose: 0.997768
+02/19 15:12:22 - mmengine - INFO - Epoch(train)  [4][  600/11654]  lr: 1.670000e-04  eta: 1 day, 11:49:36  time: 2.378967  data_time: 2.109586  memory: 9726  loss: 0.000183  loss_kpt: 0.000183  acc_pose: 0.984180
+02/19 15:14:30 - mmengine - INFO - Epoch(train)  [4][  650/11654]  lr: 1.670000e-04  eta: 1 day, 11:50:59  time: 2.556668  data_time: 2.292709  memory: 9726  loss: 0.000183  loss_kpt: 0.000183  acc_pose: 0.990946
+02/19 15:16:23 - mmengine - INFO - Epoch(train)  [4][  700/11654]  lr: 1.670000e-04  eta: 1 day, 11:51:32  time: 2.264871  data_time: 1.979369  memory: 9726  loss: 0.000224  loss_kpt: 0.000224  acc_pose: 0.975989
+02/19 15:18:24 - mmengine - INFO - Epoch(train)  [4][  750/11654]  lr: 1.670000e-04  eta: 1 day, 11:52:30  time: 2.416186  data_time: 2.150087  memory: 9726  loss: 0.000275  loss_kpt: 0.000275  acc_pose: 0.993304
+02/19 15:20:04 - mmengine - INFO - Epoch(train)  [4][  800/11654]  lr: 1.670000e-04  eta: 1 day, 11:52:19  time: 2.005309  data_time: 1.736527  memory: 9726  loss: 0.000220  loss_kpt: 0.000220  acc_pose: 0.991036
+02/19 15:21:55 - mmengine - INFO - Epoch(train)  [4][  850/11654]  lr: 1.670000e-04  eta: 1 day, 11:52:41  time: 2.212669  data_time: 1.944803  memory: 9726  loss: 0.000200  loss_kpt: 0.000200  acc_pose: 0.997750
+02/19 15:24:15 - mmengine - INFO - Epoch(train)  [4][  900/11654]  lr: 1.670000e-04  eta: 1 day, 11:54:40  time: 2.792035  data_time: 2.525060  memory: 9726  loss: 0.000202  loss_kpt: 0.000202  acc_pose: 0.992152
+02/19 15:26:00 - mmengine - INFO - Epoch(train)  [4][  950/11654]  lr: 1.670000e-04  eta: 1 day, 11:54:42  time: 2.098500  data_time: 1.832089  memory: 9726  loss: 0.000219  loss_kpt: 0.000219  acc_pose: 0.985456
+02/19 15:27:46 - mmengine - INFO - Epoch(train)  [4][ 1000/11654]  lr: 1.670000e-04  eta: 1 day, 11:54:49  time: 2.129767  data_time: 1.864660  memory: 9726  loss: 0.000213  loss_kpt: 0.000213  acc_pose: 0.992170
+02/19 15:29:14 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 15:29:31 - mmengine - INFO - Epoch(train)  [4][ 1050/11654]  lr: 1.670000e-04  eta: 1 day, 11:54:49  time: 2.090064  data_time: 1.823762  memory: 9726  loss: 0.000211  loss_kpt: 0.000211  acc_pose: 0.979589
+02/19 15:31:27 - mmengine - INFO - Epoch(train)  [4][ 1100/11654]  lr: 1.670000e-04  eta: 1 day, 11:55:28  time: 2.323916  data_time: 2.043420  memory: 9726  loss: 0.000230  loss_kpt: 0.000230  acc_pose: 0.979274
+02/19 15:33:33 - mmengine - INFO - Epoch(train)  [4][ 1150/11654]  lr: 1.670000e-04  eta: 1 day, 11:56:37  time: 2.518243  data_time: 2.251453  memory: 9726  loss: 0.000212  loss_kpt: 0.000212  acc_pose: 0.980650
+02/19 15:35:26 - mmengine - INFO - Epoch(train)  [4][ 1200/11654]  lr: 1.670000e-04  eta: 1 day, 11:57:05  time: 2.272562  data_time: 2.010072  memory: 9726  loss: 0.000205  loss_kpt: 0.000205  acc_pose: 0.986302
+02/19 15:37:19 - mmengine - INFO - Epoch(train)  [4][ 1250/11654]  lr: 1.670000e-04  eta: 1 day, 11:57:31  time: 2.258056  data_time: 1.988227  memory: 9726  loss: 0.000193  loss_kpt: 0.000193  acc_pose: 0.992188
+02/19 15:39:45 - mmengine - INFO - Epoch(train)  [4][ 1300/11654]  lr: 1.670000e-04  eta: 1 day, 11:59:43  time: 2.917463  data_time: 2.640131  memory: 9726  loss: 0.000193  loss_kpt: 0.000193  acc_pose: 0.978563
+02/19 15:41:52 - mmengine - INFO - Epoch(train)  [4][ 1350/11654]  lr: 1.670000e-04  eta: 1 day, 12:00:54  time: 2.544658  data_time: 2.276929  memory: 9726  loss: 0.000186  loss_kpt: 0.000186  acc_pose: 0.991071
+02/19 15:43:58 - mmengine - INFO - Epoch(train)  [4][ 1400/11654]  lr: 1.670000e-04  eta: 1 day, 12:01:59  time: 2.515523  data_time: 2.250924  memory: 9726  loss: 0.000198  loss_kpt: 0.000198  acc_pose: 0.979911
+02/19 15:45:45 - mmengine - INFO - Epoch(train)  [4][ 1450/11654]  lr: 1.670000e-04  eta: 1 day, 12:02:01  time: 2.130680  data_time: 1.859541  memory: 9726  loss: 0.000196  loss_kpt: 0.000196  acc_pose: 0.988529
+02/19 15:47:38 - mmengine - INFO - Epoch(train)  [4][ 1500/11654]  lr: 1.670000e-04  eta: 1 day, 12:02:25  time: 2.266153  data_time: 2.003111  memory: 9726  loss: 0.000191  loss_kpt: 0.000191  acc_pose: 0.998866
+02/19 15:50:07 - mmengine - INFO - Epoch(train)  [4][ 1550/11654]  lr: 1.670000e-04  eta: 1 day, 12:04:42  time: 2.976836  data_time: 2.708193  memory: 9726  loss: 0.000196  loss_kpt: 0.000196  acc_pose: 0.978092
+02/19 15:52:22 - mmengine - INFO - Epoch(train)  [4][ 1600/11654]  lr: 1.670000e-04  eta: 1 day, 12:06:15  time: 2.705936  data_time: 2.427616  memory: 9726  loss: 0.000190  loss_kpt: 0.000190  acc_pose: 0.995536
+02/19 15:54:21 - mmengine - INFO - Epoch(train)  [4][ 1650/11654]  lr: 1.670000e-04  eta: 1 day, 12:06:54  time: 2.378679  data_time: 2.108682  memory: 9726  loss: 0.000186  loss_kpt: 0.000186  acc_pose: 0.998866
+02/19 15:56:13 - mmengine - INFO - Epoch(train)  [4][ 1700/11654]  lr: 1.670000e-04  eta: 1 day, 12:07:09  time: 2.229457  data_time: 1.949098  memory: 9726  loss: 0.000197  loss_kpt: 0.000197  acc_pose: 0.992170
+02/19 15:58:27 - mmengine - INFO - Epoch(train)  [4][ 1750/11654]  lr: 1.670000e-04  eta: 1 day, 12:08:37  time: 2.693005  data_time: 2.426636  memory: 9726  loss: 0.000183  loss_kpt: 0.000183  acc_pose: 0.997750
+02/19 16:00:48 - mmengine - INFO - Epoch(train)  [4][ 1800/11654]  lr: 1.670000e-04  eta: 1 day, 12:10:24  time: 2.815804  data_time: 2.548456  memory: 9726  loss: 0.000185  loss_kpt: 0.000185  acc_pose: 0.997677
+02/19 16:02:45 - mmengine - INFO - Epoch(train)  [4][ 1850/11654]  lr: 1.670000e-04  eta: 1 day, 12:10:54  time: 2.336018  data_time: 2.053770  memory: 9726  loss: 0.000185  loss_kpt: 0.000185  acc_pose: 0.990982
+02/19 16:04:44 - mmengine - INFO - Epoch(train)  [4][ 1900/11654]  lr: 1.670000e-04  eta: 1 day, 12:11:32  time: 2.393218  data_time: 2.123903  memory: 9726  loss: 0.000176  loss_kpt: 0.000176  acc_pose: 0.987581
+02/19 16:07:08 - mmengine - INFO - Epoch(train)  [4][ 1950/11654]  lr: 1.670000e-04  eta: 1 day, 12:13:27  time: 2.878579  data_time: 2.614969  memory: 9726  loss: 0.000172  loss_kpt: 0.000172  acc_pose: 0.993233
+02/19 16:09:19 - mmengine - INFO - Epoch(train)  [4][ 2000/11654]  lr: 1.670000e-04  eta: 1 day, 12:14:38  time: 2.613528  data_time: 2.332457  memory: 9726  loss: 0.000176  loss_kpt: 0.000176  acc_pose: 0.983058
+02/19 16:10:59 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 16:11:18 - mmengine - INFO - Epoch(train)  [4][ 2050/11654]  lr: 1.670000e-04  eta: 1 day, 12:15:13  time: 2.381262  data_time: 2.116562  memory: 9726  loss: 0.000170  loss_kpt: 0.000170  acc_pose: 0.996579
+02/19 16:13:16 - mmengine - INFO - Epoch(train)  [4][ 2100/11654]  lr: 1.670000e-04  eta: 1 day, 12:15:44  time: 2.365097  data_time: 2.098670  memory: 9726  loss: 0.000176  loss_kpt: 0.000176  acc_pose: 0.991018
+02/19 16:15:14 - mmengine - INFO - Epoch(train)  [4][ 2150/11654]  lr: 1.670000e-04  eta: 1 day, 12:16:11  time: 2.341622  data_time: 2.075365  memory: 9726  loss: 0.000183  loss_kpt: 0.000183  acc_pose: 0.993268
+02/19 16:17:06 - mmengine - INFO - Epoch(train)  [4][ 2200/11654]  lr: 1.670000e-04  eta: 1 day, 12:16:22  time: 2.242474  data_time: 1.973286  memory: 9726  loss: 0.000188  loss_kpt: 0.000188  acc_pose: 0.977554
+02/19 16:18:48 - mmengine - INFO - Epoch(train)  [4][ 2250/11654]  lr: 1.670000e-04  eta: 1 day, 12:16:02  time: 2.050981  data_time: 1.772126  memory: 9726  loss: 0.000185  loss_kpt: 0.000185  acc_pose: 0.986572
+02/19 16:20:30 - mmengine - INFO - Epoch(train)  [4][ 2300/11654]  lr: 1.670000e-04  eta: 1 day, 12:15:40  time: 2.033631  data_time: 1.768371  memory: 9726  loss: 0.000183  loss_kpt: 0.000183  acc_pose: 0.986536
+02/19 16:22:17 - mmengine - INFO - Epoch(train)  [4][ 2350/11654]  lr: 1.670000e-04  eta: 1 day, 12:15:33  time: 2.137061  data_time: 1.874725  memory: 9726  loss: 0.000179  loss_kpt: 0.000179  acc_pose: 0.995464
+02/19 16:24:23 - mmengine - INFO - Epoch(train)  [4][ 2400/11654]  lr: 1.670000e-04  eta: 1 day, 12:16:25  time: 2.519433  data_time: 2.235281  memory: 9726  loss: 0.000181  loss_kpt: 0.000181  acc_pose: 0.990783
+02/19 16:25:55 - mmengine - INFO - Epoch(train)  [4][ 2450/11654]  lr: 1.670000e-04  eta: 1 day, 12:15:32  time: 1.836734  data_time: 1.574082  memory: 9726  loss: 0.000188  loss_kpt: 0.000188  acc_pose: 0.998866
+02/19 16:27:43 - mmengine - INFO - Epoch(train)  [4][ 2500/11654]  lr: 1.670000e-04  eta: 1 day, 12:15:30  time: 2.175020  data_time: 1.908927  memory: 9726  loss: 0.000182  loss_kpt: 0.000182  acc_pose: 0.986395
+02/19 16:29:31 - mmengine - INFO - Epoch(train)  [4][ 2550/11654]  lr: 1.670000e-04  eta: 1 day, 12:15:24  time: 2.151375  data_time: 1.886654  memory: 9726  loss: 0.000180  loss_kpt: 0.000180  acc_pose: 0.998884
+02/19 16:31:18 - mmengine - INFO - Epoch(train)  [4][ 2600/11654]  lr: 1.670000e-04  eta: 1 day, 12:15:17  time: 2.146799  data_time: 1.889075  memory: 9726  loss: 0.000188  loss_kpt: 0.000188  acc_pose: 0.991989
+02/19 16:33:12 - mmengine - INFO - Epoch(train)  [4][ 2650/11654]  lr: 1.670000e-04  eta: 1 day, 12:15:27  time: 2.267927  data_time: 1.987628  memory: 9726  loss: 0.000184  loss_kpt: 0.000184  acc_pose: 0.993304
+02/19 16:35:52 - mmengine - INFO - Epoch(train)  [4][ 2700/11654]  lr: 1.670000e-04  eta: 1 day, 12:18:00  time: 3.204728  data_time: 2.945097  memory: 9726  loss: 0.000184  loss_kpt: 0.000184  acc_pose: 0.995500
+02/19 16:37:35 - mmengine - INFO - Epoch(train)  [4][ 2750/11654]  lr: 1.670000e-04  eta: 1 day, 12:17:37  time: 2.052336  data_time: 1.784413  memory: 9726  loss: 0.000179  loss_kpt: 0.000179  acc_pose: 0.992045
+02/19 16:39:37 - mmengine - INFO - Epoch(train)  [4][ 2800/11654]  lr: 1.670000e-04  eta: 1 day, 12:18:13  time: 2.442256  data_time: 2.179919  memory: 9726  loss: 0.000200  loss_kpt: 0.000200  acc_pose: 1.000000
+02/19 16:41:15 - mmengine - INFO - Epoch(train)  [4][ 2850/11654]  lr: 1.670000e-04  eta: 1 day, 12:17:35  time: 1.962118  data_time: 1.696073  memory: 9726  loss: 0.000186  loss_kpt: 0.000186  acc_pose: 0.995536
+02/19 16:42:45 - mmengine - INFO - Epoch(train)  [4][ 2900/11654]  lr: 1.670000e-04  eta: 1 day, 12:16:33  time: 1.798015  data_time: 1.534924  memory: 9726  loss: 0.000182  loss_kpt: 0.000182  acc_pose: 0.985491
+02/19 16:44:25 - mmengine - INFO - Epoch(train)  [4][ 2950/11654]  lr: 1.670000e-04  eta: 1 day, 12:16:02  time: 2.006651  data_time: 1.743954  memory: 9726  loss: 0.000174  loss_kpt: 0.000174  acc_pose: 1.000000
+02/19 16:46:23 - mmengine - INFO - Epoch(train)  [4][ 3000/11654]  lr: 1.670000e-04  eta: 1 day, 12:16:23  time: 2.356316  data_time: 2.090152  memory: 9726  loss: 0.000173  loss_kpt: 0.000173  acc_pose: 0.993268
+02/19 16:47:27 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 16:48:01 - mmengine - INFO - Epoch(train)  [4][ 3050/11654]  lr: 1.670000e-04  eta: 1 day, 12:15:45  time: 1.963829  data_time: 1.704875  memory: 9726  loss: 0.000178  loss_kpt: 0.000178  acc_pose: 0.992152
+02/19 16:49:49 - mmengine - INFO - Epoch(train)  [4][ 3100/11654]  lr: 1.670000e-04  eta: 1 day, 12:15:37  time: 2.167512  data_time: 1.905819  memory: 9726  loss: 0.000175  loss_kpt: 0.000175  acc_pose: 0.997732
+02/19 16:51:33 - mmengine - INFO - Epoch(train)  [4][ 3150/11654]  lr: 1.670000e-04  eta: 1 day, 12:15:13  time: 2.065014  data_time: 1.799189  memory: 9726  loss: 0.000178  loss_kpt: 0.000178  acc_pose: 0.998866
+02/19 16:53:37 - mmengine - INFO - Epoch(train)  [4][ 3200/11654]  lr: 1.670000e-04  eta: 1 day, 12:15:52  time: 2.492663  data_time: 2.213512  memory: 9726  loss: 0.000189  loss_kpt: 0.000189  acc_pose: 0.997768
+02/19 16:55:32 - mmengine - INFO - Epoch(train)  [4][ 3250/11654]  lr: 1.670000e-04  eta: 1 day, 12:16:03  time: 2.302046  data_time: 2.036725  memory: 9726  loss: 0.000244  loss_kpt: 0.000244  acc_pose: 0.978458
+02/19 16:57:14 - mmengine - INFO - Epoch(train)  [4][ 3300/11654]  lr: 1.670000e-04  eta: 1 day, 12:15:33  time: 2.032457  data_time: 1.768710  memory: 9726  loss: 0.000232  loss_kpt: 0.000232  acc_pose: 0.994181
+02/19 16:59:00 - mmengine - INFO - Epoch(train)  [4][ 3350/11654]  lr: 1.670000e-04  eta: 1 day, 12:15:17  time: 2.123281  data_time: 1.854991  memory: 9726  loss: 0.000209  loss_kpt: 0.000209  acc_pose: 0.995536
+02/19 17:00:49 - mmengine - INFO - Epoch(train)  [4][ 3400/11654]  lr: 1.670000e-04  eta: 1 day, 12:15:08  time: 2.176035  data_time: 1.916934  memory: 9726  loss: 0.000211  loss_kpt: 0.000211  acc_pose: 0.967120
+02/19 17:02:41 - mmengine - INFO - Epoch(train)  [4][ 3450/11654]  lr: 1.670000e-04  eta: 1 day, 12:15:06  time: 2.231393  data_time: 1.963248  memory: 9726  loss: 0.000194  loss_kpt: 0.000194  acc_pose: 0.987599
+02/19 17:04:55 - mmengine - INFO - Epoch(train)  [4][ 3500/11654]  lr: 1.670000e-04  eta: 1 day, 12:16:10  time: 2.684560  data_time: 2.421701  memory: 9726  loss: 0.000184  loss_kpt: 0.000184  acc_pose: 0.979659
+02/19 17:08:02 - mmengine - INFO - Epoch(train)  [4][ 3550/11654]  lr: 1.670000e-04  eta: 1 day, 12:19:48  time: 3.742771  data_time: 3.478141  memory: 9726  loss: 0.000197  loss_kpt: 0.000197  acc_pose: 0.989955
+02/19 17:10:36 - mmengine - INFO - Epoch(train)  [4][ 3600/11654]  lr: 1.670000e-04  eta: 1 day, 12:21:47  time: 3.079689  data_time: 2.817165  memory: 9726  loss: 0.000184  loss_kpt: 0.000184  acc_pose: 0.987723
+02/19 17:12:30 - mmengine - INFO - Epoch(train)  [4][ 3650/11654]  lr: 1.670000e-04  eta: 1 day, 12:21:49  time: 2.275897  data_time: 2.010775  memory: 9726  loss: 0.000197  loss_kpt: 0.000197  acc_pose: 0.988515
+02/19 17:14:41 - mmengine - INFO - Epoch(train)  [4][ 3700/11654]  lr: 1.670000e-04  eta: 1 day, 12:22:42  time: 2.628566  data_time: 2.364028  memory: 9726  loss: 0.000193  loss_kpt: 0.000193  acc_pose: 0.991018
+02/19 17:16:29 - mmengine - INFO - Epoch(train)  [4][ 3750/11654]  lr: 1.670000e-04  eta: 1 day, 12:22:27  time: 2.160184  data_time: 1.893797  memory: 9726  loss: 0.000190  loss_kpt: 0.000190  acc_pose: 0.996652
+02/19 17:18:25 - mmengine - INFO - Epoch(train)  [4][ 3800/11654]  lr: 1.670000e-04  eta: 1 day, 12:22:34  time: 2.317873  data_time: 2.057419  memory: 9726  loss: 0.000172  loss_kpt: 0.000172  acc_pose: 0.985420
+02/19 17:20:18 - mmengine - INFO - Epoch(train)  [4][ 3850/11654]  lr: 1.670000e-04  eta: 1 day, 12:22:33  time: 2.264175  data_time: 2.001034  memory: 9726  loss: 0.000173  loss_kpt: 0.000173  acc_pose: 0.998884
+02/19 17:22:28 - mmengine - INFO - Epoch(train)  [4][ 3900/11654]  lr: 1.670000e-04  eta: 1 day, 12:23:18  time: 2.591824  data_time: 2.326802  memory: 9726  loss: 0.000186  loss_kpt: 0.000186  acc_pose: 0.992062
+02/19 17:24:46 - mmengine - INFO - Epoch(train)  [4][ 3950/11654]  lr: 1.670000e-04  eta: 1 day, 12:24:27  time: 2.762218  data_time: 2.497947  memory: 9726  loss: 0.000178  loss_kpt: 0.000178  acc_pose: 0.994420
+02/19 17:26:41 - mmengine - INFO - Epoch(train)  [4][ 4000/11654]  lr: 1.670000e-04  eta: 1 day, 12:24:31  time: 2.309578  data_time: 2.051606  memory: 9726  loss: 0.000178  loss_kpt: 0.000178  acc_pose: 0.992023
+02/19 17:27:55 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 17:28:35 - mmengine - INFO - Epoch(train)  [4][ 4050/11654]  lr: 1.670000e-04  eta: 1 day, 12:24:28  time: 2.263553  data_time: 1.994461  memory: 9726  loss: 0.000173  loss_kpt: 0.000173  acc_pose: 0.951849
+02/19 17:30:11 - mmengine - INFO - Epoch(train)  [4][ 4100/11654]  lr: 1.670000e-04  eta: 1 day, 12:23:38  time: 1.936071  data_time: 1.666513  memory: 9726  loss: 0.000181  loss_kpt: 0.000181  acc_pose: 0.984339
+02/19 17:31:40 - mmengine - INFO - Epoch(train)  [4][ 4150/11654]  lr: 1.670000e-04  eta: 1 day, 12:22:23  time: 1.763508  data_time: 1.495563  memory: 9726  loss: 0.000193  loss_kpt: 0.000193  acc_pose: 0.995500
+02/19 17:33:20 - mmengine - INFO - Epoch(train)  [4][ 4200/11654]  lr: 1.670000e-04  eta: 1 day, 12:21:43  time: 2.005503  data_time: 1.735957  memory: 9726  loss: 0.000178  loss_kpt: 0.000178  acc_pose: 0.995518
+02/19 17:34:59 - mmengine - INFO - Epoch(train)  [4][ 4250/11654]  lr: 1.670000e-04  eta: 1 day, 12:20:58  time: 1.971630  data_time: 1.703807  memory: 9726  loss: 0.000172  loss_kpt: 0.000172  acc_pose: 0.980537
+02/19 17:36:31 - mmengine - INFO - Epoch(train)  [4][ 4300/11654]  lr: 1.670000e-04  eta: 1 day, 12:19:55  time: 1.849622  data_time: 1.590326  memory: 9726  loss: 0.000176  loss_kpt: 0.000176  acc_pose: 0.978596
+02/19 17:38:34 - mmengine - INFO - Epoch(train)  [4][ 4350/11654]  lr: 1.670000e-04  eta: 1 day, 12:20:18  time: 2.464168  data_time: 2.213444  memory: 9726  loss: 0.000178  loss_kpt: 0.000178  acc_pose: 0.992117
+02/19 17:40:40 - mmengine - INFO - Epoch(train)  [4][ 4400/11654]  lr: 1.670000e-04  eta: 1 day, 12:20:48  time: 2.514881  data_time: 2.259301  memory: 9726  loss: 0.000161  loss_kpt: 0.000161  acc_pose: 0.985491
+02/19 17:43:08 - mmengine - INFO - Epoch(train)  [4][ 4450/11654]  lr: 1.670000e-04  eta: 1 day, 12:22:20  time: 2.966265  data_time: 2.707520  memory: 9726  loss: 0.000161  loss_kpt: 0.000161  acc_pose: 0.980812
+02/19 17:45:50 - mmengine - INFO - Epoch(train)  [4][ 4500/11654]  lr: 1.670000e-04  eta: 1 day, 12:24:28  time: 3.233005  data_time: 2.979645  memory: 9726  loss: 0.000156  loss_kpt: 0.000156  acc_pose: 0.975181
+02/19 17:48:14 - mmengine - INFO - Epoch(train)  [4][ 4550/11654]  lr: 1.670000e-04  eta: 1 day, 12:25:46  time: 2.881141  data_time: 2.627781  memory: 9726  loss: 0.000168  loss_kpt: 0.000168  acc_pose: 0.993178
+02/19 17:50:48 - mmengine - INFO - Epoch(train)  [4][ 4600/11654]  lr: 1.670000e-04  eta: 1 day, 12:27:29  time: 3.071297  data_time: 2.818537  memory: 9726  loss: 0.000173  loss_kpt: 0.000173  acc_pose: 0.990873
+02/19 17:52:58 - mmengine - INFO - Epoch(train)  [4][ 4650/11654]  lr: 1.670000e-04  eta: 1 day, 12:28:07  time: 2.599458  data_time: 2.342356  memory: 9726  loss: 0.000171  loss_kpt: 0.000171  acc_pose: 0.993233
+02/19 17:55:11 - mmengine - INFO - Epoch(train)  [4][ 4700/11654]  lr: 1.670000e-04  eta: 1 day, 12:28:53  time: 2.661877  data_time: 2.406117  memory: 9726  loss: 0.000178  loss_kpt: 0.000178  acc_pose: 0.997768
+02/19 17:57:12 - mmengine - INFO - Epoch(train)  [4][ 4750/11654]  lr: 1.670000e-04  eta: 1 day, 12:29:07  time: 2.431566  data_time: 2.165586  memory: 9726  loss: 0.000183  loss_kpt: 0.000183  acc_pose: 0.990910
+02/19 17:59:41 - mmengine - INFO - Epoch(train)  [4][ 4800/11654]  lr: 1.670000e-04  eta: 1 day, 12:30:33  time: 2.969945  data_time: 2.713403  memory: 9726  loss: 0.000186  loss_kpt: 0.000186  acc_pose: 0.997768
+02/19 18:01:37 - mmengine - INFO - Epoch(train)  [4][ 4850/11654]  lr: 1.670000e-04  eta: 1 day, 12:30:31  time: 2.325827  data_time: 2.065720  memory: 9726  loss: 0.000181  loss_kpt: 0.000181  acc_pose: 0.997768
+02/19 18:05:21 - mmengine - INFO - Epoch(train)  [4][ 4900/11654]  lr: 1.670000e-04  eta: 1 day, 12:35:22  time: 4.480376  data_time: 4.214842  memory: 9726  loss: 0.000172  loss_kpt: 0.000172  acc_pose: 0.992188
+02/19 18:07:48 - mmengine - INFO - Epoch(train)  [4][ 4950/11654]  lr: 1.670000e-04  eta: 1 day, 12:36:41  time: 2.935917  data_time: 2.679620  memory: 9726  loss: 0.000163  loss_kpt: 0.000163  acc_pose: 0.982037
+02/19 18:10:28 - mmengine - INFO - Epoch(train)  [4][ 5000/11654]  lr: 1.670000e-04  eta: 1 day, 12:38:37  time: 3.212903  data_time: 2.956147  memory: 9726  loss: 0.000175  loss_kpt: 0.000175  acc_pose: 0.998884
+02/19 18:12:05 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 18:12:49 - mmengine - INFO - Epoch(train)  [4][ 5050/11654]  lr: 1.670000e-04  eta: 1 day, 12:39:37  time: 2.804031  data_time: 2.549058  memory: 9726  loss: 0.000170  loss_kpt: 0.000170  acc_pose: 0.995428
+02/19 18:15:11 - mmengine - INFO - Epoch(train)  [4][ 5100/11654]  lr: 1.670000e-04  eta: 1 day, 12:40:42  time: 2.851361  data_time: 2.596027  memory: 9726  loss: 0.000169  loss_kpt: 0.000169  acc_pose: 0.998884
+02/19 18:17:15 - mmengine - INFO - Epoch(train)  [4][ 5150/11654]  lr: 1.670000e-04  eta: 1 day, 12:40:57  time: 2.480014  data_time: 2.221891  memory: 9726  loss: 0.000184  loss_kpt: 0.000184  acc_pose: 0.995536
+02/19 18:20:15 - mmengine - INFO - Epoch(train)  [4][ 5200/11654]  lr: 1.670000e-04  eta: 1 day, 12:43:41  time: 3.593088  data_time: 3.338838  memory: 9726  loss: 0.000190  loss_kpt: 0.000190  acc_pose: 0.987345
+02/19 18:22:25 - mmengine - INFO - Epoch(train)  [4][ 5250/11654]  lr: 1.670000e-04  eta: 1 day, 12:44:09  time: 2.593635  data_time: 2.342681  memory: 9726  loss: 0.000190  loss_kpt: 0.000190  acc_pose: 0.981731
+02/19 18:24:45 - mmengine - INFO - Epoch(train)  [4][ 5300/11654]  lr: 1.670000e-04  eta: 1 day, 12:45:05  time: 2.801160  data_time: 2.543126  memory: 9726  loss: 0.000199  loss_kpt: 0.000199  acc_pose: 0.983099
+02/19 18:27:07 - mmengine - INFO - Epoch(train)  [4][ 5350/11654]  lr: 1.670000e-04  eta: 1 day, 12:46:07  time: 2.848414  data_time: 2.590952  memory: 9726  loss: 0.000184  loss_kpt: 0.000184  acc_pose: 0.995518
+02/19 18:29:43 - mmengine - INFO - Epoch(train)  [4][ 5400/11654]  lr: 1.670000e-04  eta: 1 day, 12:47:44  time: 3.122074  data_time: 2.866970  memory: 9726  loss: 0.000170  loss_kpt: 0.000170  acc_pose: 0.987563
+02/19 18:32:00 - mmengine - INFO - Epoch(train)  [4][ 5450/11654]  lr: 1.670000e-04  eta: 1 day, 12:48:28  time: 2.732290  data_time: 2.461793  memory: 9726  loss: 0.000173  loss_kpt: 0.000173  acc_pose: 0.995500
+02/19 18:34:32 - mmengine - INFO - Epoch(train)  [4][ 5500/11654]  lr: 1.670000e-04  eta: 1 day, 12:49:54  time: 3.050914  data_time: 2.792199  memory: 9726  loss: 0.000171  loss_kpt: 0.000171  acc_pose: 0.998884
+02/19 18:36:57 - mmengine - INFO - Epoch(train)  [4][ 5550/11654]  lr: 1.670000e-04  eta: 1 day, 12:50:59  time: 2.895340  data_time: 2.641854  memory: 9726  loss: 0.000164  loss_kpt: 0.000164  acc_pose: 0.991071
+02/19 18:40:05 - mmengine - INFO - Epoch(train)  [4][ 5600/11654]  lr: 1.670000e-04  eta: 1 day, 12:53:56  time: 3.755399  data_time: 3.501356  memory: 9726  loss: 0.000166  loss_kpt: 0.000166  acc_pose: 0.987723
+02/19 18:43:14 - mmengine - INFO - Epoch(train)  [4][ 5650/11654]  lr: 1.670000e-04  eta: 1 day, 12:56:56  time: 3.788548  data_time: 3.530083  memory: 9726  loss: 0.000160  loss_kpt: 0.000160  acc_pose: 0.988786
+02/19 18:45:59 - mmengine - INFO - Epoch(train)  [4][ 5700/11654]  lr: 1.670000e-04  eta: 1 day, 12:58:50  time: 3.292856  data_time: 3.025981  memory: 9726  loss: 0.000157  loss_kpt: 0.000157  acc_pose: 0.989555
+02/19 18:48:49 - mmengine - INFO - Epoch(train)  [4][ 5750/11654]  lr: 1.670000e-04  eta: 1 day, 13:00:55  time: 3.390825  data_time: 3.132173  memory: 9726  loss: 0.000166  loss_kpt: 0.000166  acc_pose: 0.994420
+02/19 18:50:53 - mmengine - INFO - Epoch(train)  [4][ 5800/11654]  lr: 1.670000e-04  eta: 1 day, 13:01:03  time: 2.488718  data_time: 2.231618  memory: 9726  loss: 0.000175  loss_kpt: 0.000175  acc_pose: 0.984321
+02/19 18:52:33 - mmengine - INFO - Epoch(train)  [4][ 5850/11654]  lr: 1.670000e-04  eta: 1 day, 13:00:06  time: 1.996476  data_time: 1.740591  memory: 9726  loss: 0.000159  loss_kpt: 0.000159  acc_pose: 0.987705
+02/19 18:54:40 - mmengine - INFO - Epoch(train)  [4][ 5900/11654]  lr: 1.670000e-04  eta: 1 day, 13:00:21  time: 2.551968  data_time: 2.294608  memory: 9726  loss: 0.000168  loss_kpt: 0.000168  acc_pose: 1.000000
+02/19 18:56:29 - mmengine - INFO - Epoch(train)  [4][ 5950/11654]  lr: 1.670000e-04  eta: 1 day, 12:59:45  time: 2.166651  data_time: 1.904863  memory: 9726  loss: 0.000176  loss_kpt: 0.000176  acc_pose: 0.996616
+02/19 18:58:24 - mmengine - INFO - Epoch(train)  [4][ 6000/11654]  lr: 1.670000e-04  eta: 1 day, 12:59:26  time: 2.299833  data_time: 2.043175  memory: 9726  loss: 0.000168  loss_kpt: 0.000168  acc_pose: 0.975287
+02/19 18:59:41 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 19:00:09 - mmengine - INFO - Epoch(train)  [4][ 6050/11654]  lr: 1.670000e-04  eta: 1 day, 12:58:42  time: 2.098355  data_time: 1.843146  memory: 9726  loss: 0.000182  loss_kpt: 0.000182  acc_pose: 0.975541
+02/19 19:01:51 - mmengine - INFO - Epoch(train)  [4][ 6100/11654]  lr: 1.670000e-04  eta: 1 day, 12:57:49  time: 2.042134  data_time: 1.783757  memory: 9726  loss: 0.000171  loss_kpt: 0.000171  acc_pose: 0.996616
+02/19 19:03:43 - mmengine - INFO - Epoch(train)  [4][ 6150/11654]  lr: 1.670000e-04  eta: 1 day, 12:57:23  time: 2.246978  data_time: 1.993688  memory: 9726  loss: 0.000172  loss_kpt: 0.000172  acc_pose: 1.000000
+02/19 19:05:34 - mmengine - INFO - Epoch(train)  [4][ 6200/11654]  lr: 1.670000e-04  eta: 1 day, 12:56:54  time: 2.222724  data_time: 1.967186  memory: 9726  loss: 0.000172  loss_kpt: 0.000172  acc_pose: 0.994366
+02/19 19:07:17 - mmengine - INFO - Epoch(train)  [4][ 6250/11654]  lr: 1.670000e-04  eta: 1 day, 12:56:01  time: 2.045445  data_time: 1.787250  memory: 9726  loss: 0.000167  loss_kpt: 0.000167  acc_pose: 0.994420
+02/19 19:08:58 - mmengine - INFO - Epoch(train)  [4][ 6300/11654]  lr: 1.670000e-04  eta: 1 day, 12:55:05  time: 2.020753  data_time: 1.767537  memory: 9726  loss: 0.000169  loss_kpt: 0.000169  acc_pose: 0.988803
+02/19 19:10:37 - mmengine - INFO - Epoch(train)  [4][ 6350/11654]  lr: 1.670000e-04  eta: 1 day, 12:54:04  time: 1.981134  data_time: 1.725375  memory: 9726  loss: 0.000160  loss_kpt: 0.000160  acc_pose: 0.997750
+02/19 19:12:26 - mmengine - INFO - Epoch(train)  [4][ 6400/11654]  lr: 1.670000e-04  eta: 1 day, 12:53:29  time: 2.180873  data_time: 1.922216  memory: 9726  loss: 0.000156  loss_kpt: 0.000156  acc_pose: 0.997768
+02/19 19:14:11 - mmengine - INFO - Epoch(train)  [4][ 6450/11654]  lr: 1.670000e-04  eta: 1 day, 12:52:42  time: 2.098542  data_time: 1.837911  memory: 9726  loss: 0.000165  loss_kpt: 0.000165  acc_pose: 0.998884
+02/19 19:15:52 - mmengine - INFO - Epoch(train)  [4][ 6500/11654]  lr: 1.670000e-04  eta: 1 day, 12:51:46  time: 2.024465  data_time: 1.753291  memory: 9726  loss: 0.000150  loss_kpt: 0.000150  acc_pose: 0.981713
+02/19 19:17:29 - mmengine - INFO - Epoch(train)  [4][ 6550/11654]  lr: 1.670000e-04  eta: 1 day, 12:50:39  time: 1.939151  data_time: 1.670067  memory: 9726  loss: 0.000153  loss_kpt: 0.000153  acc_pose: 0.998848
+02/19 19:19:25 - mmengine - INFO - Epoch(train)  [4][ 6600/11654]  lr: 1.670000e-04  eta: 1 day, 12:50:19  time: 2.313676  data_time: 2.046314  memory: 9726  loss: 0.000143  loss_kpt: 0.000143  acc_pose: 0.998866
+02/19 19:21:01 - mmengine - INFO - Epoch(train)  [4][ 6650/11654]  lr: 1.670000e-04  eta: 1 day, 12:49:11  time: 1.931761  data_time: 1.675307  memory: 9726  loss: 0.000152  loss_kpt: 0.000152  acc_pose: 0.972606
+02/19 19:22:34 - mmengine - INFO - Epoch(train)  [4][ 6700/11654]  lr: 1.670000e-04  eta: 1 day, 12:47:53  time: 1.852413  data_time: 1.583797  memory: 9726  loss: 0.000147  loss_kpt: 0.000147  acc_pose: 0.994250
+02/19 19:24:27 - mmengine - INFO - Epoch(train)  [4][ 6750/11654]  lr: 1.670000e-04  eta: 1 day, 12:47:27  time: 2.264619  data_time: 2.006877  memory: 9726  loss: 0.000149  loss_kpt: 0.000149  acc_pose: 0.998884
+02/19 19:26:15 - mmengine - INFO - Epoch(train)  [4][ 6800/11654]  lr: 1.670000e-04  eta: 1 day, 12:46:46  time: 2.159305  data_time: 1.903187  memory: 9726  loss: 0.000167  loss_kpt: 0.000167  acc_pose: 0.996599
+02/19 19:28:14 - mmengine - INFO - Epoch(train)  [4][ 6850/11654]  lr: 1.670000e-04  eta: 1 day, 12:46:34  time: 2.388793  data_time: 2.132449  memory: 9726  loss: 0.000159  loss_kpt: 0.000159  acc_pose: 0.998866
+02/19 19:30:31 - mmengine - INFO - Epoch(train)  [4][ 6900/11654]  lr: 1.670000e-04  eta: 1 day, 12:47:06  time: 2.741385  data_time: 2.483835  memory: 9726  loss: 0.000161  loss_kpt: 0.000161  acc_pose: 0.989795
+02/19 19:32:12 - mmengine - INFO - Epoch(train)  [4][ 6950/11654]  lr: 1.670000e-04  eta: 1 day, 12:46:06  time: 2.005323  data_time: 1.749519  memory: 9726  loss: 0.000168  loss_kpt: 0.000168  acc_pose: 0.996634
+02/19 19:34:03 - mmengine - INFO - Epoch(train)  [4][ 7000/11654]  lr: 1.670000e-04  eta: 1 day, 12:45:32  time: 2.220794  data_time: 1.965475  memory: 9726  loss: 0.000160  loss_kpt: 0.000160  acc_pose: 0.997750
+02/19 19:35:19 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 19:35:50 - mmengine - INFO - Epoch(train)  [4][ 7050/11654]  lr: 1.670000e-04  eta: 1 day, 12:44:48  time: 2.141092  data_time: 1.881728  memory: 9726  loss: 0.000158  loss_kpt: 0.000158  acc_pose: 0.997732
+02/19 19:37:18 - mmengine - INFO - Epoch(train)  [4][ 7100/11654]  lr: 1.670000e-04  eta: 1 day, 12:43:18  time: 1.763023  data_time: 1.504999  memory: 9726  loss: 0.000153  loss_kpt: 0.000153  acc_pose: 0.998866
+02/19 19:39:03 - mmengine - INFO - Epoch(train)  [4][ 7150/11654]  lr: 1.670000e-04  eta: 1 day, 12:42:28  time: 2.090109  data_time: 1.831226  memory: 9726  loss: 0.000146  loss_kpt: 0.000146  acc_pose: 0.996634
+02/19 19:40:41 - mmengine - INFO - Epoch(train)  [4][ 7200/11654]  lr: 1.670000e-04  eta: 1 day, 12:41:22  time: 1.964819  data_time: 1.706251  memory: 9726  loss: 0.000155  loss_kpt: 0.000155  acc_pose: 0.998884
+02/19 19:42:28 - mmengine - INFO - Epoch(train)  [4][ 7250/11654]  lr: 1.670000e-04  eta: 1 day, 12:40:38  time: 2.143732  data_time: 1.888010  memory: 9726  loss: 0.000153  loss_kpt: 0.000153  acc_pose: 0.995500
+02/19 19:44:11 - mmengine - INFO - Epoch(train)  [4][ 7300/11654]  lr: 1.670000e-04  eta: 1 day, 12:39:44  time: 2.065660  data_time: 1.806948  memory: 9726  loss: 0.000153  loss_kpt: 0.000153  acc_pose: 1.000000
+02/19 19:46:30 - mmengine - INFO - Epoch(train)  [4][ 7350/11654]  lr: 1.670000e-04  eta: 1 day, 12:40:16  time: 2.768240  data_time: 2.504991  memory: 9726  loss: 0.000154  loss_kpt: 0.000154  acc_pose: 0.994420
+02/19 19:48:33 - mmengine - INFO - Epoch(train)  [4][ 7400/11654]  lr: 1.670000e-04  eta: 1 day, 12:40:09  time: 2.458670  data_time: 2.188330  memory: 9726  loss: 0.000154  loss_kpt: 0.000154  acc_pose: 0.981027
+02/19 19:50:23 - mmengine - INFO - Epoch(train)  [4][ 7450/11654]  lr: 1.670000e-04  eta: 1 day, 12:39:32  time: 2.215423  data_time: 1.946478  memory: 9726  loss: 0.000154  loss_kpt: 0.000154  acc_pose: 0.997732
+02/19 19:51:55 - mmengine - INFO - Epoch(train)  [4][ 7500/11654]  lr: 1.670000e-04  eta: 1 day, 12:38:09  time: 1.829459  data_time: 1.572713  memory: 9726  loss: 0.000153  loss_kpt: 0.000153  acc_pose: 0.986589
+02/19 19:53:40 - mmengine - INFO - Epoch(train)  [4][ 7550/11654]  lr: 1.670000e-04  eta: 1 day, 12:37:20  time: 2.109576  data_time: 1.853252  memory: 9726  loss: 0.000152  loss_kpt: 0.000152  acc_pose: 0.976332
+02/19 19:55:16 - mmengine - INFO - Epoch(train)  [4][ 7600/11654]  lr: 1.670000e-04  eta: 1 day, 12:36:06  time: 1.911691  data_time: 1.654573  memory: 9726  loss: 0.000164  loss_kpt: 0.000164  acc_pose: 0.993233
+02/19 19:57:10 - mmengine - INFO - Epoch(train)  [4][ 7650/11654]  lr: 1.670000e-04  eta: 1 day, 12:35:36  time: 2.273397  data_time: 2.017430  memory: 9726  loss: 0.000161  loss_kpt: 0.000161  acc_pose: 0.989831
+02/19 19:58:52 - mmengine - INFO - Epoch(train)  [4][ 7700/11654]  lr: 1.670000e-04  eta: 1 day, 12:34:37  time: 2.039155  data_time: 1.784188  memory: 9726  loss: 0.000159  loss_kpt: 0.000159  acc_pose: 0.988804
+02/19 20:00:25 - mmengine - INFO - Epoch(train)  [4][ 7750/11654]  lr: 1.670000e-04  eta: 1 day, 12:33:18  time: 1.867657  data_time: 1.613838  memory: 9726  loss: 0.000168  loss_kpt: 0.000168  acc_pose: 0.971666
+02/19 20:01:59 - mmengine - INFO - Epoch(train)  [4][ 7800/11654]  lr: 1.670000e-04  eta: 1 day, 12:32:02  time: 1.890841  data_time: 1.636672  memory: 9726  loss: 0.000148  loss_kpt: 0.000148  acc_pose: 0.998884
+02/19 20:04:24 - mmengine - INFO - Epoch(train)  [4][ 7850/11654]  lr: 1.670000e-04  eta: 1 day, 12:32:43  time: 2.881314  data_time: 2.626616  memory: 9726  loss: 0.000151  loss_kpt: 0.000151  acc_pose: 0.995428
+02/19 20:06:00 - mmengine - INFO - Epoch(train)  [4][ 7900/11654]  lr: 1.670000e-04  eta: 1 day, 12:31:32  time: 1.934859  data_time: 1.679875  memory: 9726  loss: 0.000149  loss_kpt: 0.000149  acc_pose: 0.991071
+02/19 20:07:46 - mmengine - INFO - Epoch(train)  [4][ 7950/11654]  lr: 1.670000e-04  eta: 1 day, 12:30:42  time: 2.117242  data_time: 1.863737  memory: 9726  loss: 0.000148  loss_kpt: 0.000148  acc_pose: 0.998884
+02/19 20:09:38 - mmengine - INFO - Epoch(train)  [4][ 8000/11654]  lr: 1.670000e-04  eta: 1 day, 12:30:04  time: 2.228939  data_time: 1.972798  memory: 9726  loss: 0.000150  loss_kpt: 0.000150  acc_pose: 0.998884
+02/19 20:11:01 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 20:11:31 - mmengine - INFO - Epoch(train)  [4][ 8050/11654]  lr: 1.670000e-04  eta: 1 day, 12:29:32  time: 2.267990  data_time: 2.015259  memory: 9726  loss: 0.000153  loss_kpt: 0.000153  acc_pose: 0.998884
+02/19 20:13:22 - mmengine - INFO - Epoch(train)  [4][ 8100/11654]  lr: 1.670000e-04  eta: 1 day, 12:28:52  time: 2.210546  data_time: 1.956666  memory: 9726  loss: 0.000148  loss_kpt: 0.000148  acc_pose: 0.988660
+02/19 20:15:04 - mmengine - INFO - Epoch(train)  [4][ 8150/11654]  lr: 1.670000e-04  eta: 1 day, 12:27:53  time: 2.050923  data_time: 1.795570  memory: 9726  loss: 0.000157  loss_kpt: 0.000157  acc_pose: 0.982895
+02/19 20:16:43 - mmengine - INFO - Epoch(train)  [4][ 8200/11654]  lr: 1.670000e-04  eta: 1 day, 12:26:47  time: 1.984103  data_time: 1.705499  memory: 9726  loss: 0.000158  loss_kpt: 0.000158  acc_pose: 0.996616
+02/19 20:18:51 - mmengine - INFO - Epoch(train)  [4][ 8250/11654]  lr: 1.670000e-04  eta: 1 day, 12:26:47  time: 2.559338  data_time: 2.290843  memory: 9726  loss: 0.000146  loss_kpt: 0.000146  acc_pose: 0.989555
+02/19 20:20:28 - mmengine - INFO - Epoch(train)  [4][ 8300/11654]  lr: 1.670000e-04  eta: 1 day, 12:25:34  time: 1.928551  data_time: 1.657186  memory: 9726  loss: 0.000145  loss_kpt: 0.000145  acc_pose: 0.993196
+02/19 20:22:04 - mmengine - INFO - Epoch(train)  [4][ 8350/11654]  lr: 1.670000e-04  eta: 1 day, 12:24:20  time: 1.927496  data_time: 1.665759  memory: 9726  loss: 0.000143  loss_kpt: 0.000143  acc_pose: 1.000000
+02/19 20:23:48 - mmengine - INFO - Epoch(train)  [4][ 8400/11654]  lr: 1.670000e-04  eta: 1 day, 12:23:25  time: 2.086071  data_time: 1.829378  memory: 9726  loss: 0.000147  loss_kpt: 0.000147  acc_pose: 0.994384
+02/19 20:25:31 - mmengine - INFO - Epoch(train)  [4][ 8450/11654]  lr: 1.670000e-04  eta: 1 day, 12:22:26  time: 2.060608  data_time: 1.802833  memory: 9726  loss: 0.000145  loss_kpt: 0.000145  acc_pose: 0.994313
+02/19 20:27:09 - mmengine - INFO - Epoch(train)  [4][ 8500/11654]  lr: 1.670000e-04  eta: 1 day, 12:21:14  time: 1.943379  data_time: 1.685801  memory: 9726  loss: 0.000156  loss_kpt: 0.000156  acc_pose: 0.994312
+02/19 20:28:46 - mmengine - INFO - Epoch(train)  [4][ 8550/11654]  lr: 1.670000e-04  eta: 1 day, 12:20:03  time: 1.952897  data_time: 1.692931  memory: 9726  loss: 0.000155  loss_kpt: 0.000155  acc_pose: 0.989831
+02/19 20:30:18 - mmengine - INFO - Epoch(train)  [4][ 8600/11654]  lr: 1.670000e-04  eta: 1 day, 12:18:39  time: 1.838927  data_time: 1.578096  memory: 9726  loss: 0.000150  loss_kpt: 0.000150  acc_pose: 0.998884
+02/19 20:32:03 - mmengine - INFO - Epoch(train)  [4][ 8650/11654]  lr: 1.670000e-04  eta: 1 day, 12:17:45  time: 2.099386  data_time: 1.839861  memory: 9726  loss: 0.000151  loss_kpt: 0.000151  acc_pose: 0.998866
+02/19 20:33:43 - mmengine - INFO - Epoch(train)  [4][ 8700/11654]  lr: 1.670000e-04  eta: 1 day, 12:16:39  time: 1.998264  data_time: 1.742942  memory: 9726  loss: 0.000155  loss_kpt: 0.000155  acc_pose: 0.986483
+02/19 20:35:16 - mmengine - INFO - Epoch(train)  [4][ 8750/11654]  lr: 1.670000e-04  eta: 1 day, 12:15:17  time: 1.856364  data_time: 1.601181  memory: 9726  loss: 0.000142  loss_kpt: 0.000142  acc_pose: 0.997768
+02/19 20:36:48 - mmengine - INFO - Epoch(train)  [4][ 8800/11654]  lr: 1.670000e-04  eta: 1 day, 12:13:52  time: 1.836916  data_time: 1.578866  memory: 9726  loss: 0.000145  loss_kpt: 0.000145  acc_pose: 0.998884
+02/19 20:39:01 - mmengine - INFO - Epoch(train)  [4][ 8850/11654]  lr: 1.670000e-04  eta: 1 day, 12:14:01  time: 2.667071  data_time: 2.413817  memory: 9726  loss: 0.000148  loss_kpt: 0.000148  acc_pose: 0.988803
+02/19 20:40:28 - mmengine - INFO - Epoch(train)  [4][ 8900/11654]  lr: 1.670000e-04  eta: 1 day, 12:12:25  time: 1.733035  data_time: 1.477880  memory: 9726  loss: 0.000146  loss_kpt: 0.000146  acc_pose: 0.997768
+02/19 20:41:59 - mmengine - INFO - Epoch(train)  [4][ 8950/11654]  lr: 1.670000e-04  eta: 1 day, 12:10:58  time: 1.821862  data_time: 1.564524  memory: 9726  loss: 0.000153  loss_kpt: 0.000153  acc_pose: 1.000000
+02/19 20:43:34 - mmengine - INFO - Epoch(train)  [4][ 9000/11654]  lr: 1.670000e-04  eta: 1 day, 12:09:40  time: 1.893164  data_time: 1.637166  memory: 9726  loss: 0.000149  loss_kpt: 0.000149  acc_pose: 0.988643
+02/19 20:44:46 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 20:45:15 - mmengine - INFO - Epoch(train)  [4][ 9050/11654]  lr: 1.670000e-04  eta: 1 day, 12:08:37  time: 2.033021  data_time: 1.770730  memory: 9726  loss: 0.000139  loss_kpt: 0.000139  acc_pose: 0.998884
+02/19 20:46:45 - mmengine - INFO - Epoch(train)  [4][ 9100/11654]  lr: 1.670000e-04  eta: 1 day, 12:07:07  time: 1.792609  data_time: 1.505702  memory: 9726  loss: 0.000142  loss_kpt: 0.000142  acc_pose: 0.986340
+02/19 20:48:24 - mmengine - INFO - Epoch(train)  [4][ 9150/11654]  lr: 1.670000e-04  eta: 1 day, 12:05:59  time: 1.987112  data_time: 1.719641  memory: 9726  loss: 0.000142  loss_kpt: 0.000142  acc_pose: 0.994348
+02/19 20:49:55 - mmengine - INFO - Epoch(train)  [4][ 9200/11654]  lr: 1.670000e-04  eta: 1 day, 12:04:31  time: 1.809306  data_time: 1.535702  memory: 9726  loss: 0.000150  loss_kpt: 0.000150  acc_pose: 0.998884
+02/19 20:51:33 - mmengine - INFO - Epoch(train)  [4][ 9250/11654]  lr: 1.670000e-04  eta: 1 day, 12:03:21  time: 1.973768  data_time: 1.713722  memory: 9726  loss: 0.000145  loss_kpt: 0.000145  acc_pose: 0.998884
+02/19 20:53:11 - mmengine - INFO - Epoch(train)  [4][ 9300/11654]  lr: 1.670000e-04  eta: 1 day, 12:02:10  time: 1.958896  data_time: 1.699372  memory: 9726  loss: 0.000142  loss_kpt: 0.000142  acc_pose: 1.000000
+02/19 20:54:42 - mmengine - INFO - Epoch(train)  [4][ 9350/11654]  lr: 1.670000e-04  eta: 1 day, 12:00:41  time: 1.808951  data_time: 1.539459  memory: 9726  loss: 0.000154  loss_kpt: 0.000154  acc_pose: 0.998884
+02/19 20:56:17 - mmengine - INFO - Epoch(train)  [4][ 9400/11654]  lr: 1.670000e-04  eta: 1 day, 11:59:25  time: 1.913623  data_time: 1.654067  memory: 9726  loss: 0.000161  loss_kpt: 0.000161  acc_pose: 0.997750
+02/19 20:57:55 - mmengine - INFO - Epoch(train)  [4][ 9450/11654]  lr: 1.670000e-04  eta: 1 day, 11:58:12  time: 1.950821  data_time: 1.680209  memory: 9726  loss: 0.000161  loss_kpt: 0.000161  acc_pose: 0.982847
+02/19 20:59:35 - mmengine - INFO - Epoch(train)  [4][ 9500/11654]  lr: 1.670000e-04  eta: 1 day, 11:57:05  time: 1.998365  data_time: 1.742934  memory: 9726  loss: 0.000157  loss_kpt: 0.000157  acc_pose: 0.997768
+02/19 21:01:14 - mmengine - INFO - Epoch(train)  [4][ 9550/11654]  lr: 1.670000e-04  eta: 1 day, 11:55:55  time: 1.974685  data_time: 1.716384  memory: 9726  loss: 0.000163  loss_kpt: 0.000163  acc_pose: 0.996652
+02/19 21:02:49 - mmengine - INFO - Epoch(train)  [4][ 9600/11654]  lr: 1.670000e-04  eta: 1 day, 11:54:37  time: 1.904284  data_time: 1.646093  memory: 9726  loss: 0.000154  loss_kpt: 0.000154  acc_pose: 0.996525
+02/19 21:04:38 - mmengine - INFO - Epoch(train)  [4][ 9650/11654]  lr: 1.670000e-04  eta: 1 day, 11:53:48  time: 2.176842  data_time: 1.922651  memory: 9726  loss: 0.000158  loss_kpt: 0.000158  acc_pose: 1.000000
+02/19 21:06:09 - mmengine - INFO - Epoch(train)  [4][ 9700/11654]  lr: 1.670000e-04  eta: 1 day, 11:52:21  time: 1.816222  data_time: 1.558820  memory: 9726  loss: 0.000152  loss_kpt: 0.000152  acc_pose: 0.983259
+02/19 21:07:49 - mmengine - INFO - Epoch(train)  [4][ 9750/11654]  lr: 1.670000e-04  eta: 1 day, 11:51:14  time: 2.011008  data_time: 1.738765  memory: 9726  loss: 0.000147  loss_kpt: 0.000147  acc_pose: 1.000000
+02/19 21:09:47 - mmengine - INFO - Epoch(train)  [4][ 9800/11654]  lr: 1.670000e-04  eta: 1 day, 11:50:45  time: 2.357807  data_time: 2.102636  memory: 9726  loss: 0.000145  loss_kpt: 0.000145  acc_pose: 0.991071
+02/19 21:11:40 - mmengine - INFO - Epoch(train)  [4][ 9850/11654]  lr: 1.670000e-04  eta: 1 day, 11:50:05  time: 2.261781  data_time: 1.989633  memory: 9726  loss: 0.000149  loss_kpt: 0.000149  acc_pose: 0.997696
+02/19 21:13:11 - mmengine - INFO - Epoch(train)  [4][ 9900/11654]  lr: 1.670000e-04  eta: 1 day, 11:48:37  time: 1.810247  data_time: 1.552845  memory: 9726  loss: 0.000154  loss_kpt: 0.000154  acc_pose: 1.000000
+02/19 21:15:04 - mmengine - INFO - Epoch(train)  [4][ 9950/11654]  lr: 1.670000e-04  eta: 1 day, 11:47:56  time: 2.258687  data_time: 1.987010  memory: 9726  loss: 0.000157  loss_kpt: 0.000157  acc_pose: 0.997768
+02/19 21:16:33 - mmengine - INFO - Epoch(train)  [4][10000/11654]  lr: 1.670000e-04  eta: 1 day, 11:46:25  time: 1.783959  data_time: 1.494529  memory: 9726  loss: 0.000144  loss_kpt: 0.000144  acc_pose: 0.985218
+02/19 21:17:40 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 21:18:16 - mmengine - INFO - Epoch(train)  [4][10050/11654]  lr: 1.670000e-04  eta: 1 day, 11:45:23  time: 2.059197  data_time: 1.785891  memory: 9726  loss: 0.000143  loss_kpt: 0.000143  acc_pose: 0.986301
+02/19 21:19:40 - mmengine - INFO - Epoch(train)  [4][10100/11654]  lr: 1.670000e-04  eta: 1 day, 11:43:40  time: 1.684968  data_time: 1.410649  memory: 9726  loss: 0.000154  loss_kpt: 0.000154  acc_pose: 0.991018
+02/19 21:21:01 - mmengine - INFO - Epoch(train)  [4][10150/11654]  lr: 1.670000e-04  eta: 1 day, 11:41:52  time: 1.629238  data_time: 1.337854  memory: 9726  loss: 0.000144  loss_kpt: 0.000144  acc_pose: 0.982090
+02/19 21:22:32 - mmengine - INFO - Epoch(train)  [4][10200/11654]  lr: 1.670000e-04  eta: 1 day, 11:40:23  time: 1.806072  data_time: 1.532627  memory: 9726  loss: 0.000142  loss_kpt: 0.000142  acc_pose: 0.998884
+02/19 21:24:16 - mmengine - INFO - Epoch(train)  [4][10250/11654]  lr: 1.670000e-04  eta: 1 day, 11:39:24  time: 2.089490  data_time: 1.816382  memory: 9726  loss: 0.000149  loss_kpt: 0.000149  acc_pose: 0.985420
+02/19 21:25:46 - mmengine - INFO - Epoch(train)  [4][10300/11654]  lr: 1.670000e-04  eta: 1 day, 11:37:54  time: 1.795523  data_time: 1.523415  memory: 9726  loss: 0.000149  loss_kpt: 0.000149  acc_pose: 1.000000
+02/19 21:27:06 - mmengine - INFO - Epoch(train)  [4][10350/11654]  lr: 1.670000e-04  eta: 1 day, 11:36:03  time: 1.608531  data_time: 1.338760  memory: 9726  loss: 0.000153  loss_kpt: 0.000153  acc_pose: 0.985295
+02/19 21:28:42 - mmengine - INFO - Epoch(train)  [4][10400/11654]  lr: 1.670000e-04  eta: 1 day, 11:34:44  time: 1.904357  data_time: 1.633143  memory: 9726  loss: 0.000140  loss_kpt: 0.000140  acc_pose: 0.986371
+02/19 21:30:10 - mmengine - INFO - Epoch(train)  [4][10450/11654]  lr: 1.670000e-04  eta: 1 day, 11:33:10  time: 1.757302  data_time: 1.484569  memory: 9726  loss: 0.000149  loss_kpt: 0.000149  acc_pose: 1.000000
+02/19 21:31:31 - mmengine - INFO - Epoch(train)  [4][10500/11654]  lr: 1.670000e-04  eta: 1 day, 11:31:21  time: 1.622371  data_time: 1.349529  memory: 9726  loss: 0.000143  loss_kpt: 0.000143  acc_pose: 0.998884
+02/19 21:32:52 - mmengine - INFO - Epoch(train)  [4][10550/11654]  lr: 1.670000e-04  eta: 1 day, 11:29:34  time: 1.632891  data_time: 1.342662  memory: 9726  loss: 0.000147  loss_kpt: 0.000147  acc_pose: 0.995410
+02/19 21:34:24 - mmengine - INFO - Epoch(train)  [4][10600/11654]  lr: 1.670000e-04  eta: 1 day, 11:28:07  time: 1.824005  data_time: 1.553903  memory: 9726  loss: 0.000162  loss_kpt: 0.000162  acc_pose: 0.998884
+02/19 21:35:41 - mmengine - INFO - Epoch(train)  [4][10650/11654]  lr: 1.670000e-04  eta: 1 day, 11:26:11  time: 1.554879  data_time: 1.283993  memory: 9726  loss: 0.000165  loss_kpt: 0.000165  acc_pose: 0.990929
+02/19 21:37:05 - mmengine - INFO - Epoch(train)  [4][10700/11654]  lr: 1.670000e-04  eta: 1 day, 11:24:28  time: 1.673123  data_time: 1.385286  memory: 9726  loss: 0.000166  loss_kpt: 0.000166  acc_pose: 0.998884
+02/19 21:38:31 - mmengine - INFO - Epoch(train)  [4][10750/11654]  lr: 1.670000e-04  eta: 1 day, 11:22:50  time: 1.715361  data_time: 1.442476  memory: 9726  loss: 0.000150  loss_kpt: 0.000150  acc_pose: 0.992025
+02/19 21:39:55 - mmengine - INFO - Epoch(train)  [4][10800/11654]  lr: 1.670000e-04  eta: 1 day, 11:21:09  time: 1.694535  data_time: 1.423135  memory: 9726  loss: 0.000160  loss_kpt: 0.000160  acc_pose: 0.979292
+02/19 21:41:14 - mmengine - INFO - Epoch(train)  [4][10850/11654]  lr: 1.670000e-04  eta: 1 day, 11:19:15  time: 1.564038  data_time: 1.292734  memory: 9726  loss: 0.000154  loss_kpt: 0.000154  acc_pose: 0.994420
+02/19 21:42:32 - mmengine - INFO - Epoch(train)  [4][10900/11654]  lr: 1.670000e-04  eta: 1 day, 11:17:22  time: 1.573576  data_time: 1.303340  memory: 9726  loss: 0.000156  loss_kpt: 0.000156  acc_pose: 1.000000
+02/19 21:43:58 - mmengine - INFO - Epoch(train)  [4][10950/11654]  lr: 1.670000e-04  eta: 1 day, 11:15:43  time: 1.710786  data_time: 1.442136  memory: 9726  loss: 0.000148  loss_kpt: 0.000148  acc_pose: 0.998866
+02/19 21:45:29 - mmengine - INFO - Epoch(train)  [4][11000/11654]  lr: 1.670000e-04  eta: 1 day, 11:14:16  time: 1.825632  data_time: 1.554440  memory: 9726  loss: 0.000142  loss_kpt: 0.000142  acc_pose: 0.992188
+02/19 21:46:24 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 21:46:49 - mmengine - INFO - Epoch(train)  [4][11050/11654]  lr: 1.670000e-04  eta: 1 day, 11:12:25  time: 1.593800  data_time: 1.321287  memory: 9726  loss: 0.000152  loss_kpt: 0.000152  acc_pose: 0.997750
+02/19 21:48:09 - mmengine - INFO - Epoch(train)  [4][11100/11654]  lr: 1.670000e-04  eta: 1 day, 11:10:36  time: 1.611073  data_time: 1.341879  memory: 9726  loss: 0.000151  loss_kpt: 0.000151  acc_pose: 0.974258
+02/19 21:50:06 - mmengine - INFO - Epoch(train)  [4][11150/11654]  lr: 1.670000e-04  eta: 1 day, 11:10:01  time: 2.327484  data_time: 2.056226  memory: 9726  loss: 0.000142  loss_kpt: 0.000142  acc_pose: 0.993122
+02/19 21:51:36 - mmengine - INFO - Epoch(train)  [4][11200/11654]  lr: 1.670000e-04  eta: 1 day, 11:08:31  time: 1.797333  data_time: 1.524594  memory: 9726  loss: 0.000144  loss_kpt: 0.000144  acc_pose: 0.994384
+02/19 21:52:55 - mmengine - INFO - Epoch(train)  [4][11250/11654]  lr: 1.670000e-04  eta: 1 day, 11:06:39  time: 1.580534  data_time: 1.308869  memory: 9726  loss: 0.000138  loss_kpt: 0.000138  acc_pose: 0.998884
+02/19 21:54:20 - mmengine - INFO - Epoch(train)  [4][11300/11654]  lr: 1.670000e-04  eta: 1 day, 11:05:00  time: 1.704925  data_time: 1.433870  memory: 9726  loss: 0.000137  loss_kpt: 0.000137  acc_pose: 1.000000
+02/19 21:55:38 - mmengine - INFO - Epoch(train)  [4][11350/11654]  lr: 1.670000e-04  eta: 1 day, 11:03:05  time: 1.551906  data_time: 1.280544  memory: 9726  loss: 0.000145  loss_kpt: 0.000145  acc_pose: 1.000000
+02/19 21:57:01 - mmengine - INFO - Epoch(train)  [4][11400/11654]  lr: 1.670000e-04  eta: 1 day, 11:01:22  time: 1.666972  data_time: 1.394231  memory: 9726  loss: 0.000140  loss_kpt: 0.000140  acc_pose: 0.997768
+02/19 21:58:27 - mmengine - INFO - Epoch(train)  [4][11450/11654]  lr: 1.670000e-04  eta: 1 day, 10:59:44  time: 1.717107  data_time: 1.444299  memory: 9726  loss: 0.000132  loss_kpt: 0.000132  acc_pose: 0.995518
+02/19 21:59:46 - mmengine - INFO - Epoch(train)  [4][11500/11654]  lr: 1.670000e-04  eta: 1 day, 10:57:52  time: 1.577865  data_time: 1.290849  memory: 9726  loss: 0.000140  loss_kpt: 0.000140  acc_pose: 0.998884
+02/19 22:01:02 - mmengine - INFO - Epoch(train)  [4][11550/11654]  lr: 1.670000e-04  eta: 1 day, 10:55:56  time: 1.529742  data_time: 1.257619  memory: 9726  loss: 0.000142  loss_kpt: 0.000142  acc_pose: 0.992188
+02/19 22:02:19 - mmengine - INFO - Epoch(train)  [4][11600/11654]  lr: 1.670000e-04  eta: 1 day, 10:53:59  time: 1.529446  data_time: 1.257035  memory: 9726  loss: 0.000138  loss_kpt: 0.000138  acc_pose: 0.980974
+02/19 22:03:38 - mmengine - INFO - Epoch(train)  [4][11650/11654]  lr: 1.670000e-04  eta: 1 day, 10:52:09  time: 1.587800  data_time: 1.315613  memory: 9726  loss: 0.000141  loss_kpt: 0.000141  acc_pose: 0.998884
+02/19 22:03:40 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 22:03:40 - mmengine - INFO - Saving checkpoint at 4 epochs
+02/19 22:04:32 - mmengine - INFO - Epoch(val)  [4][  50/1463]    eta: 0:22:34  time: 0.958799  data_time: 0.813206  memory: 9726  
+02/19 22:05:15 - mmengine - INFO - Epoch(val)  [4][ 100/1463]    eta: 0:20:45  time: 0.868553  data_time: 0.720201  memory: 1165  
+02/19 22:06:07 - mmengine - INFO - Epoch(val)  [4][ 150/1463]    eta: 0:20:53  time: 1.036905  data_time: 0.887655  memory: 1165  
+02/19 22:06:53 - mmengine - INFO - Epoch(val)  [4][ 200/1463]    eta: 0:19:57  time: 0.927724  data_time: 0.774122  memory: 1165  
+02/19 22:07:30 - mmengine - INFO - Epoch(val)  [4][ 250/1463]    eta: 0:18:16  time: 0.727986  data_time: 0.576872  memory: 1165  
+02/19 22:08:31 - mmengine - INFO - Epoch(val)  [4][ 300/1463]    eta: 0:18:33  time: 1.222256  data_time: 1.069512  memory: 1165  
+02/19 22:09:19 - mmengine - INFO - Epoch(val)  [4][ 350/1463]    eta: 0:17:45  time: 0.959033  data_time: 0.812438  memory: 1165  
+02/19 22:10:11 - mmengine - INFO - Epoch(val)  [4][ 400/1463]    eta: 0:17:08  time: 1.035664  data_time: 0.889148  memory: 1165  
+02/19 22:11:05 - mmengine - INFO - Epoch(val)  [4][ 450/1463]    eta: 0:16:33  time: 1.092908  data_time: 0.946489  memory: 1165  
+02/19 22:11:26 - mmengine - INFO - Epoch(val)  [4][ 500/1463]    eta: 0:14:51  time: 0.422725  data_time: 0.276645  memory: 1165  
+02/19 22:12:21 - mmengine - INFO - Epoch(val)  [4][ 550/1463]    eta: 0:14:17  time: 1.084269  data_time: 0.933011  memory: 1165  
+02/19 22:13:03 - mmengine - INFO - Epoch(val)  [4][ 600/1463]    eta: 0:13:23  time: 0.838126  data_time: 0.692399  memory: 1165  
+02/19 22:14:00 - mmengine - INFO - Epoch(val)  [4][ 650/1463]    eta: 0:12:50  time: 1.146433  data_time: 0.996282  memory: 1165  
+02/19 22:14:45 - mmengine - INFO - Epoch(val)  [4][ 700/1463]    eta: 0:12:00  time: 0.895505  data_time: 0.743386  memory: 1165  
+02/19 22:15:19 - mmengine - INFO - Epoch(val)  [4][ 750/1463]    eta: 0:11:01  time: 0.690401  data_time: 0.537948  memory: 1165  
+02/19 22:16:01 - mmengine - INFO - Epoch(val)  [4][ 800/1463]    eta: 0:10:10  time: 0.832463  data_time: 0.684810  memory: 1165  
+02/19 22:16:50 - mmengine - INFO - Epoch(val)  [4][ 850/1463]    eta: 0:09:27  time: 0.991378  data_time: 0.844751  memory: 1165  
+02/19 22:17:32 - mmengine - INFO - Epoch(val)  [4][ 900/1463]    eta: 0:08:38  time: 0.836658  data_time: 0.686821  memory: 1165  
+02/19 22:18:42 - mmengine - INFO - Epoch(val)  [4][ 950/1463]    eta: 0:08:05  time: 1.402437  data_time: 1.251812  memory: 1165  
+02/19 22:19:15 - mmengine - INFO - Epoch(val)  [4][1000/1463]    eta: 0:07:11  time: 0.649894  data_time: 0.503031  memory: 1165  
+02/19 22:20:12 - mmengine - INFO - Epoch(val)  [4][1050/1463]    eta: 0:06:28  time: 1.142608  data_time: 0.992799  memory: 1165  
+02/19 22:21:01 - mmengine - INFO - Epoch(val)  [4][1100/1463]    eta: 0:05:42  time: 0.980923  data_time: 0.831643  memory: 1165  
+02/19 22:21:55 - mmengine - INFO - Epoch(val)  [4][1150/1463]    eta: 0:04:56  time: 1.073904  data_time: 0.922983  memory: 1165  
+02/19 22:22:51 - mmengine - INFO - Epoch(val)  [4][1200/1463]    eta: 0:04:11  time: 1.127654  data_time: 0.975734  memory: 1165  
+02/19 22:24:08 - mmengine - INFO - Epoch(val)  [4][1250/1463]    eta: 0:03:28  time: 1.544440  data_time: 1.371919  memory: 1165  
+02/19 22:24:50 - mmengine - INFO - Epoch(val)  [4][1300/1463]    eta: 0:02:38  time: 0.835002  data_time: 0.685133  memory: 1165  
+02/19 22:25:33 - mmengine - INFO - Epoch(val)  [4][1350/1463]    eta: 0:01:49  time: 0.848879  data_time: 0.697152  memory: 1165  
+02/19 22:26:13 - mmengine - INFO - Epoch(val)  [4][1400/1463]    eta: 0:01:00  time: 0.800786  data_time: 0.647762  memory: 1165  
+02/19 22:27:06 - mmengine - INFO - Epoch(val)  [4][1450/1463]    eta: 0:00:12  time: 1.070830  data_time: 0.919719  memory: 1165  
+02/19 22:27:25 - mmengine - INFO - Evaluating CocoMetric...
+Loading and preparing results...
+DONE (t=1.47s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *keypoints*
+DONE (t=16.64s).
+Accumulating evaluation results...
+DONE (t=2.26s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] =  0.000
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets= 20 ] =  0.002
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets= 20 ] =  0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets= 20 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] =  0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] =  0.006
+ Average Recall     (AR) @[ IoU=0.50      | area=   all | maxDets= 20 ] =  0.016
+ Average Recall     (AR) @[ IoU=0.75      | area=   all | maxDets= 20 ] =  0.003
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets= 20 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] =  0.006
+02/19 22:27:46 - mmengine - INFO - Epoch(val) [4][1463/1463]    coco/AP: 0.000404  coco/AP .5: 0.001537  coco/AP .75: 0.000102  coco/AP (M): -1.000000  coco/AP (L): 0.000404  coco/AR: 0.005508  coco/AR .5: 0.016389  coco/AR .75: 0.003287  coco/AR (M): -1.000000  coco/AR (L): 0.005508  data_time: 0.814141  time: 0.964368
+02/19 22:29:20 - mmengine - INFO - Epoch(train)  [5][   50/11654]  lr: 2.225000e-04  eta: 1 day, 10:50:29  time: 1.864814  data_time: 1.591015  memory: 9726  loss: 0.000143  loss_kpt: 0.000143  acc_pose: 0.988751
+02/19 22:30:39 - mmengine - INFO - Epoch(train)  [5][  100/11654]  lr: 2.225000e-04  eta: 1 day, 10:48:39  time: 1.592571  data_time: 1.320103  memory: 9726  loss: 0.000164  loss_kpt: 0.000164  acc_pose: 0.995518
+02/19 22:31:54 - mmengine - INFO - Epoch(train)  [5][  150/11654]  lr: 2.225000e-04  eta: 1 day, 10:46:40  time: 1.502370  data_time: 1.226449  memory: 9726  loss: 0.000148  loss_kpt: 0.000148  acc_pose: 0.996652
+02/19 22:33:16 - mmengine - INFO - Epoch(train)  [5][  200/11654]  lr: 2.225000e-04  eta: 1 day, 10:44:54  time: 1.623428  data_time: 1.351849  memory: 9726  loss: 0.000170  loss_kpt: 0.000170  acc_pose: 0.989900
+02/19 22:34:26 - mmengine - INFO - Epoch(train)  [5][  250/11654]  lr: 2.225000e-04  eta: 1 day, 10:42:45  time: 1.405398  data_time: 1.132097  memory: 9726  loss: 0.000161  loss_kpt: 0.000161  acc_pose: 0.998884
+02/19 22:35:38 - mmengine - INFO - Epoch(train)  [5][  300/11654]  lr: 2.225000e-04  eta: 1 day, 10:40:41  time: 1.445876  data_time: 1.172765  memory: 9726  loss: 0.000193  loss_kpt: 0.000193  acc_pose: 0.990761
+02/19 22:36:52 - mmengine - INFO - Epoch(train)  [5][  350/11654]  lr: 2.225000e-04  eta: 1 day, 10:38:41  time: 1.480351  data_time: 1.209431  memory: 9726  loss: 0.000187  loss_kpt: 0.000187  acc_pose: 0.992045
+02/19 22:37:37 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 22:38:15 - mmengine - INFO - Epoch(train)  [5][  400/11654]  lr: 2.225000e-04  eta: 1 day, 10:36:58  time: 1.653453  data_time: 1.382176  memory: 9726  loss: 0.000184  loss_kpt: 0.000184  acc_pose: 0.979750
+02/19 22:39:28 - mmengine - INFO - Epoch(train)  [5][  450/11654]  lr: 2.225000e-04  eta: 1 day, 10:34:55  time: 1.458041  data_time: 1.183033  memory: 9726  loss: 0.000186  loss_kpt: 0.000186  acc_pose: 0.987635
+02/19 22:40:45 - mmengine - INFO - Epoch(train)  [5][  500/11654]  lr: 2.225000e-04  eta: 1 day, 10:33:01  time: 1.537231  data_time: 1.264732  memory: 9726  loss: 0.000186  loss_kpt: 0.000186  acc_pose: 0.996616
+02/19 22:42:01 - mmengine - INFO - Epoch(train)  [5][  550/11654]  lr: 2.225000e-04  eta: 1 day, 10:31:06  time: 1.530605  data_time: 1.242382  memory: 9726  loss: 0.000168  loss_kpt: 0.000168  acc_pose: 0.993304
+02/19 22:43:22 - mmengine - INFO - Epoch(train)  [5][  600/11654]  lr: 2.225000e-04  eta: 1 day, 10:29:18  time: 1.610740  data_time: 1.336930  memory: 9726  loss: 0.000175  loss_kpt: 0.000175  acc_pose: 0.985436
+02/19 22:44:33 - mmengine - INFO - Epoch(train)  [5][  650/11654]  lr: 2.225000e-04  eta: 1 day, 10:27:13  time: 1.419538  data_time: 1.147127  memory: 9726  loss: 0.000172  loss_kpt: 0.000172  acc_pose: 0.998829
+02/19 22:45:46 - mmengine - INFO - Epoch(train)  [5][  700/11654]  lr: 2.225000e-04  eta: 1 day, 10:25:11  time: 1.462347  data_time: 1.187904  memory: 9726  loss: 0.000170  loss_kpt: 0.000170  acc_pose: 0.992115
+02/19 22:46:53 - mmengine - INFO - Epoch(train)  [5][  750/11654]  lr: 2.225000e-04  eta: 1 day, 10:22:58  time: 1.337356  data_time: 1.067961  memory: 9726  loss: 0.000164  loss_kpt: 0.000164  acc_pose: 0.996652
+02/19 22:47:58 - mmengine - INFO - Epoch(train)  [5][  800/11654]  lr: 2.225000e-04  eta: 1 day, 10:20:42  time: 1.308162  data_time: 1.017297  memory: 9726  loss: 0.000156  loss_kpt: 0.000156  acc_pose: 0.998884
+02/19 22:49:20 - mmengine - INFO - Epoch(train)  [5][  850/11654]  lr: 2.225000e-04  eta: 1 day, 10:18:57  time: 1.628806  data_time: 1.354065  memory: 9726  loss: 0.000158  loss_kpt: 0.000158  acc_pose: 0.986517
+02/19 22:50:26 - mmengine - INFO - Epoch(train)  [5][  900/11654]  lr: 2.225000e-04  eta: 1 day, 10:16:44  time: 1.337312  data_time: 1.063260  memory: 9726  loss: 0.000153  loss_kpt: 0.000153  acc_pose: 0.989955
+02/19 22:51:33 - mmengine - INFO - Epoch(train)  [5][  950/11654]  lr: 2.225000e-04  eta: 1 day, 10:14:30  time: 1.323714  data_time: 1.036882  memory: 9726  loss: 0.000152  loss_kpt: 0.000152  acc_pose: 0.992188
+02/19 22:52:36 - mmengine - INFO - Epoch(train)  [5][ 1000/11654]  lr: 2.225000e-04  eta: 1 day, 10:12:11  time: 1.262346  data_time: 0.988545  memory: 9726  loss: 0.000159  loss_kpt: 0.000159  acc_pose: 1.000000
+02/19 22:53:56 - mmengine - INFO - Epoch(train)  [5][ 1050/11654]  lr: 2.225000e-04  eta: 1 day, 10:10:24  time: 1.603025  data_time: 1.330087  memory: 9726  loss: 0.000158  loss_kpt: 0.000158  acc_pose: 0.986572
+02/19 22:55:00 - mmengine - INFO - Epoch(train)  [5][ 1100/11654]  lr: 2.225000e-04  eta: 1 day, 10:08:07  time: 1.291793  data_time: 1.001597  memory: 9726  loss: 0.000167  loss_kpt: 0.000167  acc_pose: 0.995428
+02/19 22:56:05 - mmengine - INFO - Epoch(train)  [5][ 1150/11654]  lr: 2.225000e-04  eta: 1 day, 10:05:51  time: 1.287511  data_time: 1.017120  memory: 9726  loss: 0.000157  loss_kpt: 0.000157  acc_pose: 0.993178
+02/19 22:57:06 - mmengine - INFO - Epoch(train)  [5][ 1200/11654]  lr: 2.225000e-04  eta: 1 day, 10:03:29  time: 1.228046  data_time: 0.956168  memory: 9726  loss: 0.000146  loss_kpt: 0.000146  acc_pose: 0.997768
+02/19 22:58:21 - mmengine - INFO - Epoch(train)  [5][ 1250/11654]  lr: 2.225000e-04  eta: 1 day, 10:01:32  time: 1.500034  data_time: 1.227878  memory: 9726  loss: 0.000160  loss_kpt: 0.000160  acc_pose: 0.990929
+02/19 22:59:52 - mmengine - INFO - Epoch(train)  [5][ 1300/11654]  lr: 2.225000e-04  eta: 1 day, 10:00:07  time: 1.822104  data_time: 1.549063  memory: 9726  loss: 0.000162  loss_kpt: 0.000162  acc_pose: 0.988659
+02/19 23:00:57 - mmengine - INFO - Epoch(train)  [5][ 1350/11654]  lr: 2.225000e-04  eta: 1 day, 9:57:51  time: 1.290725  data_time: 1.018958  memory: 9726  loss: 0.000158  loss_kpt: 0.000158  acc_pose: 0.988662
+02/19 23:01:37 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 23:01:58 - mmengine - INFO - Epoch(train)  [5][ 1400/11654]  lr: 2.225000e-04  eta: 1 day, 9:55:28  time: 1.214593  data_time: 0.941407  memory: 9726  loss: 0.000148  loss_kpt: 0.000148  acc_pose: 0.990982
+02/19 23:03:19 - mmengine - INFO - Epoch(train)  [5][ 1450/11654]  lr: 2.225000e-04  eta: 1 day, 9:53:45  time: 1.626753  data_time: 1.356323  memory: 9726  loss: 0.000159  loss_kpt: 0.000159  acc_pose: 0.995536
+02/19 23:04:20 - mmengine - INFO - Epoch(train)  [5][ 1500/11654]  lr: 2.225000e-04  eta: 1 day, 9:51:24  time: 1.229061  data_time: 0.955124  memory: 9726  loss: 0.000154  loss_kpt: 0.000154  acc_pose: 0.997732
+02/19 23:05:22 - mmengine - INFO - Epoch(train)  [5][ 1550/11654]  lr: 2.225000e-04  eta: 1 day, 9:49:03  time: 1.225605  data_time: 0.953737  memory: 9726  loss: 0.000152  loss_kpt: 0.000152  acc_pose: 0.985473
+02/19 23:06:22 - mmengine - INFO - Epoch(train)  [5][ 1600/11654]  lr: 2.225000e-04  eta: 1 day, 9:46:41  time: 1.214353  data_time: 0.942222  memory: 9726  loss: 0.000152  loss_kpt: 0.000152  acc_pose: 0.997768
+02/19 23:07:36 - mmengine - INFO - Epoch(train)  [5][ 1650/11654]  lr: 2.225000e-04  eta: 1 day, 9:44:43  time: 1.468308  data_time: 1.180820  memory: 9726  loss: 0.000146  loss_kpt: 0.000146  acc_pose: 0.997768
+02/19 23:08:43 - mmengine - INFO - Epoch(train)  [5][ 1700/11654]  lr: 2.225000e-04  eta: 1 day, 9:42:33  time: 1.345128  data_time: 1.074275  memory: 9726  loss: 0.000159  loss_kpt: 0.000159  acc_pose: 0.992042
+02/19 23:09:42 - mmengine - INFO - Epoch(train)  [5][ 1750/11654]  lr: 2.225000e-04  eta: 1 day, 9:40:09  time: 1.184463  data_time: 0.912913  memory: 9726  loss: 0.000154  loss_kpt: 0.000154  acc_pose: 0.991071
+02/19 23:10:43 - mmengine - INFO - Epoch(train)  [5][ 1800/11654]  lr: 2.225000e-04  eta: 1 day, 9:37:48  time: 1.211902  data_time: 0.938119  memory: 9726  loss: 0.000140  loss_kpt: 0.000140  acc_pose: 0.998884
+02/19 23:11:48 - mmengine - INFO - Epoch(train)  [5][ 1850/11654]  lr: 2.225000e-04  eta: 1 day, 9:35:35  time: 1.305134  data_time: 1.034158  memory: 9726  loss: 0.000144  loss_kpt: 0.000144  acc_pose: 0.989703
+02/19 23:12:46 - mmengine - INFO - Epoch(train)  [5][ 1900/11654]  lr: 2.225000e-04  eta: 1 day, 9:33:09  time: 1.157928  data_time: 0.886023  memory: 9726  loss: 0.000154  loss_kpt: 0.000154  acc_pose: 0.991071
+02/19 23:13:52 - mmengine - INFO - Epoch(train)  [5][ 1950/11654]  lr: 2.225000e-04  eta: 1 day, 9:30:59  time: 1.320442  data_time: 1.048022  memory: 9726  loss: 0.000152  loss_kpt: 0.000152  acc_pose: 0.994420
+02/19 23:14:55 - mmengine - INFO - Epoch(train)  [5][ 2000/11654]  lr: 2.225000e-04  eta: 1 day, 9:28:42  time: 1.249552  data_time: 0.976701  memory: 9726  loss: 0.000149  loss_kpt: 0.000149  acc_pose: 0.995310
+02/19 23:15:57 - mmengine - INFO - Epoch(train)  [5][ 2050/11654]  lr: 2.225000e-04  eta: 1 day, 9:26:25  time: 1.252672  data_time: 0.964888  memory: 9726  loss: 0.000155  loss_kpt: 0.000155  acc_pose: 0.989828
+02/19 23:16:54 - mmengine - INFO - Epoch(train)  [5][ 2100/11654]  lr: 2.225000e-04  eta: 1 day, 9:23:57  time: 1.127816  data_time: 0.856023  memory: 9726  loss: 0.000149  loss_kpt: 0.000149  acc_pose: 0.996652
+02/19 23:17:55 - mmengine - INFO - Epoch(train)  [5][ 2150/11654]  lr: 2.225000e-04  eta: 1 day, 9:21:39  time: 1.225989  data_time: 0.952959  memory: 9726  loss: 0.000150  loss_kpt: 0.000150  acc_pose: 1.000000
+02/19 23:19:07 - mmengine - INFO - Epoch(train)  [5][ 2200/11654]  lr: 2.225000e-04  eta: 1 day, 9:19:41  time: 1.446647  data_time: 1.172487  memory: 9726  loss: 0.000148  loss_kpt: 0.000148  acc_pose: 0.997732
+02/19 23:20:07 - mmengine - INFO - Epoch(train)  [5][ 2250/11654]  lr: 2.225000e-04  eta: 1 day, 9:17:18  time: 1.183175  data_time: 0.910289  memory: 9726  loss: 0.000153  loss_kpt: 0.000153  acc_pose: 0.995483
+02/19 23:21:05 - mmengine - INFO - Epoch(train)  [5][ 2300/11654]  lr: 2.225000e-04  eta: 1 day, 9:14:56  time: 1.174194  data_time: 0.886349  memory: 9726  loss: 0.000147  loss_kpt: 0.000147  acc_pose: 0.986428
+02/19 23:22:06 - mmengine - INFO - Epoch(train)  [5][ 2350/11654]  lr: 2.225000e-04  eta: 1 day, 9:12:37  time: 1.210491  data_time: 0.938438  memory: 9726  loss: 0.000159  loss_kpt: 0.000159  acc_pose: 0.993105
+02/19 23:22:55 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 23:23:21 - mmengine - INFO - Epoch(train)  [5][ 2400/11654]  lr: 2.225000e-04  eta: 1 day, 9:10:45  time: 1.512469  data_time: 1.239858  memory: 9726  loss: 0.000165  loss_kpt: 0.000165  acc_pose: 0.989796
+02/19 23:24:23 - mmengine - INFO - Epoch(train)  [5][ 2450/11654]  lr: 2.225000e-04  eta: 1 day, 9:08:28  time: 1.232589  data_time: 0.944651  memory: 9726  loss: 0.000158  loss_kpt: 0.000158  acc_pose: 0.991036
+02/19 23:25:22 - mmengine - INFO - Epoch(train)  [5][ 2500/11654]  lr: 2.225000e-04  eta: 1 day, 9:06:06  time: 1.177163  data_time: 0.903928  memory: 9726  loss: 0.000151  loss_kpt: 0.000151  acc_pose: 0.998866
+02/19 23:26:25 - mmengine - INFO - Epoch(train)  [5][ 2550/11654]  lr: 2.225000e-04  eta: 1 day, 9:03:52  time: 1.252634  data_time: 0.978425  memory: 9726  loss: 0.000146  loss_kpt: 0.000146  acc_pose: 0.993304
+02/19 23:27:27 - mmengine - INFO - Epoch(train)  [5][ 2600/11654]  lr: 2.225000e-04  eta: 1 day, 9:01:37  time: 1.246486  data_time: 0.972839  memory: 9726  loss: 0.000148  loss_kpt: 0.000148  acc_pose: 0.998829
+02/19 23:28:40 - mmengine - INFO - Epoch(train)  [5][ 2650/11654]  lr: 2.225000e-04  eta: 1 day, 8:59:41  time: 1.461971  data_time: 1.188135  memory: 9726  loss: 0.000158  loss_kpt: 0.000158  acc_pose: 0.992117
+02/19 23:29:38 - mmengine - INFO - Epoch(train)  [5][ 2700/11654]  lr: 2.225000e-04  eta: 1 day, 8:57:19  time: 1.164194  data_time: 0.873469  memory: 9726  loss: 0.000146  loss_kpt: 0.000146  acc_pose: 0.997732
+02/19 23:30:41 - mmengine - INFO - Epoch(train)  [5][ 2750/11654]  lr: 2.225000e-04  eta: 1 day, 8:55:05  time: 1.250053  data_time: 0.975535  memory: 9726  loss: 0.000146  loss_kpt: 0.000146  acc_pose: 0.998866
+02/19 23:31:43 - mmengine - INFO - Epoch(train)  [5][ 2800/11654]  lr: 2.225000e-04  eta: 1 day, 8:52:50  time: 1.238776  data_time: 0.963877  memory: 9726  loss: 0.000153  loss_kpt: 0.000153  acc_pose: 0.983063
+02/19 23:32:40 - mmengine - INFO - Epoch(train)  [5][ 2850/11654]  lr: 2.225000e-04  eta: 1 day, 8:50:27  time: 1.139227  data_time: 0.864521  memory: 9726  loss: 0.000151  loss_kpt: 0.000151  acc_pose: 0.983098
+02/19 23:33:35 - mmengine - INFO - Epoch(train)  [5][ 2900/11654]  lr: 2.225000e-04  eta: 1 day, 8:48:02  time: 1.117371  data_time: 0.840880  memory: 9726  loss: 0.000145  loss_kpt: 0.000145  acc_pose: 1.000000
+02/19 23:35:00 - mmengine - INFO - Epoch(train)  [5][ 2950/11654]  lr: 2.225000e-04  eta: 1 day, 8:46:27  time: 1.686044  data_time: 1.414413  memory: 9726  loss: 0.000145  loss_kpt: 0.000145  acc_pose: 0.993215
+02/19 23:35:53 - mmengine - INFO - Epoch(train)  [5][ 3000/11654]  lr: 2.225000e-04  eta: 1 day, 8:43:58  time: 1.069505  data_time: 0.794663  memory: 9726  loss: 0.000153  loss_kpt: 0.000153  acc_pose: 0.989955
+02/19 23:36:53 - mmengine - INFO - Epoch(train)  [5][ 3050/11654]  lr: 2.225000e-04  eta: 1 day, 8:41:39  time: 1.188443  data_time: 0.914376  memory: 9726  loss: 0.000146  loss_kpt: 0.000146  acc_pose: 0.988784
+02/19 23:37:48 - mmengine - INFO - Epoch(train)  [5][ 3100/11654]  lr: 2.225000e-04  eta: 1 day, 8:39:14  time: 1.101078  data_time: 0.810180  memory: 9726  loss: 0.000141  loss_kpt: 0.000141  acc_pose: 0.997768
+02/19 23:38:51 - mmengine - INFO - Epoch(train)  [5][ 3150/11654]  lr: 2.225000e-04  eta: 1 day, 8:37:02  time: 1.266787  data_time: 0.996533  memory: 9726  loss: 0.000143  loss_kpt: 0.000143  acc_pose: 0.984304
+02/19 23:39:43 - mmengine - INFO - Epoch(train)  [5][ 3200/11654]  lr: 2.225000e-04  eta: 1 day, 8:34:31  time: 1.029760  data_time: 0.757500  memory: 9726  loss: 0.000150  loss_kpt: 0.000150  acc_pose: 0.996652
+02/19 23:40:40 - mmengine - INFO - Epoch(train)  [5][ 3250/11654]  lr: 2.225000e-04  eta: 1 day, 8:32:09  time: 1.141175  data_time: 0.873779  memory: 9726  loss: 0.000146  loss_kpt: 0.000146  acc_pose: 1.000000
+02/19 23:41:34 - mmengine - INFO - Epoch(train)  [5][ 3300/11654]  lr: 2.225000e-04  eta: 1 day, 8:29:42  time: 1.078542  data_time: 0.810159  memory: 9726  loss: 0.000144  loss_kpt: 0.000144  acc_pose: 0.994237
+02/19 23:42:30 - mmengine - INFO - Epoch(train)  [5][ 3350/11654]  lr: 2.225000e-04  eta: 1 day, 8:27:19  time: 1.117977  data_time: 0.840552  memory: 9726  loss: 0.000147  loss_kpt: 0.000147  acc_pose: 0.988768
+02/19 23:43:14 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/19 23:43:31 - mmengine - INFO - Epoch(train)  [5][ 3400/11654]  lr: 2.225000e-04  eta: 1 day, 8:25:06  time: 1.228469  data_time: 0.962094  memory: 9726  loss: 0.000147  loss_kpt: 0.000147  acc_pose: 0.998884
+02/19 23:44:26 - mmengine - INFO - Epoch(train)  [5][ 3450/11654]  lr: 2.225000e-04  eta: 1 day, 8:22:42  time: 1.105138  data_time: 0.836426  memory: 9726  loss: 0.000169  loss_kpt: 0.000169  acc_pose: 0.988751
+02/19 23:45:22 - mmengine - INFO - Epoch(train)  [5][ 3500/11654]  lr: 2.225000e-04  eta: 1 day, 8:20:19  time: 1.118015  data_time: 0.850280  memory: 9726  loss: 0.000161  loss_kpt: 0.000161  acc_pose: 0.996616
+02/19 23:46:15 - mmengine - INFO - Epoch(train)  [5][ 3550/11654]  lr: 2.225000e-04  eta: 1 day, 8:17:52  time: 1.063194  data_time: 0.788986  memory: 9726  loss: 0.000152  loss_kpt: 0.000152  acc_pose: 0.988803
+02/19 23:47:04 - mmengine - INFO - Epoch(train)  [5][ 3600/11654]  lr: 2.225000e-04  eta: 1 day, 8:15:18  time: 0.975467  data_time: 0.713837  memory: 9726  loss: 0.000146  loss_kpt: 0.000146  acc_pose: 0.996652
+02/19 23:48:02 - mmengine - INFO - Epoch(train)  [5][ 3650/11654]  lr: 2.225000e-04  eta: 1 day, 8:13:00  time: 1.164338  data_time: 0.897988  memory: 9726  loss: 0.000155  loss_kpt: 0.000155  acc_pose: 0.992151
+02/19 23:49:05 - mmengine - INFO - Epoch(train)  [5][ 3700/11654]  lr: 2.225000e-04  eta: 1 day, 8:10:50  time: 1.259081  data_time: 0.990753  memory: 9726  loss: 0.000158  loss_kpt: 0.000158  acc_pose: 1.000000
+02/19 23:50:00 - mmengine - INFO - Epoch(train)  [5][ 3750/11654]  lr: 2.225000e-04  eta: 1 day, 8:08:27  time: 1.100216  data_time: 0.837161  memory: 9726  loss: 0.000171  loss_kpt: 0.000171  acc_pose: 0.996652
+02/19 23:50:53 - mmengine - INFO - Epoch(train)  [5][ 3800/11654]  lr: 2.225000e-04  eta: 1 day, 8:06:01  time: 1.055488  data_time: 0.799511  memory: 9726  loss: 0.000161  loss_kpt: 0.000161  acc_pose: 0.997732
+02/19 23:51:45 - mmengine - INFO - Epoch(train)  [5][ 3850/11654]  lr: 2.225000e-04  eta: 1 day, 8:03:34  time: 1.044661  data_time: 0.779696  memory: 9726  loss: 0.000152  loss_kpt: 0.000152  acc_pose: 0.989920
+02/19 23:52:47 - mmengine - INFO - Epoch(train)  [5][ 3900/11654]  lr: 2.225000e-04  eta: 1 day, 8:01:23  time: 1.235472  data_time: 0.970631  memory: 9726  loss: 0.000146  loss_kpt: 0.000146  acc_pose: 0.995536
+02/19 23:53:48 - mmengine - INFO - Epoch(train)  [5][ 3950/11654]  lr: 2.225000e-04  eta: 1 day, 7:59:11  time: 1.219029  data_time: 0.957236  memory: 9726  loss: 0.000147  loss_kpt: 0.000147  acc_pose: 0.995536
+02/19 23:54:41 - mmengine - INFO - Epoch(train)  [5][ 4000/11654]  lr: 2.225000e-04  eta: 1 day, 7:56:46  time: 1.065763  data_time: 0.794298  memory: 9726  loss: 0.000148  loss_kpt: 0.000148  acc_pose: 0.997768
+02/19 23:55:29 - mmengine - INFO - Epoch(train)  [5][ 4050/11654]  lr: 2.225000e-04  eta: 1 day, 7:54:12  time: 0.953661  data_time: 0.691689  memory: 9726  loss: 0.000158  loss_kpt: 0.000158  acc_pose: 0.998884
+02/19 23:56:25 - mmengine - INFO - Epoch(train)  [5][ 4100/11654]  lr: 2.225000e-04  eta: 1 day, 7:51:53  time: 1.129247  data_time: 0.872692  memory: 9726  loss: 0.000160  loss_kpt: 0.000160  acc_pose: 0.993250
+02/19 23:57:19 - mmengine - INFO - Epoch(train)  [5][ 4150/11654]  lr: 2.225000e-04  eta: 1 day, 7:49:29  time: 1.063244  data_time: 0.786834  memory: 9726  loss: 0.000171  loss_kpt: 0.000171  acc_pose: 0.998866
+02/19 23:58:15 - mmengine - INFO - Epoch(train)  [5][ 4200/11654]  lr: 2.225000e-04  eta: 1 day, 7:47:10  time: 1.124566  data_time: 0.863178  memory: 9726  loss: 0.000165  loss_kpt: 0.000165  acc_pose: 0.980991
+02/19 23:59:04 - mmengine - INFO - Epoch(train)  [5][ 4250/11654]  lr: 2.225000e-04  eta: 1 day, 7:44:39  time: 0.977324  data_time: 0.710504  memory: 9726  loss: 0.000180  loss_kpt: 0.000180  acc_pose: 0.984195
+02/19 23:59:58 - mmengine - INFO - Epoch(train)  [5][ 4300/11654]  lr: 2.225000e-04  eta: 1 day, 7:42:17  time: 1.081246  data_time: 0.816077  memory: 9726  loss: 0.000165  loss_kpt: 0.000165  acc_pose: 0.997768
+02/20 00:00:49 - mmengine - INFO - Epoch(train)  [5][ 4350/11654]  lr: 2.225000e-04  eta: 1 day, 7:39:50  time: 1.020100  data_time: 0.753152  memory: 9726  loss: 0.000165  loss_kpt: 0.000165  acc_pose: 0.977448
+02/20 00:01:24 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/20 00:01:41 - mmengine - INFO - Epoch(train)  [5][ 4400/11654]  lr: 2.225000e-04  eta: 1 day, 7:37:25  time: 1.035482  data_time: 0.770081  memory: 9726  loss: 0.000162  loss_kpt: 0.000162  acc_pose: 0.992062
+02/20 00:02:31 - mmengine - INFO - Epoch(train)  [5][ 4450/11654]  lr: 2.225000e-04  eta: 1 day, 7:34:57  time: 1.000693  data_time: 0.740711  memory: 9726  loss: 0.000152  loss_kpt: 0.000152  acc_pose: 0.997750
+02/20 00:03:33 - mmengine - INFO - Epoch(train)  [5][ 4500/11654]  lr: 2.225000e-04  eta: 1 day, 7:32:49  time: 1.238714  data_time: 0.962085  memory: 9726  loss: 0.000154  loss_kpt: 0.000154  acc_pose: 0.998866
+02/20 00:04:20 - mmengine - INFO - Epoch(train)  [5][ 4550/11654]  lr: 2.225000e-04  eta: 1 day, 7:30:17  time: 0.956393  data_time: 0.694046  memory: 9726  loss: 0.000160  loss_kpt: 0.000160  acc_pose: 0.985296
+02/20 00:05:13 - mmengine - INFO - Epoch(train)  [5][ 4600/11654]  lr: 2.225000e-04  eta: 1 day, 7:27:54  time: 1.049412  data_time: 0.788778  memory: 9726  loss: 0.000161  loss_kpt: 0.000161  acc_pose: 0.998866
+02/20 00:06:04 - mmengine - INFO - Epoch(train)  [5][ 4650/11654]  lr: 2.225000e-04  eta: 1 day, 7:25:29  time: 1.029420  data_time: 0.761134  memory: 9726  loss: 0.000152  loss_kpt: 0.000152  acc_pose: 0.987453
+02/20 00:06:57 - mmengine - INFO - Epoch(train)  [5][ 4700/11654]  lr: 2.225000e-04  eta: 1 day, 7:23:07  time: 1.056308  data_time: 0.778047  memory: 9726  loss: 0.000151  loss_kpt: 0.000151  acc_pose: 0.994145
+02/20 00:07:48 - mmengine - INFO - Epoch(train)  [5][ 4750/11654]  lr: 2.225000e-04  eta: 1 day, 7:20:41  time: 1.008972  data_time: 0.743525  memory: 9726  loss: 0.000141  loss_kpt: 0.000141  acc_pose: 0.997768
+02/20 00:09:02 - mmengine - INFO - Epoch(train)  [5][ 4800/11654]  lr: 2.225000e-04  eta: 1 day, 7:18:54  time: 1.479203  data_time: 1.215992  memory: 9726  loss: 0.000142  loss_kpt: 0.000142  acc_pose: 0.985168
+02/20 00:09:52 - mmengine - INFO - Epoch(train)  [5][ 4850/11654]  lr: 2.225000e-04  eta: 1 day, 7:16:27  time: 1.000217  data_time: 0.737759  memory: 9726  loss: 0.000148  loss_kpt: 0.000148  acc_pose: 0.998848
+02/20 00:10:54 - mmengine - INFO - Epoch(train)  [5][ 4900/11654]  lr: 2.225000e-04  eta: 1 day, 7:14:22  time: 1.254243  data_time: 0.984126  memory: 9726  loss: 0.000143  loss_kpt: 0.000143  acc_pose: 0.998884
+02/20 00:11:51 - mmengine - INFO - Epoch(train)  [5][ 4950/11654]  lr: 2.225000e-04  eta: 1 day, 7:12:06  time: 1.125995  data_time: 0.859103  memory: 9726  loss: 0.000140  loss_kpt: 0.000140  acc_pose: 0.998866
+02/20 00:12:51 - mmengine - INFO - Epoch(train)  [5][ 5000/11654]  lr: 2.225000e-04  eta: 1 day, 7:09:58  time: 1.211564  data_time: 0.942158  memory: 9726  loss: 0.000147  loss_kpt: 0.000147  acc_pose: 0.985491
+02/20 00:13:54 - mmengine - INFO - Epoch(train)  [5][ 5050/11654]  lr: 2.225000e-04  eta: 1 day, 7:07:53  time: 1.253194  data_time: 0.995632  memory: 9726  loss: 0.000143  loss_kpt: 0.000143  acc_pose: 0.946375
+02/20 00:14:54 - mmengine - INFO - Epoch(train)  [5][ 5100/11654]  lr: 2.225000e-04  eta: 1 day, 7:05:44  time: 1.205606  data_time: 0.936515  memory: 9726  loss: 0.000143  loss_kpt: 0.000143  acc_pose: 0.997732
+02/20 00:15:52 - mmengine - INFO - Epoch(train)  [5][ 5150/11654]  lr: 2.225000e-04  eta: 1 day, 7:03:32  time: 1.158251  data_time: 0.894157  memory: 9726  loss: 0.000144  loss_kpt: 0.000144  acc_pose: 0.992152
+02/20 00:16:57 - mmengine - INFO - Epoch(train)  [5][ 5200/11654]  lr: 2.225000e-04  eta: 1 day, 7:01:31  time: 1.297924  data_time: 1.021044  memory: 9726  loss: 0.000142  loss_kpt: 0.000142  acc_pose: 0.992098
+02/20 00:17:56 - mmengine - INFO - Epoch(train)  [5][ 5250/11654]  lr: 2.225000e-04  eta: 1 day, 6:59:21  time: 1.182327  data_time: 0.918681  memory: 9726  loss: 0.000140  loss_kpt: 0.000140  acc_pose: 0.997768
+02/20 00:19:05 - mmengine - INFO - Epoch(train)  [5][ 5300/11654]  lr: 2.225000e-04  eta: 1 day, 6:57:28  time: 1.380860  data_time: 1.118963  memory: 9726  loss: 0.000134  loss_kpt: 0.000134  acc_pose: 0.996652
+02/20 00:20:07 - mmengine - INFO - Epoch(train)  [5][ 5350/11654]  lr: 2.225000e-04  eta: 1 day, 6:55:23  time: 1.244331  data_time: 0.986235  memory: 9726  loss: 0.000138  loss_kpt: 0.000138  acc_pose: 1.000000
+02/20 00:20:56 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/20 00:21:17 - mmengine - INFO - Epoch(train)  [5][ 5400/11654]  lr: 2.225000e-04  eta: 1 day, 6:53:30  time: 1.395049  data_time: 1.134347  memory: 9726  loss: 0.000134  loss_kpt: 0.000134  acc_pose: 0.992098
+02/20 00:22:16 - mmengine - INFO - Epoch(train)  [5][ 5450/11654]  lr: 2.225000e-04  eta: 1 day, 6:51:20  time: 1.170519  data_time: 0.912584  memory: 9726  loss: 0.000139  loss_kpt: 0.000139  acc_pose: 0.997768
+02/20 00:23:31 - mmengine - INFO - Epoch(train)  [5][ 5500/11654]  lr: 2.225000e-04  eta: 1 day, 6:49:36  time: 1.497383  data_time: 1.222493  memory: 9726  loss: 0.000138  loss_kpt: 0.000138  acc_pose: 0.998866
+02/20 00:24:31 - mmengine - INFO - Epoch(train)  [5][ 5550/11654]  lr: 2.225000e-04  eta: 1 day, 6:47:30  time: 1.218337  data_time: 0.958087  memory: 9726  loss: 0.000130  loss_kpt: 0.000130  acc_pose: 0.998866
+02/20 00:25:39 - mmengine - INFO - Epoch(train)  [5][ 5600/11654]  lr: 2.225000e-04  eta: 1 day, 6:45:34  time: 1.352654  data_time: 1.082846  memory: 9726  loss: 0.000137  loss_kpt: 0.000137  acc_pose: 0.996634
+02/20 00:26:37 - mmengine - INFO - Epoch(train)  [5][ 5650/11654]  lr: 2.225000e-04  eta: 1 day, 6:43:24  time: 1.155996  data_time: 0.897425  memory: 9726  loss: 0.000136  loss_kpt: 0.000136  acc_pose: 0.997750
+02/20 00:27:37 - mmengine - INFO - Epoch(train)  [5][ 5700/11654]  lr: 2.225000e-04  eta: 1 day, 6:41:16  time: 1.192947  data_time: 0.935184  memory: 9726  loss: 0.000138  loss_kpt: 0.000138  acc_pose: 0.987436
+02/20 00:28:43 - mmengine - INFO - Epoch(train)  [5][ 5750/11654]  lr: 2.225000e-04  eta: 1 day, 6:39:19  time: 1.330394  data_time: 1.068770  memory: 9726  loss: 0.000135  loss_kpt: 0.000135  acc_pose: 0.986607
+02/20 00:29:50 - mmengine - INFO - Epoch(train)  [5][ 5800/11654]  lr: 2.225000e-04  eta: 1 day, 6:37:24  time: 1.343776  data_time: 1.086000  memory: 9726  loss: 0.000131  loss_kpt: 0.000131  acc_pose: 0.996562
+02/20 00:30:49 - mmengine - INFO - Epoch(train)  [5][ 5850/11654]  lr: 2.225000e-04  eta: 1 day, 6:35:15  time: 1.181365  data_time: 0.923337  memory: 9726  loss: 0.000132  loss_kpt: 0.000132  acc_pose: 0.986501
+02/20 00:31:49 - mmengine - INFO - Epoch(train)  [5][ 5900/11654]  lr: 2.225000e-04  eta: 1 day, 6:33:09  time: 1.202807  data_time: 0.942975  memory: 9726  loss: 0.000131  loss_kpt: 0.000131  acc_pose: 0.994384
+02/20 00:32:55 - mmengine - INFO - Epoch(train)  [5][ 5950/11654]  lr: 2.225000e-04  eta: 1 day, 6:31:11  time: 1.310420  data_time: 1.049059  memory: 9726  loss: 0.000140  loss_kpt: 0.000140  acc_pose: 0.996652
+02/20 00:34:10 - mmengine - INFO - Epoch(train)  [5][ 6000/11654]  lr: 2.225000e-04  eta: 1 day, 6:29:28  time: 1.493902  data_time: 1.219117  memory: 9726  loss: 0.000136  loss_kpt: 0.000136  acc_pose: 0.992188
+02/20 00:35:11 - mmengine - INFO - Epoch(train)  [5][ 6050/11654]  lr: 2.225000e-04  eta: 1 day, 6:27:24  time: 1.231572  data_time: 0.968770  memory: 9726  loss: 0.000132  loss_kpt: 0.000132  acc_pose: 0.996652
+02/20 00:36:17 - mmengine - INFO - Epoch(train)  [5][ 6100/11654]  lr: 2.225000e-04  eta: 1 day, 6:25:28  time: 1.323664  data_time: 1.063368  memory: 9726  loss: 0.000131  loss_kpt: 0.000131  acc_pose: 1.000000
+02/20 00:37:24 - mmengine - INFO - Epoch(train)  [5][ 6150/11654]  lr: 2.225000e-04  eta: 1 day, 6:23:32  time: 1.327352  data_time: 1.045607  memory: 9726  loss: 0.000135  loss_kpt: 0.000135  acc_pose: 0.996634
+02/20 00:38:38 - mmengine - INFO - Epoch(train)  [5][ 6200/11654]  lr: 2.225000e-04  eta: 1 day, 6:21:48  time: 1.483837  data_time: 1.218270  memory: 9726  loss: 0.000140  loss_kpt: 0.000140  acc_pose: 0.983223
+02/20 00:39:37 - mmengine - INFO - Epoch(train)  [5][ 6250/11654]  lr: 2.225000e-04  eta: 1 day, 6:19:41  time: 1.173784  data_time: 0.907890  memory: 9726  loss: 0.000131  loss_kpt: 0.000131  acc_pose: 0.993196
+02/20 00:40:49 - mmengine - INFO - Epoch(train)  [5][ 6300/11654]  lr: 2.225000e-04  eta: 1 day, 6:17:54  time: 1.442634  data_time: 1.182282  memory: 9726  loss: 0.000133  loss_kpt: 0.000133  acc_pose: 1.000000
+02/20 00:41:54 - mmengine - INFO - Epoch(train)  [5][ 6350/11654]  lr: 2.225000e-04  eta: 1 day, 6:15:57  time: 1.308714  data_time: 1.040351  memory: 9726  loss: 0.000136  loss_kpt: 0.000136  acc_pose: 0.996652
+02/20 00:42:39 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/20 00:43:00 - mmengine - INFO - Epoch(train)  [5][ 6400/11654]  lr: 2.225000e-04  eta: 1 day, 6:14:01  time: 1.320199  data_time: 1.053588  memory: 9726  loss: 0.000133  loss_kpt: 0.000133  acc_pose: 0.998884
+02/20 00:44:28 - mmengine - INFO - Epoch(train)  [5][ 6450/11654]  lr: 2.225000e-04  eta: 1 day, 6:12:39  time: 1.758201  data_time: 1.494235  memory: 9726  loss: 0.000133  loss_kpt: 0.000133  acc_pose: 0.985402
+02/20 00:45:38 - mmengine - INFO - Epoch(train)  [5][ 6500/11654]  lr: 2.225000e-04  eta: 1 day, 6:10:49  time: 1.404016  data_time: 1.138270  memory: 9726  loss: 0.000131  loss_kpt: 0.000131  acc_pose: 0.987599
+02/20 00:46:38 - mmengine - INFO - Epoch(train)  [5][ 6550/11654]  lr: 2.225000e-04  eta: 1 day, 6:08:45  time: 1.197962  data_time: 0.936376  memory: 9726  loss: 0.000137  loss_kpt: 0.000137  acc_pose: 0.997714
+02/20 00:47:38 - mmengine - INFO - Epoch(train)  [5][ 6600/11654]  lr: 2.225000e-04  eta: 1 day, 6:06:40  time: 1.201217  data_time: 0.937502  memory: 9726  loss: 0.000127  loss_kpt: 0.000127  acc_pose: 0.994384
+02/20 00:48:42 - mmengine - INFO - Epoch(train)  [5][ 6650/11654]  lr: 2.225000e-04  eta: 1 day, 6:04:41  time: 1.266788  data_time: 1.001283  memory: 9726  loss: 0.000137  loss_kpt: 0.000137  acc_pose: 1.000000
+02/20 00:49:44 - mmengine - INFO - Epoch(train)  [5][ 6700/11654]  lr: 2.225000e-04  eta: 1 day, 6:02:39  time: 1.238685  data_time: 0.982421  memory: 9726  loss: 0.000132  loss_kpt: 0.000132  acc_pose: 0.990910
+02/20 00:50:44 - mmengine - INFO - Epoch(train)  [5][ 6750/11654]  lr: 2.225000e-04  eta: 1 day, 6:00:35  time: 1.202445  data_time: 0.937495  memory: 9726  loss: 0.000148  loss_kpt: 0.000148  acc_pose: 0.997693
+02/20 00:51:47 - mmengine - INFO - Epoch(train)  [5][ 6800/11654]  lr: 2.225000e-04  eta: 1 day, 5:58:36  time: 1.260223  data_time: 0.998682  memory: 9726  loss: 0.000138  loss_kpt: 0.000138  acc_pose: 0.994384
+02/20 00:52:48 - mmengine - INFO - Epoch(train)  [5][ 6850/11654]  lr: 2.225000e-04  eta: 1 day, 5:56:33  time: 1.215982  data_time: 0.953071  memory: 9726  loss: 0.000127  loss_kpt: 0.000127  acc_pose: 0.992188
+02/20 00:54:03 - mmengine - INFO - Epoch(train)  [5][ 6900/11654]  lr: 2.225000e-04  eta: 1 day, 5:54:52  time: 1.501986  data_time: 1.236671  memory: 9726  loss: 0.000139  loss_kpt: 0.000139  acc_pose: 0.995482
+02/20 00:55:00 - mmengine - INFO - Epoch(train)  [5][ 6950/11654]  lr: 2.225000e-04  eta: 1 day, 5:52:44  time: 1.139375  data_time: 0.879194  memory: 9726  loss: 0.000134  loss_kpt: 0.000134  acc_pose: 0.993286
+02/20 00:56:00 - mmengine - INFO - Epoch(train)  [5][ 7000/11654]  lr: 2.225000e-04  eta: 1 day, 5:50:40  time: 1.198319  data_time: 0.913796  memory: 9726  loss: 0.000135  loss_kpt: 0.000135  acc_pose: 0.993197
+02/20 00:56:58 - mmengine - INFO - Epoch(train)  [5][ 7050/11654]  lr: 2.225000e-04  eta: 1 day, 5:48:34  time: 1.163691  data_time: 0.892616  memory: 9726  loss: 0.000142  loss_kpt: 0.000142  acc_pose: 0.978198
+02/20 00:58:02 - mmengine - INFO - Epoch(train)  [5][ 7100/11654]  lr: 2.225000e-04  eta: 1 day, 5:46:37  time: 1.279856  data_time: 1.016957  memory: 9726  loss: 0.000135  loss_kpt: 0.000135  acc_pose: 0.995536
+02/20 00:59:09 - mmengine - INFO - Epoch(train)  [5][ 7150/11654]  lr: 2.225000e-04  eta: 1 day, 5:44:44  time: 1.344258  data_time: 1.081754  memory: 9726  loss: 0.000131  loss_kpt: 0.000131  acc_pose: 0.998866
+02/20 01:00:11 - mmengine - INFO - Epoch(train)  [5][ 7200/11654]  lr: 2.225000e-04  eta: 1 day, 5:42:44  time: 1.235873  data_time: 0.972693  memory: 9726  loss: 0.000124  loss_kpt: 0.000124  acc_pose: 0.995518
+02/20 01:01:09 - mmengine - INFO - Epoch(train)  [5][ 7250/11654]  lr: 2.225000e-04  eta: 1 day, 5:40:39  time: 1.170809  data_time: 0.904764  memory: 9726  loss: 0.000138  loss_kpt: 0.000138  acc_pose: 0.994420
+02/20 01:02:20 - mmengine - INFO - Epoch(train)  [5][ 7300/11654]  lr: 2.225000e-04  eta: 1 day, 5:38:53  time: 1.420448  data_time: 1.159540  memory: 9726  loss: 0.000132  loss_kpt: 0.000132  acc_pose: 0.985112
+02/20 01:03:27 - mmengine - INFO - Epoch(train)  [5][ 7350/11654]  lr: 2.225000e-04  eta: 1 day, 5:37:00  time: 1.335462  data_time: 1.069020  memory: 9726  loss: 0.000143  loss_kpt: 0.000143  acc_pose: 0.988658
+02/20 01:04:06 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/20 01:04:25 - mmengine - INFO - Epoch(train)  [5][ 7400/11654]  lr: 2.225000e-04  eta: 1 day, 5:34:55  time: 1.156036  data_time: 0.875230  memory: 9726  loss: 0.000147  loss_kpt: 0.000147  acc_pose: 0.997750
+02/20 01:05:24 - mmengine - INFO - Epoch(train)  [5][ 7450/11654]  lr: 2.225000e-04  eta: 1 day, 5:32:50  time: 1.168727  data_time: 0.898239  memory: 9726  loss: 0.000134  loss_kpt: 0.000134  acc_pose: 0.998866
+02/20 01:06:32 - mmengine - INFO - Epoch(train)  [5][ 7500/11654]  lr: 2.225000e-04  eta: 1 day, 5:31:01  time: 1.372400  data_time: 1.093598  memory: 9726  loss: 0.000137  loss_kpt: 0.000137  acc_pose: 1.000000
+02/20 01:07:35 - mmengine - INFO - Epoch(train)  [5][ 7550/11654]  lr: 2.225000e-04  eta: 1 day, 5:29:03  time: 1.252976  data_time: 0.990987  memory: 9726  loss: 0.000130  loss_kpt: 0.000130  acc_pose: 0.991054
+02/20 01:08:44 - mmengine - INFO - Epoch(train)  [5][ 7600/11654]  lr: 2.225000e-04  eta: 1 day, 5:27:14  time: 1.378794  data_time: 1.118033  memory: 9726  loss: 0.000140  loss_kpt: 0.000140  acc_pose: 1.000000
+02/20 01:09:41 - mmengine - INFO - Epoch(train)  [5][ 7650/11654]  lr: 2.225000e-04  eta: 1 day, 5:25:09  time: 1.149990  data_time: 0.889722  memory: 9726  loss: 0.000136  loss_kpt: 0.000136  acc_pose: 0.988751
+02/20 01:10:51 - mmengine - INFO - Epoch(train)  [5][ 7700/11654]  lr: 2.225000e-04  eta: 1 day, 5:23:22  time: 1.403345  data_time: 1.147520  memory: 9726  loss: 0.000128  loss_kpt: 0.000128  acc_pose: 0.994366
+02/20 01:11:55 - mmengine - INFO - Epoch(train)  [5][ 7750/11654]  lr: 2.225000e-04  eta: 1 day, 5:21:26  time: 1.278999  data_time: 1.015197  memory: 9726  loss: 0.000136  loss_kpt: 0.000136  acc_pose: 0.994420
+02/20 01:12:52 - mmengine - INFO - Epoch(train)  [5][ 7800/11654]  lr: 2.225000e-04  eta: 1 day, 5:19:21  time: 1.139048  data_time: 0.874525  memory: 9726  loss: 0.000131  loss_kpt: 0.000131  acc_pose: 0.996652
+02/20 01:13:58 - mmengine - INFO - Epoch(train)  [5][ 7850/11654]  lr: 2.225000e-04  eta: 1 day, 5:17:27  time: 1.306162  data_time: 1.044208  memory: 9726  loss: 0.000142  loss_kpt: 0.000142  acc_pose: 0.997732
+02/20 01:15:08 - mmengine - INFO - Epoch(train)  [5][ 7900/11654]  lr: 2.225000e-04  eta: 1 day, 5:15:41  time: 1.409364  data_time: 1.147423  memory: 9726  loss: 0.000139  loss_kpt: 0.000139  acc_pose: 0.988804
+02/20 01:16:08 - mmengine - INFO - Epoch(train)  [5][ 7950/11654]  lr: 2.225000e-04  eta: 1 day, 5:13:40  time: 1.200597  data_time: 0.937732  memory: 9726  loss: 0.000137  loss_kpt: 0.000137  acc_pose: 0.994313
+02/20 01:17:05 - mmengine - INFO - Epoch(train)  [5][ 8000/11654]  lr: 2.225000e-04  eta: 1 day, 5:11:35  time: 1.142444  data_time: 0.881010  memory: 9726  loss: 0.000132  loss_kpt: 0.000132  acc_pose: 0.997768
+02/20 01:18:08 - mmengine - INFO - Epoch(train)  [5][ 8050/11654]  lr: 2.225000e-04  eta: 1 day, 5:09:38  time: 1.249878  data_time: 0.987979  memory: 9726  loss: 0.000131  loss_kpt: 0.000131  acc_pose: 0.988678
+02/20 01:19:46 - mmengine - INFO - Epoch(train)  [5][ 8100/11654]  lr: 2.225000e-04  eta: 1 day, 5:08:33  time: 1.973578  data_time: 1.708701  memory: 9726  loss: 0.000136  loss_kpt: 0.000136  acc_pose: 0.990855
+02/20 01:20:49 - mmengine - INFO - Epoch(train)  [5][ 8150/11654]  lr: 2.225000e-04  eta: 1 day, 5:06:36  time: 1.242971  data_time: 0.959514  memory: 9726  loss: 0.000126  loss_kpt: 0.000126  acc_pose: 0.986410
+02/20 01:21:50 - mmengine - INFO - Epoch(train)  [5][ 8200/11654]  lr: 2.225000e-04  eta: 1 day, 5:04:38  time: 1.236017  data_time: 0.976271  memory: 9726  loss: 0.000131  loss_kpt: 0.000131  acc_pose: 0.995500
+02/20 01:22:52 - mmengine - INFO - Epoch(train)  [5][ 8250/11654]  lr: 2.225000e-04  eta: 1 day, 5:02:40  time: 1.223335  data_time: 0.959453  memory: 9726  loss: 0.000131  loss_kpt: 0.000131  acc_pose: 1.000000
+02/20 01:24:08 - mmengine - INFO - Epoch(train)  [5][ 8300/11654]  lr: 2.225000e-04  eta: 1 day, 5:01:03  time: 1.520688  data_time: 1.250806  memory: 9726  loss: 0.000137  loss_kpt: 0.000137  acc_pose: 0.990779
+02/20 01:25:05 - mmengine - INFO - Epoch(train)  [5][ 8350/11654]  lr: 2.225000e-04  eta: 1 day, 4:58:59  time: 1.148937  data_time: 0.888649  memory: 9726  loss: 0.000132  loss_kpt: 0.000132  acc_pose: 0.989740
+02/20 01:25:45 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/20 01:26:05 - mmengine - INFO - Epoch(train)  [5][ 8400/11654]  lr: 2.225000e-04  eta: 1 day, 4:56:58  time: 1.190168  data_time: 0.916367  memory: 9726  loss: 0.000144  loss_kpt: 0.000144  acc_pose: 0.994366
+02/20 01:27:06 - mmengine - INFO - Epoch(train)  [5][ 8450/11654]  lr: 2.225000e-04  eta: 1 day, 4:55:00  time: 1.220978  data_time: 0.957248  memory: 9726  loss: 0.000147  loss_kpt: 0.000147  acc_pose: 0.992042
+02/20 01:28:18 - mmengine - INFO - Epoch(train)  [5][ 8500/11654]  lr: 2.225000e-04  eta: 1 day, 4:53:18  time: 1.442646  data_time: 1.182394  memory: 9726  loss: 0.000136  loss_kpt: 0.000136  acc_pose: 0.996652
+02/20 01:29:19 - mmengine - INFO - Epoch(train)  [5][ 8550/11654]  lr: 2.225000e-04  eta: 1 day, 4:51:20  time: 1.217252  data_time: 0.937492  memory: 9726  loss: 0.000142  loss_kpt: 0.000142  acc_pose: 0.998848
+02/20 01:30:17 - mmengine - INFO - Epoch(train)  [5][ 8600/11654]  lr: 2.225000e-04  eta: 1 day, 4:49:19  time: 1.173400  data_time: 0.910564  memory: 9726  loss: 0.000151  loss_kpt: 0.000151  acc_pose: 0.995500
+02/20 01:31:15 - mmengine - INFO - Epoch(train)  [5][ 8650/11654]  lr: 2.225000e-04  eta: 1 day, 4:47:16  time: 1.148202  data_time: 0.886241  memory: 9726  loss: 0.000145  loss_kpt: 0.000145  acc_pose: 0.997732
+02/20 01:32:20 - mmengine - INFO - Epoch(train)  [5][ 8700/11654]  lr: 2.225000e-04  eta: 1 day, 4:45:24  time: 1.297688  data_time: 1.020395  memory: 9726  loss: 0.000139  loss_kpt: 0.000139  acc_pose: 0.996634
+02/20 01:33:26 - mmengine - INFO - Epoch(train)  [5][ 8750/11654]  lr: 2.225000e-04  eta: 1 day, 4:43:34  time: 1.336111  data_time: 1.073804  memory: 9726  loss: 0.000129  loss_kpt: 0.000129  acc_pose: 0.993304
+02/20 01:34:22 - mmengine - INFO - Epoch(train)  [5][ 8800/11654]  lr: 2.225000e-04  eta: 1 day, 4:41:29  time: 1.110377  data_time: 0.849840  memory: 9726  loss: 0.000132  loss_kpt: 0.000132  acc_pose: 0.998866
+02/20 01:35:23 - mmengine - INFO - Epoch(train)  [5][ 8850/11654]  lr: 2.225000e-04  eta: 1 day, 4:39:32  time: 1.215506  data_time: 0.952542  memory: 9726  loss: 0.000140  loss_kpt: 0.000140  acc_pose: 1.000000
+02/20 01:36:28 - mmengine - INFO - Epoch(train)  [5][ 8900/11654]  lr: 2.225000e-04  eta: 1 day, 4:37:40  time: 1.295713  data_time: 1.033880  memory: 9726  loss: 0.000133  loss_kpt: 0.000133  acc_pose: 0.971795
+02/20 01:37:27 - mmengine - INFO - Epoch(train)  [5][ 8950/11654]  lr: 2.225000e-04  eta: 1 day, 4:35:40  time: 1.184282  data_time: 0.921885  memory: 9726  loss: 0.000137  loss_kpt: 0.000137  acc_pose: 0.989884
+02/20 01:38:33 - mmengine - INFO - Epoch(train)  [5][ 9000/11654]  lr: 2.225000e-04  eta: 1 day, 4:33:51  time: 1.330001  data_time: 1.064825  memory: 9726  loss: 0.000133  loss_kpt: 0.000133  acc_pose: 0.983117
+02/20 01:39:43 - mmengine - INFO - Epoch(train)  [5][ 9050/11654]  lr: 2.225000e-04  eta: 1 day, 4:32:06  time: 1.386314  data_time: 1.121716  memory: 9726  loss: 0.000137  loss_kpt: 0.000137  acc_pose: 0.983259
+02/20 01:40:44 - mmengine - INFO - Epoch(train)  [5][ 9100/11654]  lr: 2.225000e-04  eta: 1 day, 4:30:10  time: 1.227641  data_time: 0.961371  memory: 9726  loss: 0.000135  loss_kpt: 0.000135  acc_pose: 0.984178
+02/20 01:41:43 - mmengine - INFO - Epoch(train)  [5][ 9150/11654]  lr: 2.225000e-04  eta: 1 day, 4:28:11  time: 1.186461  data_time: 0.926369  memory: 9726  loss: 0.000126  loss_kpt: 0.000126  acc_pose: 1.000000
+02/20 01:42:44 - mmengine - INFO - Epoch(train)  [5][ 9200/11654]  lr: 2.225000e-04  eta: 1 day, 4:26:15  time: 1.221598  data_time: 0.943425  memory: 9726  loss: 0.000131  loss_kpt: 0.000131  acc_pose: 0.993250
+02/20 01:43:58 - mmengine - INFO - Epoch(train)  [5][ 9250/11654]  lr: 2.225000e-04  eta: 1 day, 4:24:35  time: 1.470529  data_time: 1.205533  memory: 9726  loss: 0.000122  loss_kpt: 0.000122  acc_pose: 0.998884
+02/20 01:44:58 - mmengine - INFO - Epoch(train)  [5][ 9300/11654]  lr: 2.225000e-04  eta: 1 day, 4:22:38  time: 1.193870  data_time: 0.933970  memory: 9726  loss: 0.000129  loss_kpt: 0.000129  acc_pose: 0.998866
+02/20 01:45:57 - mmengine - INFO - Epoch(train)  [5][ 9350/11654]  lr: 2.225000e-04  eta: 1 day, 4:20:39  time: 1.188375  data_time: 0.912747  memory: 9726  loss: 0.000131  loss_kpt: 0.000131  acc_pose: 0.996599
+02/20 01:46:37 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/20 01:46:57 - mmengine - INFO - Epoch(train)  [5][ 9400/11654]  lr: 2.225000e-04  eta: 1 day, 4:18:42  time: 1.195091  data_time: 0.931505  memory: 9726  loss: 0.000127  loss_kpt: 0.000127  acc_pose: 0.989849
+02/20 01:47:55 - mmengine - INFO - Epoch(train)  [5][ 9450/11654]  lr: 2.225000e-04  eta: 1 day, 4:16:42  time: 1.164885  data_time: 0.893860  memory: 9726  loss: 0.000136  loss_kpt: 0.000136  acc_pose: 0.987688
+02/20 01:49:06 - mmengine - INFO - Epoch(train)  [5][ 9500/11654]  lr: 2.225000e-04  eta: 1 day, 4:15:00  time: 1.414295  data_time: 1.150046  memory: 9726  loss: 0.000138  loss_kpt: 0.000138  acc_pose: 0.989814
+02/20 01:50:03 - mmengine - INFO - Epoch(train)  [5][ 9550/11654]  lr: 2.225000e-04  eta: 1 day, 4:12:59  time: 1.137960  data_time: 0.869858  memory: 9726  loss: 0.000141  loss_kpt: 0.000141  acc_pose: 0.992117
+02/20 01:50:57 - mmengine - INFO - Epoch(train)  [5][ 9600/11654]  lr: 2.225000e-04  eta: 1 day, 4:10:55  time: 1.093769  data_time: 0.835559  memory: 9726  loss: 0.000140  loss_kpt: 0.000140  acc_pose: 0.989796
+02/20 01:51:57 - mmengine - INFO - Epoch(train)  [5][ 9650/11654]  lr: 2.225000e-04  eta: 1 day, 4:08:58  time: 1.196180  data_time: 0.931398  memory: 9726  loss: 0.000144  loss_kpt: 0.000144  acc_pose: 0.997750
+02/20 01:53:04 - mmengine - INFO - Epoch(train)  [5][ 9700/11654]  lr: 2.225000e-04  eta: 1 day, 4:07:10  time: 1.337646  data_time: 1.075871  memory: 9726  loss: 0.000130  loss_kpt: 0.000130  acc_pose: 0.983205
+02/20 01:54:24 - mmengine - INFO - Epoch(train)  [5][ 9750/11654]  lr: 2.225000e-04  eta: 1 day, 4:05:41  time: 1.595004  data_time: 1.327566  memory: 9726  loss: 0.000133  loss_kpt: 0.000133  acc_pose: 0.998866
+02/20 01:55:19 - mmengine - INFO - Epoch(train)  [5][ 9800/11654]  lr: 2.225000e-04  eta: 1 day, 4:03:38  time: 1.108443  data_time: 0.848755  memory: 9726  loss: 0.000143  loss_kpt: 0.000143  acc_pose: 0.985385
+02/20 01:56:17 - mmengine - INFO - Epoch(train)  [5][ 9850/11654]  lr: 2.225000e-04  eta: 1 day, 4:01:38  time: 1.146919  data_time: 0.886371  memory: 9726  loss: 0.000133  loss_kpt: 0.000133  acc_pose: 0.997732
+02/20 01:57:17 - mmengine - INFO - Epoch(train)  [5][ 9900/11654]  lr: 2.225000e-04  eta: 1 day, 3:59:42  time: 1.200571  data_time: 0.936642  memory: 9726  loss: 0.000140  loss_kpt: 0.000140  acc_pose: 0.989685
+02/20 01:58:21 - mmengine - INFO - Epoch(train)  [5][ 9950/11654]  lr: 2.225000e-04  eta: 1 day, 3:57:53  time: 1.296259  data_time: 1.038995  memory: 9726  loss: 0.000133  loss_kpt: 0.000133  acc_pose: 0.998884
+02/20 01:59:20 - mmengine - INFO - Epoch(train)  [5][10000/11654]  lr: 2.225000e-04  eta: 1 day, 3:55:55  time: 1.170539  data_time: 0.912052  memory: 9726  loss: 0.000123  loss_kpt: 0.000123  acc_pose: 1.000000
+02/20 02:00:22 - mmengine - INFO - Epoch(train)  [5][10050/11654]  lr: 2.225000e-04  eta: 1 day, 3:54:02  time: 1.234276  data_time: 0.968657  memory: 9726  loss: 0.000128  loss_kpt: 0.000128  acc_pose: 0.991916
+02/20 02:01:16 - mmengine - INFO - Epoch(train)  [5][10100/11654]  lr: 2.225000e-04  eta: 1 day, 3:51:58  time: 1.076500  data_time: 0.818018  memory: 9726  loss: 0.000130  loss_kpt: 0.000130  acc_pose: 0.986352
+02/20 02:02:14 - mmengine - INFO - Epoch(train)  [5][10150/11654]  lr: 2.225000e-04  eta: 1 day, 3:50:00  time: 1.165210  data_time: 0.899980  memory: 9726  loss: 0.000127  loss_kpt: 0.000127  acc_pose: 0.998884
+02/20 02:03:25 - mmengine - INFO - Epoch(train)  [5][10200/11654]  lr: 2.225000e-04  eta: 1 day, 3:48:19  time: 1.413699  data_time: 1.149984  memory: 9726  loss: 0.000128  loss_kpt: 0.000128  acc_pose: 0.993177
+02/20 02:04:22 - mmengine - INFO - Epoch(train)  [5][10250/11654]  lr: 2.225000e-04  eta: 1 day, 3:46:20  time: 1.143268  data_time: 0.886047  memory: 9726  loss: 0.000131  loss_kpt: 0.000131  acc_pose: 0.985456
+02/20 02:05:25 - mmengine - INFO - Epoch(train)  [5][10300/11654]  lr: 2.225000e-04  eta: 1 day, 3:44:29  time: 1.266038  data_time: 1.003448  memory: 9726  loss: 0.000140  loss_kpt: 0.000140  acc_pose: 0.998884
+02/20 02:06:22 - mmengine - INFO - Epoch(train)  [5][10350/11654]  lr: 2.225000e-04  eta: 1 day, 3:42:30  time: 1.136538  data_time: 0.870894  memory: 9726  loss: 0.000143  loss_kpt: 0.000143  acc_pose: 0.988643
+02/20 02:07:04 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/20 02:07:21 - mmengine - INFO - Epoch(train)  [5][10400/11654]  lr: 2.225000e-04  eta: 1 day, 3:40:35  time: 1.192476  data_time: 0.917039  memory: 9726  loss: 0.000133  loss_kpt: 0.000133  acc_pose: 0.995465
+02/20 02:08:34 - mmengine - INFO - Epoch(train)  [5][10450/11654]  lr: 2.225000e-04  eta: 1 day, 3:38:56  time: 1.449110  data_time: 1.181289  memory: 9726  loss: 0.000126  loss_kpt: 0.000126  acc_pose: 1.000000
+02/20 02:09:33 - mmengine - INFO - Epoch(train)  [5][10500/11654]  lr: 2.225000e-04  eta: 1 day, 3:37:00  time: 1.172462  data_time: 0.906616  memory: 9726  loss: 0.000125  loss_kpt: 0.000125  acc_pose: 1.000000
+02/20 02:10:32 - mmengine - INFO - Epoch(train)  [5][10550/11654]  lr: 2.225000e-04  eta: 1 day, 3:35:05  time: 1.195820  data_time: 0.923015  memory: 9726  loss: 0.000126  loss_kpt: 0.000126  acc_pose: 1.000000
+02/20 02:11:43 - mmengine - INFO - Epoch(train)  [5][10600/11654]  lr: 2.225000e-04  eta: 1 day, 3:33:24  time: 1.404617  data_time: 1.139358  memory: 9726  loss: 0.000126  loss_kpt: 0.000126  acc_pose: 1.000000
+02/20 02:12:41 - mmengine - INFO - Epoch(train)  [5][10650/11654]  lr: 2.225000e-04  eta: 1 day, 3:31:28  time: 1.175869  data_time: 0.913034  memory: 9726  loss: 0.000124  loss_kpt: 0.000124  acc_pose: 0.998866
+02/20 02:13:45 - mmengine - INFO - Epoch(train)  [5][10700/11654]  lr: 2.225000e-04  eta: 1 day, 3:29:39  time: 1.279511  data_time: 1.020244  memory: 9726  loss: 0.000124  loss_kpt: 0.000124  acc_pose: 0.992081
+02/20 02:14:47 - mmengine - INFO - Epoch(train)  [5][10750/11654]  lr: 2.225000e-04  eta: 1 day, 3:27:47  time: 1.225246  data_time: 0.961400  memory: 9726  loss: 0.000127  loss_kpt: 0.000127  acc_pose: 0.986339
+02/20 02:15:50 - mmengine - INFO - Epoch(train)  [5][10800/11654]  lr: 2.225000e-04  eta: 1 day, 3:25:58  time: 1.275789  data_time: 1.001153  memory: 9726  loss: 0.000133  loss_kpt: 0.000133  acc_pose: 0.993304
+02/20 02:16:46 - mmengine - INFO - Epoch(train)  [5][10850/11654]  lr: 2.225000e-04  eta: 1 day, 3:23:59  time: 1.119920  data_time: 0.860251  memory: 9726  loss: 0.000129  loss_kpt: 0.000129  acc_pose: 0.995536
+02/20 02:17:48 - mmengine - INFO - Epoch(train)  [5][10900/11654]  lr: 2.225000e-04  eta: 1 day, 3:22:07  time: 1.224625  data_time: 0.966086  memory: 9726  loss: 0.000125  loss_kpt: 0.000125  acc_pose: 0.981768
+02/20 02:18:57 - mmengine - INFO - Epoch(train)  [5][10950/11654]  lr: 2.225000e-04  eta: 1 day, 3:20:25  time: 1.380592  data_time: 1.120976  memory: 9726  loss: 0.000127  loss_kpt: 0.000127  acc_pose: 0.996522
+02/20 02:19:59 - mmengine - INFO - Epoch(train)  [5][11000/11654]  lr: 2.225000e-04  eta: 1 day, 3:18:34  time: 1.247536  data_time: 0.983231  memory: 9726  loss: 0.000123  loss_kpt: 0.000123  acc_pose: 0.985438
+02/20 02:20:58 - mmengine - INFO - Epoch(train)  [5][11050/11654]  lr: 2.225000e-04  eta: 1 day, 3:16:40  time: 1.183707  data_time: 0.922403  memory: 9726  loss: 0.000121  loss_kpt: 0.000121  acc_pose: 0.998884
+02/20 02:22:02 - mmengine - INFO - Epoch(train)  [5][11100/11654]  lr: 2.225000e-04  eta: 1 day, 3:14:51  time: 1.267150  data_time: 1.005026  memory: 9726  loss: 0.000127  loss_kpt: 0.000127  acc_pose: 0.998884
+02/20 02:23:02 - mmengine - INFO - Epoch(train)  [5][11150/11654]  lr: 2.225000e-04  eta: 1 day, 3:12:57  time: 1.199605  data_time: 0.933078  memory: 9726  loss: 0.000123  loss_kpt: 0.000123  acc_pose: 0.995500
+02/20 02:24:14 - mmengine - INFO - Epoch(train)  [5][11200/11654]  lr: 2.225000e-04  eta: 1 day, 3:11:20  time: 1.444312  data_time: 1.170743  memory: 9726  loss: 0.000129  loss_kpt: 0.000129  acc_pose: 1.000000
+02/20 02:25:16 - mmengine - INFO - Epoch(train)  [5][11250/11654]  lr: 2.225000e-04  eta: 1 day, 3:09:30  time: 1.250884  data_time: 0.991060  memory: 9726  loss: 0.000130  loss_kpt: 0.000130  acc_pose: 0.998866
+02/20 02:26:12 - mmengine - INFO - Epoch(train)  [5][11300/11654]  lr: 2.225000e-04  eta: 1 day, 3:07:32  time: 1.116518  data_time: 0.852614  memory: 9726  loss: 0.000145  loss_kpt: 0.000145  acc_pose: 0.988588
+02/20 02:27:08 - mmengine - INFO - Epoch(train)  [5][11350/11654]  lr: 2.225000e-04  eta: 1 day, 3:05:34  time: 1.119708  data_time: 0.860511  memory: 9726  loss: 0.000152  loss_kpt: 0.000152  acc_pose: 0.998866
+02/20 02:27:58 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/20 02:28:17 - mmengine - INFO - Epoch(train)  [5][11400/11654]  lr: 2.225000e-04  eta: 1 day, 3:03:53  time: 1.382770  data_time: 1.116504  memory: 9726  loss: 0.000134  loss_kpt: 0.000134  acc_pose: 0.996599
+02/20 02:29:47 - mmengine - INFO - Epoch(train)  [5][11450/11654]  lr: 2.225000e-04  eta: 1 day, 3:02:38  time: 1.786648  data_time: 1.521430  memory: 9726  loss: 0.000120  loss_kpt: 0.000120  acc_pose: 0.998848
+02/20 02:30:43 - mmengine - INFO - Epoch(train)  [5][11500/11654]  lr: 2.225000e-04  eta: 1 day, 3:00:41  time: 1.131788  data_time: 0.872973  memory: 9726  loss: 0.000135  loss_kpt: 0.000135  acc_pose: 0.998866
+02/20 02:31:43 - mmengine - INFO - Epoch(train)  [5][11550/11654]  lr: 2.225000e-04  eta: 1 day, 2:58:48  time: 1.198615  data_time: 0.935145  memory: 9726  loss: 0.000134  loss_kpt: 0.000134  acc_pose: 1.000000
+02/20 02:32:57 - mmengine - INFO - Epoch(train)  [5][11600/11654]  lr: 2.225000e-04  eta: 1 day, 2:57:14  time: 1.481924  data_time: 1.203497  memory: 9726  loss: 0.000131  loss_kpt: 0.000131  acc_pose: 0.998866
+02/20 02:34:02 - mmengine - INFO - Epoch(train)  [5][11650/11654]  lr: 2.225000e-04  eta: 1 day, 2:55:28  time: 1.298270  data_time: 1.037688  memory: 9726  loss: 0.000122  loss_kpt: 0.000122  acc_pose: 0.998884
+02/20 02:34:03 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/20 02:34:03 - mmengine - INFO - Saving checkpoint at 5 epochs
+02/20 02:34:48 - mmengine - INFO - Epoch(val)  [5][  50/1463]    eta: 0:19:45  time: 0.838646  data_time: 0.694846  memory: 9726  
+02/20 02:35:19 - mmengine - INFO - Epoch(val)  [5][ 100/1463]    eta: 0:16:34  time: 0.620020  data_time: 0.472029  memory: 1165  
+02/20 02:35:53 - mmengine - INFO - Epoch(val)  [5][ 150/1463]    eta: 0:15:30  time: 0.668450  data_time: 0.518576  memory: 1165  
+02/20 02:36:27 - mmengine - INFO - Epoch(val)  [5][ 200/1463]    eta: 0:14:48  time: 0.685608  data_time: 0.536493  memory: 1165  
+02/20 02:36:55 - mmengine - INFO - Epoch(val)  [5][ 250/1463]    eta: 0:13:38  time: 0.561930  data_time: 0.420426  memory: 1165  
+02/20 02:37:33 - mmengine - INFO - Epoch(val)  [5][ 300/1463]    eta: 0:13:21  time: 0.761385  data_time: 0.594910  memory: 1165  
+02/20 02:38:17 - mmengine - INFO - Epoch(val)  [5][ 350/1463]    eta: 0:13:17  time: 0.877013  data_time: 0.731986  memory: 1165  
+02/20 02:38:57 - mmengine - INFO - Epoch(val)  [5][ 400/1463]    eta: 0:12:51  time: 0.794562  data_time: 0.649777  memory: 1165  
+02/20 02:39:36 - mmengine - INFO - Epoch(val)  [5][ 450/1463]    eta: 0:12:20  time: 0.773987  data_time: 0.629354  memory: 1165  
+02/20 02:39:54 - mmengine - INFO - Epoch(val)  [5][ 500/1463]    eta: 0:11:08  time: 0.359170  data_time: 0.221304  memory: 1165  
+02/20 02:40:38 - mmengine - INFO - Epoch(val)  [5][ 550/1463]    eta: 0:10:49  time: 0.889677  data_time: 0.741110  memory: 1165  
+02/20 02:41:11 - mmengine - INFO - Epoch(val)  [5][ 600/1463]    eta: 0:10:10  time: 0.660237  data_time: 0.501006  memory: 1165  
+02/20 02:41:48 - mmengine - INFO - Epoch(val)  [5][ 650/1463]    eta: 0:09:36  time: 0.729720  data_time: 0.583138  memory: 1165  
+02/20 02:42:27 - mmengine - INFO - Epoch(val)  [5][ 700/1463]    eta: 0:09:05  time: 0.781264  data_time: 0.631615  memory: 1165  
+02/20 02:42:53 - mmengine - INFO - Epoch(val)  [5][ 750/1463]    eta: 0:08:20  time: 0.535730  data_time: 0.393734  memory: 1165  
+02/20 02:43:30 - mmengine - INFO - Epoch(val)  [5][ 800/1463]    eta: 0:07:47  time: 0.733489  data_time: 0.591482  memory: 1165  
+02/20 02:44:06 - mmengine - INFO - Epoch(val)  [5][ 850/1463]    eta: 0:07:12  time: 0.726737  data_time: 0.581881  memory: 1165  
+02/20 02:44:39 - mmengine - INFO - Epoch(val)  [5][ 900/1463]    eta: 0:06:35  time: 0.656088  data_time: 0.509758  memory: 1165  
+02/20 02:45:22 - mmengine - INFO - Epoch(val)  [5][ 950/1463]    eta: 0:06:04  time: 0.852387  data_time: 0.701373  memory: 1165  
+02/20 02:45:48 - mmengine - INFO - Epoch(val)  [5][1000/1463]    eta: 0:05:24  time: 0.514785  data_time: 0.370615  memory: 1165  
+02/20 02:46:29 - mmengine - INFO - Epoch(val)  [5][1050/1463]    eta: 0:04:51  time: 0.825055  data_time: 0.681481  memory: 1165  
+02/20 02:47:07 - mmengine - INFO - Epoch(val)  [5][1100/1463]    eta: 0:04:17  time: 0.764649  data_time: 0.619076  memory: 1165  
+02/20 02:47:50 - mmengine - INFO - Epoch(val)  [5][1150/1463]    eta: 0:03:44  time: 0.865714  data_time: 0.718534  memory: 1165  
+02/20 02:48:36 - mmengine - INFO - Epoch(val)  [5][1200/1463]    eta: 0:03:10  time: 0.917936  data_time: 0.773928  memory: 1165  
+02/20 02:49:10 - mmengine - INFO - Epoch(val)  [5][1250/1463]    eta: 0:02:33  time: 0.674895  data_time: 0.531859  memory: 1165  
+02/20 02:49:45 - mmengine - INFO - Epoch(val)  [5][1300/1463]    eta: 0:01:57  time: 0.707299  data_time: 0.557952  memory: 1165  
+02/20 02:50:23 - mmengine - INFO - Epoch(val)  [5][1350/1463]    eta: 0:01:21  time: 0.754803  data_time: 0.608122  memory: 1165  
+02/20 02:50:55 - mmengine - INFO - Epoch(val)  [5][1400/1463]    eta: 0:00:45  time: 0.639797  data_time: 0.493186  memory: 1165  
+02/20 02:51:34 - mmengine - INFO - Epoch(val)  [5][1450/1463]    eta: 0:00:09  time: 0.786214  data_time: 0.638156  memory: 1165  
+02/20 02:51:51 - mmengine - INFO - Evaluating CocoMetric...
+Loading and preparing results...
+DONE (t=1.53s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *keypoints*
+DONE (t=17.50s).
+Accumulating evaluation results...
+DONE (t=1.21s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] =  0.001
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets= 20 ] =  0.004
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets= 20 ] =  0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets= 20 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] =  0.001
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 20 ] =  0.006
+ Average Recall     (AR) @[ IoU=0.50      | area=   all | maxDets= 20 ] =  0.017
+ Average Recall     (AR) @[ IoU=0.75      | area=   all | maxDets= 20 ] =  0.003
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets= 20 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets= 20 ] =  0.006
+02/20 02:52:13 - mmengine - INFO - Epoch(val) [5][1463/1463]    coco/AP: 0.000875  coco/AP .5: 0.003518  coco/AP .75: 0.000101  coco/AP (M): -1.000000  coco/AP (L): 0.000875  coco/AR: 0.005582  coco/AR .5: 0.016641  coco/AR .75: 0.003336  coco/AR (M): -1.000000  coco/AR (L): 0.005582  data_time: 0.573641  time: 0.720465
+02/20 02:52:13 - mmengine - INFO - The previous best checkpoint /work/ToyotaHPE/rcatalini/EventRobotPose/mmpose/baselines/HRNet/best_coco_AP_epoch_3.pth is removed
+02/20 02:52:14 - mmengine - INFO - The best checkpoint with 0.0009 coco/AP at 5 epoch is saved to best_coco_AP_epoch_5.pth.
+02/20 02:53:41 - mmengine - INFO - Epoch(train)  [6][   50/11654]  lr: 2.780000e-04  eta: 1 day, 2:53:53  time: 1.698837  data_time: 1.437524  memory: 9726  loss: 0.000126  loss_kpt: 0.000126  acc_pose: 0.992099
+02/20 02:54:43 - mmengine - INFO - Epoch(train)  [6][  100/11654]  lr: 2.780000e-04  eta: 1 day, 2:52:03  time: 1.237563  data_time: 0.960777  memory: 9726  loss: 0.000132  loss_kpt: 0.000132  acc_pose: 0.997714
+02/20 02:55:46 - mmengine - INFO - Epoch(train)  [6][  150/11654]  lr: 2.780000e-04  eta: 1 day, 2:50:14  time: 1.247563  data_time: 0.982631  memory: 9726  loss: 0.000126  loss_kpt: 0.000126  acc_pose: 0.998866
+02/20 02:56:47 - mmengine - INFO - Epoch(train)  [6][  200/11654]  lr: 2.780000e-04  eta: 1 day, 2:48:24  time: 1.222299  data_time: 0.955872  memory: 9726  loss: 0.000136  loss_kpt: 0.000136  acc_pose: 0.992025
+02/20 02:57:51 - mmengine - INFO - Epoch(train)  [6][  250/11654]  lr: 2.780000e-04  eta: 1 day, 2:46:38  time: 1.295591  data_time: 1.015659  memory: 9726  loss: 0.000138  loss_kpt: 0.000138  acc_pose: 0.989555
+02/20 02:59:03 - mmengine - INFO - Epoch(train)  [6][  300/11654]  lr: 2.780000e-04  eta: 1 day, 2:45:01  time: 1.435650  data_time: 1.167650  memory: 9726  loss: 0.000145  loss_kpt: 0.000145  acc_pose: 0.995536
+02/20 03:00:08 - mmengine - INFO - Epoch(train)  [6][  350/11654]  lr: 2.780000e-04  eta: 1 day, 2:43:15  time: 1.286329  data_time: 1.022412  memory: 9726  loss: 0.000132  loss_kpt: 0.000132  acc_pose: 0.997768
+02/20 03:01:11 - mmengine - INFO - Epoch(train)  [6][  400/11654]  lr: 2.780000e-04  eta: 1 day, 2:41:28  time: 1.268873  data_time: 1.003627  memory: 9726  loss: 0.000138  loss_kpt: 0.000138  acc_pose: 0.992188
+02/20 03:02:13 - mmengine - INFO - Epoch(train)  [6][  450/11654]  lr: 2.780000e-04  eta: 1 day, 2:39:38  time: 1.230694  data_time: 0.968355  memory: 9726  loss: 0.000145  loss_kpt: 0.000145  acc_pose: 0.991071
+02/20 03:03:55 - mmengine - INFO - Epoch(train)  [6][  500/11654]  lr: 2.780000e-04  eta: 1 day, 2:38:39  time: 2.046370  data_time: 1.782734  memory: 9726  loss: 0.000173  loss_kpt: 0.000173  acc_pose: 0.992081
+02/20 03:04:56 - mmengine - INFO - Epoch(train)  [6][  550/11654]  lr: 2.780000e-04  eta: 1 day, 2:36:49  time: 1.224428  data_time: 0.961564  memory: 9726  loss: 0.000160  loss_kpt: 0.000160  acc_pose: 0.997732
+02/20 03:05:59 - mmengine - INFO - Epoch(train)  [6][  600/11654]  lr: 2.780000e-04  eta: 1 day, 2:35:02  time: 1.263134  data_time: 0.986939  memory: 9726  loss: 0.000157  loss_kpt: 0.000157  acc_pose: 0.989902
+02/20 03:06:57 - mmengine - INFO - Epoch(train)  [6][  650/11654]  lr: 2.780000e-04  eta: 1 day, 2:33:08  time: 1.145783  data_time: 0.885199  memory: 9726  loss: 0.000139  loss_kpt: 0.000139  acc_pose: 0.989866
+02/20 03:08:01 - mmengine - INFO - Epoch(train)  [6][  700/11654]  lr: 2.780000e-04  eta: 1 day, 2:31:22  time: 1.289730  data_time: 1.030299  memory: 9726  loss: 0.000159  loss_kpt: 0.000159  acc_pose: 0.998866
+02/20 03:08:42 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/20 03:09:09 - mmengine - INFO - Epoch(train)  [6][  750/11654]  lr: 2.780000e-04  eta: 1 day, 2:29:41  time: 1.351629  data_time: 1.084426  memory: 9726  loss: 0.000149  loss_kpt: 0.000149  acc_pose: 0.991054
+02/20 03:10:07 - mmengine - INFO - Epoch(train)  [6][  800/11654]  lr: 2.780000e-04  eta: 1 day, 2:27:48  time: 1.167484  data_time: 0.905862  memory: 9726  loss: 0.000145  loss_kpt: 0.000145  acc_pose: 0.994420
+02/20 03:11:11 - mmengine - INFO - Epoch(train)  [6][  850/11654]  lr: 2.780000e-04  eta: 1 day, 2:26:02  time: 1.271671  data_time: 1.008817  memory: 9726  loss: 0.000133  loss_kpt: 0.000133  acc_pose: 0.982019
+02/20 03:12:19 - mmengine - INFO - Epoch(train)  [6][  900/11654]  lr: 2.780000e-04  eta: 1 day, 2:24:21  time: 1.358491  data_time: 1.079770  memory: 9726  loss: 0.000144  loss_kpt: 0.000144  acc_pose: 0.998884
+02/20 03:13:26 - mmengine - INFO - Epoch(train)  [6][  950/11654]  lr: 2.780000e-04  eta: 1 day, 2:22:39  time: 1.340729  data_time: 1.080597  memory: 9726  loss: 0.000134  loss_kpt: 0.000134  acc_pose: 0.995536
+02/20 03:14:25 - mmengine - INFO - Epoch(train)  [6][ 1000/11654]  lr: 2.780000e-04  eta: 1 day, 2:20:48  time: 1.185526  data_time: 0.922047  memory: 9726  loss: 0.000138  loss_kpt: 0.000138  acc_pose: 0.993196
+02/20 03:15:22 - mmengine - INFO - Epoch(train)  [6][ 1050/11654]  lr: 2.780000e-04  eta: 1 day, 2:18:55  time: 1.146493  data_time: 0.886621  memory: 9726  loss: 0.000141  loss_kpt: 0.000141  acc_pose: 0.996634
+02/20 03:16:21 - mmengine - INFO - Epoch(train)  [6][ 1100/11654]  lr: 2.780000e-04  eta: 1 day, 2:17:03  time: 1.170015  data_time: 0.910332  memory: 9726  loss: 0.000141  loss_kpt: 0.000141  acc_pose: 0.983188
+02/20 03:17:21 - mmengine - INFO - Epoch(train)  [6][ 1150/11654]  lr: 2.780000e-04  eta: 1 day, 2:15:14  time: 1.213389  data_time: 0.946368  memory: 9726  loss: 0.000140  loss_kpt: 0.000140  acc_pose: 0.983206
+02/20 03:18:27 - mmengine - INFO - Epoch(train)  [6][ 1200/11654]  lr: 2.780000e-04  eta: 1 day, 2:13:30  time: 1.304724  data_time: 1.041189  memory: 9726  loss: 0.000128  loss_kpt: 0.000128  acc_pose: 0.997732
+02/20 03:19:23 - mmengine - INFO - Epoch(train)  [6][ 1250/11654]  lr: 2.780000e-04  eta: 1 day, 2:11:36  time: 1.132616  data_time: 0.869340  memory: 9726  loss: 0.000134  loss_kpt: 0.000134  acc_pose: 0.977679
+02/20 03:20:23 - mmengine - INFO - Epoch(train)  [6][ 1300/11654]  lr: 2.780000e-04  eta: 1 day, 2:09:46  time: 1.190568  data_time: 0.925446  memory: 9726  loss: 0.000137  loss_kpt: 0.000137  acc_pose: 0.997768
+02/20 03:21:19 - mmengine - INFO - Epoch(train)  [6][ 1350/11654]  lr: 2.780000e-04  eta: 1 day, 2:07:52  time: 1.128620  data_time: 0.871876  memory: 9726  loss: 0.000138  loss_kpt: 0.000138  acc_pose: 0.998848
+02/20 03:22:08 - mmengine - INFO - Epoch(train)  [6][ 1400/11654]  lr: 2.780000e-04  eta: 1 day, 2:05:49  time: 0.974896  data_time: 0.719026  memory: 9726  loss: 0.000134  loss_kpt: 0.000134  acc_pose: 0.993286
+02/20 03:23:02 - mmengine - INFO - Epoch(train)  [6][ 1450/11654]  lr: 2.780000e-04  eta: 1 day, 2:03:53  time: 1.074393  data_time: 0.815151  memory: 9726  loss: 0.000176  loss_kpt: 0.000176  acc_pose: 0.991000
+02/20 03:24:07 - mmengine - INFO - Epoch(train)  [6][ 1500/11654]  lr: 2.780000e-04  eta: 1 day, 2:02:10  time: 1.302012  data_time: 1.037068  memory: 9726  loss: 0.000186  loss_kpt: 0.000186  acc_pose: 0.994384
+02/20 03:25:01 - mmengine - INFO - Epoch(train)  [6][ 1550/11654]  lr: 2.780000e-04  eta: 1 day, 2:00:13  time: 1.076096  data_time: 0.812812  memory: 9726  loss: 0.000167  loss_kpt: 0.000167  acc_pose: 0.974029
+02/20 03:25:59 - mmengine - INFO - Epoch(train)  [6][ 1600/11654]  lr: 2.780000e-04  eta: 1 day, 1:58:22  time: 1.160227  data_time: 0.897233  memory: 9726  loss: 0.000166  loss_kpt: 0.000166  acc_pose: 0.997750
+02/20 03:26:57 - mmengine - INFO - Epoch(train)  [6][ 1650/11654]  lr: 2.780000e-04  eta: 1 day, 1:56:31  time: 1.168914  data_time: 0.905643  memory: 9726  loss: 0.000156  loss_kpt: 0.000156  acc_pose: 0.992006
+02/20 03:27:54 - mmengine - INFO - Epoch(train)  [6][ 1700/11654]  lr: 2.780000e-04  eta: 1 day, 1:54:39  time: 1.140003  data_time: 0.878814  memory: 9726  loss: 0.000149  loss_kpt: 0.000149  acc_pose: 0.997750
+02/20 03:28:38 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/20 03:29:00 - mmengine - INFO - Epoch(train)  [6][ 1750/11654]  lr: 2.780000e-04  eta: 1 day, 1:52:57  time: 1.314625  data_time: 1.053240  memory: 9726  loss: 0.000147  loss_kpt: 0.000147  acc_pose: 0.997696
+02/20 03:29:56 - mmengine - INFO - Epoch(train)  [6][ 1800/11654]  lr: 2.780000e-04  eta: 1 day, 1:51:03  time: 1.115118  data_time: 0.856426  memory: 9726  loss: 0.000153  loss_kpt: 0.000153  acc_pose: 0.998884
+02/20 03:30:54 - mmengine - INFO - Epoch(train)  [6][ 1850/11654]  lr: 2.780000e-04  eta: 1 day, 1:49:13  time: 1.167311  data_time: 0.903251  memory: 9726  loss: 0.000153  loss_kpt: 0.000153  acc_pose: 0.998866
+02/20 03:31:51 - mmengine - INFO - Epoch(train)  [6][ 1900/11654]  lr: 2.780000e-04  eta: 1 day, 1:47:21  time: 1.143980  data_time: 0.866817  memory: 9726  loss: 0.000155  loss_kpt: 0.000155  acc_pose: 0.995518
+02/20 03:32:47 - mmengine - INFO - Epoch(train)  [6][ 1950/11654]  lr: 2.780000e-04  eta: 1 day, 1:45:28  time: 1.118081  data_time: 0.855089  memory: 9726  loss: 0.000170  loss_kpt: 0.000170  acc_pose: 0.994420
+02/20 03:33:49 - mmengine - INFO - Epoch(train)  [6][ 2000/11654]  lr: 2.780000e-04  eta: 1 day, 1:43:42  time: 1.228430  data_time: 0.967398  memory: 9726  loss: 0.000182  loss_kpt: 0.000182  acc_pose: 0.997768
+02/20 03:34:48 - mmengine - INFO - Epoch(train)  [6][ 2050/11654]  lr: 2.780000e-04  eta: 1 day, 1:41:53  time: 1.185236  data_time: 0.923454  memory: 9726  loss: 0.000161  loss_kpt: 0.000161  acc_pose: 0.997768
+02/20 03:35:41 - mmengine - INFO - Epoch(train)  [6][ 2100/11654]  lr: 2.780000e-04  eta: 1 day, 1:39:57  time: 1.058222  data_time: 0.796747  memory: 9726  loss: 0.000165  loss_kpt: 0.000165  acc_pose: 0.992081
+02/20 03:36:34 - mmengine - INFO - Epoch(train)  [6][ 2150/11654]  lr: 2.780000e-04  eta: 1 day, 1:38:01  time: 1.069479  data_time: 0.809357  memory: 9726  loss: 0.000154  loss_kpt: 0.000154  acc_pose: 0.994294
+02/20 03:37:27 - mmengine - INFO - Epoch(train)  [6][ 2200/11654]  lr: 2.780000e-04  eta: 1 day, 1:36:05  time: 1.054877  data_time: 0.791809  memory: 9726  loss: 0.000165  loss_kpt: 0.000165  acc_pose: 0.998884
+02/20 03:38:23 - mmengine - INFO - Epoch(train)  [6][ 2250/11654]  lr: 2.780000e-04  eta: 1 day, 1:34:13  time: 1.120826  data_time: 0.858000  memory: 9726  loss: 0.000158  loss_kpt: 0.000158  acc_pose: 0.986429
+02/20 03:39:52 - mmengine - INFO - Epoch(train)  [6][ 2300/11654]  lr: 2.780000e-04  eta: 1 day, 1:32:59  time: 1.786647  data_time: 1.526337  memory: 9726  loss: 0.000150  loss_kpt: 0.000150  acc_pose: 0.989830
+02/20 03:40:47 - mmengine - INFO - Epoch(train)  [6][ 2350/11654]  lr: 2.780000e-04  eta: 1 day, 1:31:05  time: 1.088748  data_time: 0.826817  memory: 9726  loss: 0.000136  loss_kpt: 0.000136  acc_pose: 1.000000
+02/20 03:41:43 - mmengine - INFO - Epoch(train)  [6][ 2400/11654]  lr: 2.780000e-04  eta: 1 day, 1:29:13  time: 1.115601  data_time: 0.852198  memory: 9726  loss: 0.000138  loss_kpt: 0.000138  acc_pose: 0.996579
+02/20 03:42:39 - mmengine - INFO - Epoch(train)  [6][ 2450/11654]  lr: 2.780000e-04  eta: 1 day, 1:27:22  time: 1.129393  data_time: 0.857375  memory: 9726  loss: 0.000136  loss_kpt: 0.000136  acc_pose: 0.992117
+02/20 03:43:43 - mmengine - INFO - Epoch(train)  [6][ 2500/11654]  lr: 2.780000e-04  eta: 1 day, 1:25:39  time: 1.273528  data_time: 1.012307  memory: 9726  loss: 0.000141  loss_kpt: 0.000141  acc_pose: 1.000000
+02/20 03:44:40 - mmengine - INFO - Epoch(train)  [6][ 2550/11654]  lr: 2.780000e-04  eta: 1 day, 1:23:49  time: 1.148433  data_time: 0.874968  memory: 9726  loss: 0.000129  loss_kpt: 0.000129  acc_pose: 1.000000
+02/20 03:45:36 - mmengine - INFO - Epoch(train)  [6][ 2600/11654]  lr: 2.780000e-04  eta: 1 day, 1:21:57  time: 1.107399  data_time: 0.845644  memory: 9726  loss: 0.000135  loss_kpt: 0.000135  acc_pose: 0.996652
+02/20 03:46:30 - mmengine - INFO - Epoch(train)  [6][ 2650/11654]  lr: 2.780000e-04  eta: 1 day, 1:20:03  time: 1.079504  data_time: 0.819698  memory: 9726  loss: 0.000143  loss_kpt: 0.000143  acc_pose: 0.997768
+02/20 03:47:24 - mmengine - INFO - Epoch(train)  [6][ 2700/11654]  lr: 2.780000e-04  eta: 1 day, 1:18:10  time: 1.093145  data_time: 0.835558  memory: 9726  loss: 0.000139  loss_kpt: 0.000139  acc_pose: 1.000000
+02/20 03:48:00 - mmengine - INFO - Exp name: td-hm_hrnet-w32_8xb64-210e_robot-256x192_20260219_034917
+02/20 03:48:35 - mmengine - INFO - Epoch(train)  [6][ 2750/11654]  lr: 2.780000e-04  eta: 1 day, 1:16:35  time: 1.410359  data_time: 1.143738  memory: 9726  loss: 0.000133  loss_kpt: 0.000133  acc_pose: 0.991036
+02/20 03:49:36 - mmengine - INFO - Epoch(train)  [6][ 2800/11654]  lr: 2.780000e-04  eta: 1 day, 1:14:50  time: 1.222706  data_time: 0.947063  memory: 9726  loss: 0.000139  loss_kpt: 0.000139  acc_pose: 0.993105
+02/20 03:50:41 - mmengine - INFO - Epoch(train)  [6][ 2850/11654]  lr: 2.780000e-04  eta: 1 day, 1:13:09  time: 1.304897  data_time: 1.032115  memory: 9726  loss: 0.000127  loss_kpt: 0.000127  acc_pose: 0.990910
+02/20 03:51:42 - mmengine - INFO - Epoch(train)  [6][ 2900/11654]  lr: 2.780000e-04  eta: 1 day, 1:11:24  time: 1.225719  data_time: 0.952742  memory: 9726  loss: 0.000128  loss_kpt: 0.000128  acc_pose: 0.982919
+srun: Job step aborted: Waiting up to 92 seconds for job step to finish.
+[2026-02-20T03:52:07.682] error: *** JOB 2723655 ON labetty CANCELLED AT 2026-02-20T03:52:07 DUE TO TIME LIMIT ***
+[2026-02-20T03:52:07.682] error: *** STEP 2723655.0 ON labetty CANCELLED AT 2026-02-20T03:52:07 DUE TO TIME LIMIT ***

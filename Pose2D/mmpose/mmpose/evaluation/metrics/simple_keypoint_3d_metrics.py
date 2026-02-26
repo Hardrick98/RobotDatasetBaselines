@@ -78,6 +78,7 @@ class SimpleMPJPE(BaseMetric):
             # ground truth keypoints coordinates, [T, K, D]
             gt_coords = gt['lifting_target']
             # ground truth keypoints_visible, [T, K, 1]
+
             mask = gt['lifting_target_visible'].astype(bool).reshape(
                 gt_coords.shape[0], -1)
 
